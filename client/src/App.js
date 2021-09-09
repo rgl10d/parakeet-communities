@@ -1,19 +1,15 @@
 import React from "react";
-import {useEffect} from "react";
-import axios from "axios";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./containers/Home/Home";
 
 function App() {
 
-  useEffect(() => {
-    axios.get("api/config").then((response) =>{
-      alert(response.data.currentPort);
-    });
-  }, []);
-
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
