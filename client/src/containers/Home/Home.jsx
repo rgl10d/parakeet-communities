@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import stockParakeet from "../../assets/stockParakeetedit.png";
 
 const Home = () => {
   return (
@@ -65,9 +66,9 @@ const Home = () => {
       </div>
       <div id="info-cards">
         <div className="card">
-          <img src="/" className="card-img-top" alt="..." />
+          <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Characteristic #1</h5>
             <p className="card-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
               atque molestias, quod earum beatae soluta sequi temporibus? Omnis
@@ -77,9 +78,9 @@ const Home = () => {
           </div>
         </div>
         <div className="card">
-          <img src="..." className="card-img-top" alt="..." />
+          <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Characteristic #2</h5>
             <p className="card-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ex,
               hic nostrum et neque iure exercitationem doloribus quibusdam animi
@@ -89,9 +90,9 @@ const Home = () => {
           </div>
         </div>
         <div className="card">
-          <img src="..." className="card-img-top" alt="..." />
+          <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">Characteristic #3</h5>
             <p className="card-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ex,
               hic nostrum et neque iure exercitationem doloribus quibusdam animi
