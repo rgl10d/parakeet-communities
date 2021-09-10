@@ -65,7 +65,7 @@ const Home = () => {
         </div>
       </div>
       <div id="info-cards">
-        <div className="card">
+        <div className="card" id="chara-card1">
           <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Characteristic #1</h5>
@@ -77,7 +77,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="card">
+        <div className="card" id="chara-card2">
           <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Characteristic #2</h5>
@@ -89,7 +89,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="card">
+        <div className="card" id="chara-card3">
           <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Characteristic #3</h5>
@@ -100,6 +100,45 @@ const Home = () => {
               laboriosam possimus vitae!
             </p>
           </div>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid info-blocks" id="info-block1">
+        <div class="container">
+          <h1 class="display-4">Lorem ipsum</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
+            deserunt quidem commodi quos at veritatis optio exercitationem!
+            Voluptates officiis, at nihil illo, ratione sapiente numquam alias
+            explicabo nobis aspernatur praesentium asperiores ipsa quas tempora?
+            Ad ducimus nam, accusantium odio sit consequuntur. Omnis, delectus
+            dolore. Neque, animi culpa. In, exercitationem!
+          </p>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid info-blocks" id="info-block2">
+        <div class="container">
+          <h1 class="display-4">Lorem ipsum</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
+            deserunt quidem commodi quos at veritatis optio exercitationem!
+            Voluptates officiis, at nihil illo, ratione sapiente numquam alias
+            explicabo nobis aspernatur praesentium asperiores ipsa quas tempora?
+            Ad ducimus nam, accusantium odio sit consequuntur. Omnis, delectus
+            dolore. Neque, animi culpa. In, exercitationem!
+          </p>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid info-blocks" id="info-block3">
+        <div class="container">
+          <h1 class="display-4">Lorem ipsum</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
+            deserunt quidem commodi quos at veritatis optio exercitationem!
+            Voluptates officiis, at nihil illo, ratione sapiente numquam alias
+            explicabo nobis aspernatur praesentium asperiores ipsa quas tempora?
+            Ad ducimus nam, accusantium odio sit consequuntur. Omnis, delectus
+            dolore. Neque, animi culpa. In, exercitationem!
+          </p>
         </div>
       </div>
     </>

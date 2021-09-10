@@ -4,13 +4,23 @@
 }
 
 .card {
-  width: 20rem;
+  width: 25rem;
   text-align: center;
+  margin: 10px 0px 45px 0px;
 }
 
 .card-img-top {
-  width: 50%;
-  height: 40%;
+  width: 45%;
+  height: 45%;
   border-radius: 50%;
   margin-top: 15px;
+}
+
+.info-blocks {
+  margin-bottom: 0px;
+}
+
+#info-block2 {
+  text-align: right;
+  background-color: rgb(59, 187, 59);
 }
