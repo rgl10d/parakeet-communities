@@ -1,8 +1,26 @@
 import React from "react";
 import "./Home.css";
 import stockParakeet from "../../assets/stockParakeetedit.png";
+import USAMap from "react-usa-map";
 
 const Home = () => {
+
+  const mapHandler = (event) => {
+    console.log(event.target.dataset.name);
+  };
+
+  const statesCustomConfig = () => {
+    return {
+      "FL": {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: (event) => console.log('Custom handler for FL', event.target.dataset)
+      },
+      "GA": {
+        fill: "rgb(59, 187, 59)"
+      }
+    };
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -102,10 +120,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div class="jumbotron jumbotron-fluid info-blocks" id="info-block1">
-        <div class="container">
-          <h1 class="display-4">Lorem ipsum</h1>
-          <p class="lead">
+      <div className="jumbotron jumbotron-fluid info-blocks" id="info-block1">
+        <div className="container">
+          <h1 className="display-4">Lorem ipsum</h1>
+          <p className="lead">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
             deserunt quidem commodi quos at veritatis optio exercitationem!
             Voluptates officiis, at nihil illo, ratione sapiente numquam alias
@@ -115,10 +133,10 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div class="jumbotron jumbotron-fluid info-blocks" id="info-block2">
-        <div class="container">
-          <h1 class="display-4">Lorem ipsum</h1>
-          <p class="lead">
+      <div className="jumbotron jumbotron-fluid info-blocks" id="info-block2">
+        <div className="container">
+          <h1 className="display-4">Lorem ipsum</h1>
+          <p className="lead">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
             deserunt quidem commodi quos at veritatis optio exercitationem!
             Voluptates officiis, at nihil illo, ratione sapiente numquam alias
@@ -128,10 +146,10 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div class="jumbotron jumbotron-fluid info-blocks" id="info-block3">
-        <div class="container">
-          <h1 class="display-4">Lorem ipsum</h1>
-          <p class="lead">
+      <div className="jumbotron jumbotron-fluid info-blocks" id="info-block3">
+        <div className="container">
+          <h1 className="display-4">Lorem ipsum</h1>
+          <p className="lead">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
             deserunt quidem commodi quos at veritatis optio exercitationem!
             Voluptates officiis, at nihil illo, ratione sapiente numquam alias
@@ -140,6 +158,9 @@ const Home = () => {
             dolore. Neque, animi culpa. In, exercitationem!
           </p>
         </div>
+      </div>
+      <div className="container-fluid">
+        <USAMap customize={statesCustomConfig()} onClick={mapHandler} />
       </div>
     </>
   );
