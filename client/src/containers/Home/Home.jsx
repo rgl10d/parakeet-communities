@@ -13,10 +13,11 @@ const Home = () => {
     return {
       "FL": {
         fill: "rgb(59, 187, 59)",
-        clickHandler: (event) => console.log('Custom handler for FL', event.target.dataset)
+        clickHandler: () => alert('We have communities in Florida!')
       },
       "GA": {
-        fill: "rgb(59, 187, 59)"
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert('We have communities in Georgia!')
       }
     };
   };
