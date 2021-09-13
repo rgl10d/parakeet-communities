@@ -196,7 +196,7 @@ const Home = () => {
           <div className="col-md-7">
             <h2 class="featured-heading">
               Feature Heading.{" "}
-              <span class="text-muted">This is the first.</span>
+              <span class="text-muted">This is the second.</span>
             </h2>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -209,7 +209,7 @@ const Home = () => {
           <div className="col-md-7">
             <h2 class="featured-heading">
               Feature Heading.{" "}
-              <span class="text-muted">This is the first.</span>
+              <span class="text-muted">This is the third.</span>
             </h2>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
