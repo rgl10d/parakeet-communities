@@ -4,63 +4,64 @@ import stockParakeet from "../../assets/stockParakeetedit.png";
 import USAMap from "react-usa-map";
 
 const Home = () => {
-
   const mapHandler = (event) => {
     console.log(event.target.dataset.name);
   };
 
   const statesCustomConfig = () => {
     return {
-      "FL": {
+      FL: {
         fill: "rgb(59, 187, 59)",
-        clickHandler: () => alert('We have communities in Florida!')
+        clickHandler: () => alert("We have communities in Florida!"),
       },
-      "GA": {
+      GA: {
         fill: "rgb(59, 187, 59)",
-        clickHandler: () => alert('We have communities in Georgia!')
-      }
+        clickHandler: () => alert("We have communities in Georgia!"),
+      },
     };
   };
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link" href="/">
-              Communities
-            </a>
-            <a className="nav-link" href="/">
-              About
-            </a>
-            <a className="nav-link" href="/">
-              FAQ
-            </a>
-            <a className="nav-link" href="/">
-              Apply Now
-            </a>
-            <a className="nav-link" href="/">
-              Contact Us
-            </a>
-          </div>
-        </div>
-        <form className="form-inline">
-          <button className="btn btn-outline-success" type="button">
-            Resident Portal
+      <header>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
           </button>
-        </form>
-      </nav>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link" href="/">
+                Communities
+              </a>
+              <a className="nav-link" href="/">
+                About
+              </a>
+              <a className="nav-link" href="/">
+                FAQ
+              </a>
+              <a className="nav-link" href="/">
+                Apply Now
+              </a>
+              <a className="nav-link" href="/">
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <form className="form-inline">
+            <button className="btn btn-outline-success" type="button">
+              Resident Portal
+            </button>
+          </form>
+        </nav>
+      </header>
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
           <h1 className="display-4">Our All Ages Communities</h1>
@@ -83,85 +84,168 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div id="info-cards">
-        <div className="card" id="chara-card1">
-          <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Characteristic #1</h5>
-            <p className="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              atque molestias, quod earum beatae soluta sequi temporibus? Omnis
-              iure quibusdam aperiam quos laudantium tenetur suscipit ab
-              assumenda, minima asperiores vero!
+      <div className="container page-core">
+        {/* Small Heading Cards */}
+        <div className="row">
+          <div className="col-lg-4 heading-card">
+            <img
+              src={stockParakeet}
+              className="card-img-top mx-auto"
+              alt="..."
+            />
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              corporis quidem molestias, magnam quisquam possimus?
+            </p>
+            <p>
+              <a className="btn btn-outline-success" href="/">
+                A link
+              </a>
             </p>
           </div>
-        </div>
-        <div className="card" id="chara-card2">
-          <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Characteristic #2</h5>
-            <p className="card-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ex,
-              hic nostrum et neque iure exercitationem doloribus quibusdam animi
-              saepe possimus veritatis numquam quis! Enim corporis earum
-              laboriosam possimus vitae!
+          <div className="col-lg-4 heading-card">
+            <img
+              src={stockParakeet}
+              className="card-img-top mx-auto"
+              alt="..."
+            />
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              corporis quidem molestias, magnam quisquam possimus?
+            </p>
+            <p>
+              <a className="btn btn-outline-success" href="/">
+                A link
+              </a>
             </p>
           </div>
-        </div>
-        <div className="card" id="chara-card3">
-          <img src={stockParakeet} className="card-img-top mx-auto" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">Characteristic #3</h5>
-            <p className="card-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, ex,
-              hic nostrum et neque iure exercitationem doloribus quibusdam animi
-              saepe possimus veritatis numquam quis! Enim corporis earum
-              laboriosam possimus vitae!
+          <div className="col-lg-4 heading-card">
+            <img
+              src={stockParakeet}
+              className="card-img-top mx-auto"
+              alt="..."
+            />
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              corporis quidem molestias, magnam quisquam possimus?
+            </p>
+            <p>
+              <a className="btn btn-outline-success" href="/">
+                A link
+              </a>
             </p>
           </div>
+          <hr />
         </div>
-      </div>
-      <div className="jumbotron jumbotron-fluid info-blocks" id="info-block1">
-        <div className="container">
-          <h1 className="display-4">Lorem ipsum</h1>
-          <p className="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
-            deserunt quidem commodi quos at veritatis optio exercitationem!
-            Voluptates officiis, at nihil illo, ratione sapiente numquam alias
-            explicabo nobis aspernatur praesentium asperiores ipsa quas tempora?
-            Ad ducimus nam, accusantium odio sit consequuntur. Omnis, delectus
-            dolore. Neque, animi culpa. In, exercitationem!
-          </p>
+
+        {/* Feature Blocks */}
+        <div className="row featured">
+          {/* Feature Block 1 */}
+          <div className="col-md-7">
+            <h2 class="featured-heading">
+              Feature Heading.{" "}
+              <span class="text-muted">This is the first.</span>
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium debitis consectetur similique cupiditate, veritatis
+              eveniet!
+            </p>
+          </div>
+          <div className="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">
+                500x500
+              </text>
+            </svg>
+          </div>
+
+          {/* Feature Block 2 */}
+          <div className="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">
+                500x500
+              </text>
+            </svg>
+          </div>
+          <div className="col-md-7">
+            <h2 class="featured-heading">
+              Feature Heading.{" "}
+              <span class="text-muted">This is the first.</span>
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium debitis consectetur similique cupiditate, veritatis
+              eveniet!
+            </p>
+          </div>
+
+          {/* Feature Block 3 */}
+          <div className="col-md-7">
+            <h2 class="featured-heading">
+              Feature Heading.{" "}
+              <span class="text-muted">This is the first.</span>
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium debitis consectetur similique cupiditate, veritatis
+              eveniet!
+            </p>
+          </div>
+          <div className="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee"></rect>
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">
+                500x500
+              </text>
+            </svg>
+          </div>
         </div>
-      </div>
-      <div className="jumbotron jumbotron-fluid info-blocks" id="info-block2">
-        <div className="container">
-          <h1 className="display-4">Lorem ipsum</h1>
-          <p className="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
-            deserunt quidem commodi quos at veritatis optio exercitationem!
-            Voluptates officiis, at nihil illo, ratione sapiente numquam alias
-            explicabo nobis aspernatur praesentium asperiores ipsa quas tempora?
-            Ad ducimus nam, accusantium odio sit consequuntur. Omnis, delectus
-            dolore. Neque, animi culpa. In, exercitationem!
-          </p>
+
+        {/* US Map */}
+        <div className=" map-container">
+          <USAMap
+            customize={statesCustomConfig()}
+            onClick={mapHandler}
+            title="United States Map"
+            width={800}
+          />
         </div>
-      </div>
-      <div className="jumbotron jumbotron-fluid info-blocks" id="info-block3">
-        <div className="container">
-          <h1 className="display-4">Lorem ipsum</h1>
-          <p className="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sunt
-            deserunt quidem commodi quos at veritatis optio exercitationem!
-            Voluptates officiis, at nihil illo, ratione sapiente numquam alias
-            explicabo nobis aspernatur praesentium asperiores ipsa quas tempora?
-            Ad ducimus nam, accusantium odio sit consequuntur. Omnis, delectus
-            dolore. Neque, animi culpa. In, exercitationem!
-          </p>
-        </div>
-      </div>
-      <div className="container-fluid">
-        <USAMap customize={statesCustomConfig()} onClick={mapHandler} />
       </div>
     </>
   );

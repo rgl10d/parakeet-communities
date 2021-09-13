@@ -3,26 +3,37 @@
   justify-content: space-around;
 }
 
-.card {
-  width: 25rem;
+.heading-card {
   text-align: center;
-  margin: 10px 0px 45px 0px;
 }
 
 .card-img-top {
-  width: 45%;
-  height: 45%;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   margin-top: 15px;
 }
 
 .info-blocks {
   margin-bottom: 0px;
+  border-top: grey 1px solid;
+  margin-top: 30px;
+  padding-top: 30px;
+  background-color: white;
 }
 
 #info-block2 {
   text-align: right;
   background-color: rgb(59, 187, 59);
+}
+
+.divider {
+  margin: 5rem 0;
+}
+
+/* US Map Styles */
+.map-container {
+  margin-left: 0%;
 }
 
 path {
@@ -31,4 +42,30 @@ path {
 path:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  .page-core {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-core {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-core {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-core {
+    max-width: 540px;
+  }
 }
