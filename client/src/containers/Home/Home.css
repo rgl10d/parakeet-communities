@@ -1,6 +1,5 @@
-#info-cards {
-  display: flex;
-  justify-content: space-around;
+.carouself-highlight-text {
+  color: lightgreen;
 }
 
 .heading-card {
@@ -14,17 +13,8 @@
   margin-top: 15px;
 }
 
-.info-blocks {
-  margin-bottom: 0px;
-  border-top: grey 1px solid;
-  margin-top: 30px;
-  padding-top: 30px;
-  background-color: white;
-}
-
-#info-block2 {
-  text-align: right;
-  background-color: rgb(59, 187, 59);
+.featured-image-container {
+  margin-bottom: 75px;
 }
 
 .divider {

@@ -62,27 +62,93 @@ const Home = () => {
           </form>
         </nav>
       </header>
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container">
-          <h1 className="display-4">Our All Ages Communities</h1>
-          <p className="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat
-            reprehenderit amet repellat perferendis quis ab nostrum ipsum iure
-            nemo! Dolor animi impedit labore enim consequatur repellat quisquam.
-            Voluptatum, iste ipsam? Eveniet neque doloribus cumque sapiente
-            numquam voluptate voluptatem natus corrupti dolorum! Fugiat ut nisi,
-            laborum saepe nihil distinctio iste enim et dicta commodi
-            reprehenderit deserunt recusandae atque provident tempore? Sint,
-            aspernatur a eaque perspiciatis repellat asperiores provident
-            laudantium sed totam vero facere repellendus? Eum numquam cupiditate
-            voluptatum earum magnam ipsa sed architecto, dolor reiciendis!
-            Praesentium, repellendus omnis nostrum, quod quas numquam
-            voluptatibus deserunt in, ex odio hic architecto? Totam?
-          </p>
-          <button className="btn btn-outline-success" type="button">
-            See our All Ages communities
-          </button>
+      <div
+        id="homeCarousel"
+        className="carousel slide"
+        data-ride="carousel"
+      >
+        <ol className="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            className="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <svg
+              className="bd-placeholder-img"
+              width="100%"
+              height="400px"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#777"></rect>
+            </svg>
+            <div className="carousel-caption d-none d-md-block">
+              <h2>Our <span style={{color: "lightgreen"}}>All Ages</span> Communities</h2>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <svg
+              className="bd-placeholder-img"
+              width="100%"
+              height="400px"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#777"></rect>
+            </svg>
+            <div className="carousel-caption d-none d-md-block">
+              <h2>Our <span style={{color: "lightgreen"}}>55+</span> Communities</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <svg
+              className="bd-placeholder-img"
+              width="100%"
+              height="400px"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#777"></rect>
+            </svg>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
+          </div>
         </div>
+        <a
+          className="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a
+          className="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
       </div>
       <div className="container page-core">
         {/* Small Heading Cards */}
@@ -145,19 +211,19 @@ const Home = () => {
         <div className="row featured">
           {/* Feature Block 1 */}
           <div className="col-md-7">
-            <h2 class="featured-heading">
+            <h2 className="featured-heading">
               Feature Heading.{" "}
-              <span class="text-muted">This is the first.</span>
+              <span className="text-muted">This is the first.</span>
             </h2>
-            <p class="lead">
+            <p className="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium debitis consectetur similique cupiditate, veritatis
               eveniet!
             </p>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 featured-image-container">
             <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
               height="500"
               xmlns="http://www.w3.org/2000/svg"
@@ -175,9 +241,9 @@ const Home = () => {
           </div>
 
           {/* Feature Block 2 */}
-          <div className="col-md-5">
+          <div className="col-md-5 featured-image-container">
             <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
               height="500"
               xmlns="http://www.w3.org/2000/svg"
@@ -194,11 +260,11 @@ const Home = () => {
             </svg>
           </div>
           <div className="col-md-7">
-            <h2 class="featured-heading">
+            <h2 className="featured-heading">
               Feature Heading.{" "}
-              <span class="text-muted">This is the second.</span>
+              <span className="text-muted">This is the second.</span>
             </h2>
-            <p class="lead">
+            <p className="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium debitis consectetur similique cupiditate, veritatis
               eveniet!
@@ -207,19 +273,19 @@ const Home = () => {
 
           {/* Feature Block 3 */}
           <div className="col-md-7">
-            <h2 class="featured-heading">
+            <h2 className="featured-heading">
               Feature Heading.{" "}
-              <span class="text-muted">This is the third.</span>
+              <span className="text-muted">This is the third.</span>
             </h2>
-            <p class="lead">
+            <p className="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium debitis consectetur similique cupiditate, veritatis
               eveniet!
             </p>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 featured-image-container">
             <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
               width="500"
               height="500"
               xmlns="http://www.w3.org/2000/svg"
