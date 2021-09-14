@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
 import stockParakeet from "../../assets/stockParakeetedit.png";
 import USAMap from "react-usa-map";
 
@@ -23,50 +24,9 @@ const Home = () => {
 
   return (
     <>
-      <header>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link" href="/">
-                Communities
-              </a>
-              <a className="nav-link" href="/">
-                About
-              </a>
-              <a className="nav-link" href="/">
-                FAQ
-              </a>
-              <a className="nav-link" href="/">
-                Apply Now
-              </a>
-              <a className="nav-link" href="/">
-                Contact Us
-              </a>
-            </div>
-          </div>
-          <form className="form-inline">
-            <button className="btn btn-outline-success" type="button">
-              Resident Portal
-            </button>
-          </form>
-        </nav>
-      </header>
-      <div
-        id="homeCarousel"
-        className="carousel slide"
-        data-ride="carousel"
-      >
+    {/* Navbar Component */}
+    <Navbar />
+      <div id="homeCarousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions"
@@ -90,7 +50,10 @@ const Home = () => {
               <rect width="100%" height="100%" fill="#777"></rect>
             </svg>
             <div className="carousel-caption d-none d-md-block">
-              <h2>Our <span style={{color: "lightgreen"}}>All Ages</span> Communities</h2>
+              <h2>
+                Our <span style={{ color: "lightgreen" }}>All Ages</span>{" "}
+                Communities
+              </h2>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
@@ -107,7 +70,9 @@ const Home = () => {
               <rect width="100%" height="100%" fill="#777"></rect>
             </svg>
             <div className="carousel-caption d-none d-md-block">
-              <h2>Our <span style={{color: "lightgreen"}}>55+</span> Communities</h2>
+              <h2>
+                Our <span style={{ color: "lightgreen" }}>55+</span> Communities
+              </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
@@ -137,7 +102,10 @@ const Home = () => {
           role="button"
           data-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="sr-only">Previous</span>
         </a>
         <a
@@ -146,7 +114,10 @@ const Home = () => {
           role="button"
           data-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="sr-only">Next</span>
         </a>
       </div>
@@ -204,13 +175,12 @@ const Home = () => {
               </a>
             </p>
           </div>
-          <hr />
         </div>
-
+        <hr className="divider"/>
         {/* Feature Blocks */}
         <div className="row featured">
           {/* Feature Block 1 */}
-          <div className="col-md-7">
+          <div className="col-md-7 featured-center">
             <h2 className="featured-heading">
               Feature Heading.{" "}
               <span className="text-muted">This is the first.</span>
@@ -239,7 +209,7 @@ const Home = () => {
               </text>
             </svg>
           </div>
-
+          <hr className="divider" />
           {/* Feature Block 2 */}
           <div className="col-md-5 featured-image-container">
             <svg
@@ -259,7 +229,7 @@ const Home = () => {
               </text>
             </svg>
           </div>
-          <div className="col-md-7">
+          <div id="middleFeatured" className="col-md-7 featured-center">
             <h2 className="featured-heading">
               Feature Heading.{" "}
               <span className="text-muted">This is the second.</span>
@@ -270,9 +240,9 @@ const Home = () => {
               eveniet!
             </p>
           </div>
-
+          <hr className="divider" />
           {/* Feature Block 3 */}
-          <div className="col-md-7">
+          <div className="col-md-7 featured-center">
             <h2 className="featured-heading">
               Feature Heading.{" "}
               <span className="text-muted">This is the third.</span>
@@ -313,6 +283,10 @@ const Home = () => {
           />
         </div>
       </div>
+      <nav className="footer bg-dark">
+        <button href="/" className="fa fa-youtube" />
+        <button href="/" className="fa fa-linkedin" />
+      </nav>
     </>
   );
 };

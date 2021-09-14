@@ -4,6 +4,7 @@
 
 .heading-card {
   text-align: center;
+  margin-top: 55px;
 }
 
 .card-img-top {
@@ -13,12 +14,48 @@
   margin-top: 15px;
 }
 
-.featured-image-container {
-  margin-bottom: 75px;
+.featured-center {
+  height: 400px;
+  padding: 150px 0;
 }
+
+#middleFeatured {
+  text-align: right;
+}
+
+/* .featured-image-container {
+  margin-bottom: 75px;
+} */
 
 .divider {
   margin: 5rem 0;
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color: lightgrey;
+  height: 1px;
+}
+
+.footer {
+  height: 300px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  /* width: 30px; */
+  /* text-align: center; */
+  text-decoration: none;
+  border-radius: 50%;
+  background: lightgreen;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  color: white;
 }
 
 /* US Map Styles */
