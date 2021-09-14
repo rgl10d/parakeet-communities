@@ -11,13 +11,73 @@ const Home = () => {
 
   const statesCustomConfig = () => {
     return {
+      AL: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Alabama!"),
+      },
       FL: {
         fill: "rgb(59, 187, 59)",
         clickHandler: () => alert("We have communities in Florida!"),
       },
-      GA: {
+      IN: {
         fill: "rgb(59, 187, 59)",
-        clickHandler: () => alert("We have communities in Georgia!"),
+        clickHandler: () => alert("We have communities in Indiana!"),
+      },
+      KS: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Kansas!"),
+      },
+      KY: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Kentucky!"),
+      },
+      MA: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Massachusettes!"),
+      },
+      MD: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Maryland!"),
+      },
+      MI: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Michigan!"),
+      },
+      NC: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in North Carolina!"),
+      },
+      ND: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in North Dakota!"),
+      },
+      NY: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in New York!"),
+      },
+      OH: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Ohio!"),
+      },
+      OR: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Oregon!"),
+      },
+      PA: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Pennsylvania!"),
+      },
+      TX: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Texas!"),
+      },
+      WA: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in Washington!"),
+      },
+      WV: {
+        fill: "rgb(59, 187, 59)",
+        clickHandler: () => alert("We have communities in West Virginia!"),
       },
     };
   };
@@ -102,7 +162,7 @@ const Home = () => {
             <div className="carousel-caption d-none d-md-block">
               <h2>Ready? <span style={{ color: "lightgreen" }}>Apply</span> Now.</h2>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Dream it. Rent it. Buy it.
               </p>
               <p>
                 <a className="btn btn-success" href="/">
