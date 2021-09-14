@@ -17,7 +17,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="/communities">
               Communities
             </a>
             <a className="nav-link" href="/about">
