@@ -24,17 +24,18 @@ const Home = () => {
 
   return (
     <>
-    {/* Navbar Component */}
-    <Navbar />
+      {/* Navbar Component */}
+      <Navbar />
+      {/* Carousel */}
       <div id="homeCarousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li
-            data-target="#carouselExampleCaptions"
+            data-target="#homeCarousel"
             data-slide-to="0"
             className="active"
           ></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#homeCarousel" data-slide-to="1"></li>
+          <li data-target="#homeCarousel" data-slide-to="2"></li>
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -55,6 +56,11 @@ const Home = () => {
                 Communities
               </h2>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>
+                <a className="btn btn-success" href="/">
+                  See Communities
+                </a>
+              </p>
             </div>
           </div>
           <div className="carousel-item">
@@ -74,6 +80,11 @@ const Home = () => {
                 Our <span style={{ color: "lightgreen" }}>55+</span> Communities
               </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>
+                <a className="btn btn-success" href="/">
+                  See Communities
+                </a>
+              </p>
             </div>
           </div>
           <div className="carousel-item">
@@ -89,37 +100,18 @@ const Home = () => {
               <rect width="100%" height="100%" fill="#777"></rect>
             </svg>
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h2>Ready? <span style={{ color: "lightgreen" }}>Apply</span> Now.</h2>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+              <p>
+                <a className="btn btn-success" href="/">
+                  Apply Here
+                </a>
               </p>
             </div>
           </div>
         </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Next</span>
-        </a>
       </div>
       <div className="container page-core">
         {/* Small Heading Cards */}
@@ -176,7 +168,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <hr className="divider"/>
+        <hr className="divider" />
         {/* Feature Blocks */}
         <div className="row featured">
           {/* Feature Block 1 */}
@@ -272,7 +264,7 @@ const Home = () => {
             </svg>
           </div>
         </div>
-
+        <hr className="divider" />
         {/* US Map */}
         <div className=" map-container">
           <USAMap
