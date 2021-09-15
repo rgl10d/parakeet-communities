@@ -103,7 +103,7 @@ const Home = () => {
             <svg
               className="bd-placeholder-img"
               width="100%"
-              height="400px"
+              height="500px"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               preserveAspectRatio="xMidYMid slice"
@@ -128,7 +128,7 @@ const Home = () => {
             <svg
               className="bd-placeholder-img"
               width="100%"
-              height="400px"
+              height="500px"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               preserveAspectRatio="xMidYMid slice"
@@ -152,7 +152,7 @@ const Home = () => {
             <svg
               className="bd-placeholder-img"
               width="100%"
-              height="400px"
+              height="500px"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               preserveAspectRatio="xMidYMid slice"
