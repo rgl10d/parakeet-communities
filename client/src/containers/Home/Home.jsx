@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import stockParakeet from "../../assets/stockParakeetedit.png";
 import USAMap from "react-usa-map";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const mapHandler = (event) => {
@@ -335,10 +336,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <nav className="footer bg-dark">
-        <button href="/" className="fa fa-youtube" />
-        <button href="/" className="fa fa-linkedin" />
-      </nav>
+      <Footer />
     </>
   );
 };

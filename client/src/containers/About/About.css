@@ -1,0 +1,14 @@
+#aboutHeaderImg {
+  height: 100%;
+  min-height: 500px;
+  background-image: url(../../assets/playingInYard-min.jpg);
+  background-repeat: no-repeat;
+  /* background-size: 100% auto; */
+  background-size: cover;
+  background-position: center;
+}
+
+#aboutContainer {
+  margin-top: 150px;
+  margin-bottom: 500px;
+}
