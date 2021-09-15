@@ -33,8 +33,16 @@
 .nav-link:hover {
   border-left: 5px solid lightgreen;
   padding: 2px;
+  animation-name: nav-link-border;
+  animation-duration: 500ms;
 }
 
 #residentPortalBtn {
   font-family: Oswald;
+}
+
+/* Link hover animation */
+@keyframes nav-link-border {
+    from{border-left: 5px solid transparent;}
+    to{border-left: 5px solid lightgreen;}
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import stockParakeet from "../../assets/stockParakeetedit.png";
@@ -6,6 +6,26 @@ import USAMap from "react-usa-map";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
+  let newMapWidth = 0;
+  // const [mapWidth, setMapWidth] = useState([]);
+
+  if (window.innerWidth >= 1120) {
+    newMapWidth = 1000;
+  } else if (window.innerWidth < 1120 && window.innerWidth > 900) {
+    newMapWidth = 800;
+  } else if (window.innerWidth <= 900 && window.innerWidth > 800) {
+    newMapWidth = 700;
+  } else if (window.innerWidth <= 800 && window.innerWidth > 700) {
+    newMapWidth = 600;
+  } else if (window.innerWidth <= 700 && window.innerWidth > 600) {
+    newMapWidth = 500;
+  } else if (window.innerWidth <= 600 && window.innerWidth > 500) {
+    newMapWidth = 400;
+  } else if (window.innerWidth <= 500 && window.innerWidth > 400) {
+    newMapWidth = 350;
+  } else {
+    newMapWidth = 300;
+  }
   const mapHandler = (event) => {
     console.log(event.target.dataset.name);
   };
@@ -103,7 +123,7 @@ const Home = () => {
             <svg
               className="bd-placeholder-img"
               width="100%"
-              height="500px"
+              height="600px"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               preserveAspectRatio="xMidYMid slice"
@@ -128,7 +148,7 @@ const Home = () => {
             <svg
               className="bd-placeholder-img"
               width="100%"
-              height="500px"
+              height="600px"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               preserveAspectRatio="xMidYMid slice"
@@ -152,7 +172,7 @@ const Home = () => {
             <svg
               className="bd-placeholder-img"
               width="100%"
-              height="500px"
+              height="600px"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
               preserveAspectRatio="xMidYMid slice"
@@ -161,10 +181,10 @@ const Home = () => {
               <rect width="100%" height="100%" fill="#777"></rect>
             </svg>
             <div className="carousel-caption d-none d-md-block">
-              <h2>Ready? <span style={{ color: "lightgreen" }}>Apply</span> Now.</h2>
-              <p>
-                Dream it. Rent it. Buy it.
-              </p>
+              <h2>
+                Ready? <span style={{ color: "lightgreen" }}>Apply</span> Now.
+              </h2>
+              <p>Dream it. Rent it. Buy it.</p>
               <p>
                 <a className="btn btn-success" href="/">
                   Apply Here
@@ -332,7 +352,7 @@ const Home = () => {
             customize={statesCustomConfig()}
             onClick={mapHandler}
             title="United States Map"
-            width={800}
+            width={newMapWidth}
           />
         </div>
       </div>
