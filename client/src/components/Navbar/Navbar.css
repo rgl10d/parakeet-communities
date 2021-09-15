@@ -1,0 +1,20 @@
+#navHeader {
+  background-color: black;
+}
+
+/* #navLogoContainer {
+  align-content: center;
+} */
+
+#fullLogo {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
