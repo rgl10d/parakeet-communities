@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import stockParakeet from "../../assets/stockParakeetedit.png";
@@ -26,6 +26,7 @@ const Home = () => {
   } else {
     newMapWidth = 300;
   }
+
   const mapHandler = (event) => {
     console.log(event.target.dataset.name);
   };

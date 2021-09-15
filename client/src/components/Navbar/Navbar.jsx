@@ -8,6 +8,7 @@ const Navbar = () => {
       <a id="logoLink" href="/">
         <img id="fullLogo" src={fullLogo} alt="Parakeet Communities Logo" />
       </a>
+      <hr id="navDivider"/>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <button

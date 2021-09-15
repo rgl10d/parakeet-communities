@@ -299,6 +299,17 @@ const FAQ = () => {
           </div>
         </div>
       </div>
+      <div id="moreQuestions">
+        <h1>
+          Was <span style={{ color: "rgb(37, 173, 37)" }}>your</span> question
+          not here?
+        </h1>
+        <p>
+          We're here to help! Send us a message today and we'll get right back
+          to you!
+        </p>
+        <a className="btn btn-success" href="/contact">Contact Us</a>
+      </div>
       <Footer />
     </>
   );

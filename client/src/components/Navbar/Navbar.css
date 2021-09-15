@@ -2,10 +2,7 @@
   background-color: black;
 }
 
-/* .navbar {
-    padding: 10px;
-} */
-
+/* Logo Styling */
 #fullLogo {
   height: auto;
   width: 100%;
@@ -24,6 +21,14 @@
   margin-right: auto;
 }
 
+/* Nav Divider */
+#navDivider {
+  width: 45%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Link styling */
 .nav-link {
   font-family: Oswald;
   font-size: 20px;
