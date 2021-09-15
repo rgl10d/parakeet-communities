@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
           </div>
           <form className="form-inline">
-            <button className="btn btn-outline-success" type="button">
+            <button id="residentPortalBtn" className="btn btn-outline-success" type="button">
               Resident Portal
             </button>
           </form>

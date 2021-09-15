@@ -12,3 +12,11 @@
   margin-top: 150px;
   margin-bottom: 400px;
 }
+
+#aboutTitle {
+  font-family: Oswald;
+}
+
+#aboutText {
+  font-family: Source Sans Pro;
+}

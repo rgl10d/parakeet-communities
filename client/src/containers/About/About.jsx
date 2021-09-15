@@ -10,10 +10,10 @@ const About = () => {
       <Navbar />
       <div id="aboutHeaderImg"></div>
       <div id="aboutContainer" className="container">
-        <h1>
+        <h1 id="aboutTitle">
           Who <span style={{ color: "lightgreen" }}>We</span> Are
         </h1>
-        <p>
+        <p id="aboutText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           excepturi consequuntur, fugit asperiores veritatis culpa earum nam
           nesciunt! Quae aut laudantium cumque animi corporis, ducimus

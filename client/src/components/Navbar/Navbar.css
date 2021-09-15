@@ -2,8 +2,8 @@
   background-color: black;
 }
 
-/* #navLogoContainer {
-  align-content: center;
+/* .navbar {
+    padding: 10px;
 } */
 
 #fullLogo {
@@ -15,6 +15,17 @@
   margin-right: auto;
 }
 
+.nav-link {
+  font-family: Oswald;
+  font-size: 20px;
+  border-left: 5px solid transparent;
+}
+
 .nav-link:hover {
-  border-bottom: 1px solid black;
+  border-left: 5px solid lightgreen;
+  padding: 2px;
+}
+
+#residentPortalBtn {
+  font-family: Oswald;
 }
