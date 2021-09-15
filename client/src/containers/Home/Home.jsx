@@ -348,12 +348,14 @@ const Home = () => {
         </div>
         <hr className="divider" />
         {/* US Map */}
-        <div className=" map-container">
+        <div className="map-container">
+          <h1>Select your state!</h1>
           <USAMap
             customize={statesCustomConfig()}
             onClick={mapHandler}
             title="United States Map"
             width={newMapWidth}
+            defaulFill="#{darkgreen}"
           />
         </div>
       </div>
