@@ -5,7 +5,9 @@ import fullLogo from "../../assets/full-logo-cropped.png";
 const Navbar = () => {
   return (
     <header id="navHeader" className="bg-light">
-      <img id="fullLogo" src={fullLogo} alt="Parakeet Communities Logo" />
+      <a id="logoLink" href="/">
+        <img id="fullLogo" src={fullLogo} alt="Parakeet Communities Logo" />
+      </a>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <button
@@ -21,6 +23,9 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
+            <a className="nav-link" href="/">
+                Home
+              </a>
               <a className="nav-link" href="/communities">
                 Communities
               </a>
@@ -30,16 +35,20 @@ const Navbar = () => {
               <a className="nav-link" href="/faq">
                 FAQ
               </a>
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="/apply">
                 Apply Now
               </a>
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="/contact">
                 Contact Us
               </a>
             </div>
           </div>
           <form className="form-inline">
-            <button id="residentPortalBtn" className="btn btn-outline-success" type="button">
+            <button
+              id="residentPortalBtn"
+              className="btn btn-outline-success"
+              type="button"
+            >
               Resident Portal
             </button>
           </form>
