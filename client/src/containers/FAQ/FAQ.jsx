@@ -2,6 +2,8 @@ import React from "react";
 import "./FAQ.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
 const FAQ = () => {
   return (
@@ -22,6 +24,7 @@ const FAQ = () => {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
+                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
                   What is the difference between a mobile home and a
                   manufactured home?
                 </button>

@@ -1,6 +1,6 @@
 #faqContainer {
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 div #faqContainer h1 {
@@ -13,6 +13,21 @@ div #faqContainer button {
   font-weight: bolder;
   text-decoration: none;
   color: black;
+  box-shadow: none !important;
+}
+
+div #faqContainer button:focus{
+  color: #2fc984;
+}
+
+div #faqContainer .card {
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+}
+
+.question-icon {
+  margin-right: 10px;
+  font-size: 17px;
 }
 
 #moreQuestions {
