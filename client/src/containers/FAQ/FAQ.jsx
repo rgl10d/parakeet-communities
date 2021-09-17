@@ -9,13 +9,13 @@ const FAQ = () => {
       <Navbar />
       <div id="faqContainer" className="container">
         <h1>Frequently Asked Questions</h1>
-        <div class="accordion" id="accordionExample">
+        <div className="accordion" id="accordionExample">
           {/* Question 1 */}
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingOne">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left"
+                  className="btn btn-link btn-block text-left"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseOne"
@@ -30,11 +30,11 @@ const FAQ = () => {
 
             <div
               id="collapseOne"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingOne"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 The term "Mobile Home" or "Trailer" is only used for homes that
                 were manufactured in a factory prior to the year 1976. That is
                 when the Federal Government set a number of standards in regards
@@ -45,11 +45,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 2 */}
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingTwo">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseTwo"
@@ -63,11 +63,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseTwo"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingTwo"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 There are several advantages to buying and living in a
                 manufactured home. Probably the biggest advantage is cost. When
                 a manufactured home is purchased in a community, the purchaser
@@ -90,11 +90,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 3 */}
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingThree">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseThree"
@@ -107,11 +107,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseThree"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingThree"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 The answer is "Yes". However, it is very expensive to move a
                 mobile or manufactured home. A professional mobile home mover
                 would need to be contacted to do the work. Generally the mobile
@@ -122,11 +122,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 4 */}
-          <div class="card">
-            <div class="card-header" id="headingFour">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingFour">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseFour"
@@ -139,11 +139,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseFour"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingFour"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 Yes. Many residents move to our community because of our
                 community standards and the stability the rules create within
                 the neighborhood.
@@ -151,11 +151,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 5 */}
-          <div class="card">
-            <div class="card-header" id="headingFive">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingFive">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseFive"
@@ -168,11 +168,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseFive"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingFive"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 Yes, prospective tenants must complete an application and be
                 approved prior to living in the park. There is a fee for the
                 application to be processed by a National Tenant Network or a
@@ -182,11 +182,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 6 */}
-          <div class="card">
-            <div class="card-header" id="headingSix">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingSix">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseSix"
@@ -199,11 +199,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseSix"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingSix"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 Yes, but Worsham Mobile Home Park staff must inspect the home
                 before it can be brought into the park. Homes that require
                 extensive work will not be approved...the work must be completed
@@ -212,11 +212,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 7 */}
-          <div class="card">
-            <div class="card-header" id="headingSeven">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingSeven">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseSeven"
@@ -229,22 +229,22 @@ const FAQ = () => {
             </div>
             <div
               id="collapseSeven"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingSeven"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 Yes, but only if the home has been inspected and approved and
                 the prospective buyers have been approved to live in the park.
               </div>
             </div>
           </div>
           {/* Question 8 */}
-          <div class="card">
-            <div class="card-header" id="headingEight">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingEight">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseEight"
@@ -257,11 +257,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseEight"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingEight"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 If you do not break your lease, provide a written notice 60 days
                 before moving and leave your lot clean, you will receive your
                 security deposit back. This information is in the lease and in
@@ -270,11 +270,11 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question 9 */}
-          <div class="card">
-            <div class="card-header" id="headingNine">
-              <h2 class="mb-0">
+          <div className="card">
+            <div className="card-header" id="headingNine">
+              <h2 className="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed"
+                  className="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseNine"
@@ -287,11 +287,11 @@ const FAQ = () => {
             </div>
             <div
               id="collapseNine"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingNine"
               data-parent="#accordionExample"
             >
-              <div class="card-body">
+              <div className="card-body">
                 This mobile home park is designed to be a more stable, not
                 transient community. RVs are not permitted.
               </div>
@@ -301,14 +301,15 @@ const FAQ = () => {
       </div>
       <div id="moreQuestions">
         <h1>
-          Was <span style={{ color: "rgb(37, 173, 37)" }}>your</span> question
-          not here?
+          Was <span style={{ color: "#2fc984" }}>your</span> question not here?
         </h1>
         <p>
           We're here to help! Send us a message today and we'll get right back
           to you!
         </p>
-        <a className="btn btn-success" href="/contact">Contact Us</a>
+        <a className="btn btn-success" href="/contact">
+          Contact Us
+        </a>
       </div>
       <Footer />
     </>

@@ -1,7 +1,15 @@
+/* Logo colors */
+/* reddish purple: #2f4d65;
+orange: #fa6261;
+green: #2fc984;
+yellow: #ffcc3b; */
+
+
 .carouself-highlight-text {
-  color: lightgreen;
+  color: #2fc984;
 }
 
+/* The 3 heading cards */
 .heading-card {
   text-align: center;
   margin-top: 55px;
@@ -14,6 +22,7 @@
   margin-top: 15px;
 }
 
+/* Featured Text and Images */
 .featured-center {
   height: 400px;
   padding: 150px 0;
@@ -27,6 +36,7 @@
   margin-bottom: 75px;
 } */
 
+/* <hr> Dividers */
 .divider {
   margin: 5rem 0;
   border: 0;
@@ -35,23 +45,6 @@
   width: 100%;
   background-color: lightgrey;
   height: 1px;
-}
-
-.fa {
-  padding: 15px;
-  font-size: 30px;
-  /* width: 30px; */
-  /* text-align: center; */
-  text-decoration: none;
-  border-radius: 50%;
-  background: lightgreen;
-  color: white;
-}
-
-.fa:hover {
-  opacity: 0.7;
-  text-decoration: none;
-  color: white;
 }
 
 /* US Map Styles */
@@ -69,6 +62,20 @@ path:hover {
   opacity: 0.5;
   cursor: pointer;
 }
+
+/* All green buttons */
+.btn-success {
+  background-color: #2fc984;
+}
+
+.btn-outline-success {
+  font-family: Oswald;
+}
+
+.btn-outline-success:hover {
+  background-color: #fa6261;
+}
+
 
 /* Media Queries */
 @media (min-width: 1200px) {

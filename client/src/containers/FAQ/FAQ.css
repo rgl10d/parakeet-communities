@@ -8,6 +8,13 @@ div #faqContainer h1 {
   margin-bottom: 20px;
 }
 
+div #faqContainer button {
+  font-family: Source Sans Pro;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
 #moreQuestions {
   display: block;
   text-align: center;
