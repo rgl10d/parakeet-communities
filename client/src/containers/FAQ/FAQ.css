@@ -6,6 +6,7 @@
 div #faqContainer h1 {
   font-family: Oswald;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 div #faqContainer button {

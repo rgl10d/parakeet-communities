@@ -59,6 +59,7 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
+                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
                   What are the advantages of living in a mobile home or
                   manufactured home?
                 </button>
@@ -104,6 +105,7 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
+                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
                   Can I move my home to another location if I want?
                 </button>
               </h2>
@@ -136,6 +138,7 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
+                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
                   Are your rules enforced?
                 </button>
               </h2>

@@ -1,24 +1,51 @@
-.footer {
+#footer {
   left: 0;
   bottom: 0;
   height: 300px;
   width: 100%;
+  background-color: darkslategray;
 }
 
-/* Icons */
-.fa {
-  padding: 15px;
-  font-size: 30px;
-  /* width: 30px; */
-  /* text-align: center; */
-  text-decoration: none;
-  border-radius: 50%;
-  background: lightgreen;
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#links-left {
+  text-align: right;
+}
+
+.footer-link-title {
+  font-family: Oswald;
   color: white;
 }
 
-/* .fa:hover {
-  opacity: 0.7;
-  text-decoration: none;
+.footer-link {
   color: white;
-} */
+  padding: 10px;
+  font-size: 19px;
+  font-family: Source Sans Pro;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #2fc984;
+}
+
+#footer-logo-div {
+  margin: auto -20px;
+}
+
+.footer-icon {
+  color: white;
+}
+
+.footer-icon:hover {
+  color: white;
+}
+
+#footerLogo {
+  max-height: auto;
+  max-width: 100%;
+  margin-top: 75px;
+}
