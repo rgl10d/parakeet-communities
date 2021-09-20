@@ -27,6 +27,22 @@ const About = () => {
           repellat fugiat, magni ad adipisci eveniet distinctio ratione.
         </p>
       </div>
+      <section>
+        <div id="our-service-block">
+          <h1>
+            We're here for <span style={{ color: "#2fc984" }}>you</span>!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis excepturi autem quasi? Nulla facilis id nostrum ab
+            facere perspiciatis eligendi aut est, nemo maiores veniam animi quae
+            consectetur maxime deleniti?
+          </p>
+          <a className="btn btn-success" href="/contact">
+            Contact Us
+          </a>
+        </div>
+      </section>
       <Footer />
     </>
   );

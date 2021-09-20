@@ -10,13 +10,36 @@
 
 #aboutContainer {
   margin-top: 150px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
 }
 
 #aboutTitle {
   font-family: Oswald;
+  font-size: 50px;
 }
 
 #aboutText {
   font-family: Source Sans Pro;
+  font-size: 20px;
+}
+
+#our-service-block {
+  display: block;
+  text-align: center;
+  height: 300px;
+  background-color: #fa6261;
+  color: white;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+
+div #our-service-block h1 {
+  font-family: Oswald;
+  font-size: 60px;
+}
+
+div #our-service-block p {
+  font-family: Source Sans Pro;
+  font-size: 25px;
+  text-align: center;
 }

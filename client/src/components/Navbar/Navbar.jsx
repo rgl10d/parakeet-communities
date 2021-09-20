@@ -42,6 +42,9 @@ const Navbar = () => {
               <a className="nav-link" href="/contact">
                 Contact Us
               </a>
+              <a className="nav-link" href="/careers">
+                Careers
+              </a>
             </div>
           </div>
           <form className="form-inline">
