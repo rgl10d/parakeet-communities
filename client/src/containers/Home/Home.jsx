@@ -35,71 +35,71 @@ const Home = () => {
     return {
       AL: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Alabama!"),
+        clickHandler: () => window.location.replace("/communities#alabama"),
       },
       FL: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Florida!"),
+        clickHandler: () => window.location.replace("/communities#florida"),
       },
       IN: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Indiana!"),
+        clickHandler: () => window.location.replace("/communities#indiana"),
       },
       KS: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Kansas!"),
+        clickHandler: () => window.location.replace("/communities#kansas"),
       },
       KY: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Kentucky!"),
+        clickHandler: () => window.location.replace("/communities#kentucky"),
       },
       MA: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Massachusettes!"),
+        clickHandler: () => window.location.replace("/communities#massachusettes"),
       },
       MD: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Maryland!"),
+        clickHandler: () => window.location.replace("/communities#maryland"),
       },
       MI: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Michigan!"),
+        clickHandler: () => window.location.replace("/communities#michigan"),
       },
       NC: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in North Carolina!"),
+        clickHandler: () => window.location.replace("/communities#northcarolina"),
       },
       ND: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in North Dakota!"),
+        clickHandler: () => window.location.replace("/communities#northdakota"),
       },
       NY: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in New York!"),
+        clickHandler: () => window.location.replace("/communities#newyork"),
       },
       OH: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Ohio!"),
+        clickHandler: () => window.location.replace("/communities#ohio"),
       },
       OR: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Oregon!"),
+        clickHandler: () => window.location.replace("/communities#oregon"),
       },
       PA: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Pennsylvania!"),
+        clickHandler: () => window.location.replace("/communities#pennsylvania"),
       },
       TX: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Texas!"),
+        clickHandler: () => window.location.replace("/communities#texas"),
       },
       WA: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in Washington!"),
+        clickHandler: () => window.location.replace("/communities#washington"),
       },
       WV: {
         fill: "#2fc984",
-        clickHandler: () => alert("We have communities in West Virginia!"),
+        clickHandler: () => window.location.replace("/communities#westvirginia"),
       },
     };
   };
