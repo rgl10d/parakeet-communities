@@ -16,6 +16,14 @@
 #aboutTitle {
   font-family: Oswald;
   font-size: 50px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(11, 255, 224, 1) 10%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 #aboutText {

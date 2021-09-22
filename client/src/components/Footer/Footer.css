@@ -12,7 +12,13 @@ ul {
 }
 
 #links-left {
+  margin-top: 90px;
   text-align: right;
+}
+
+#links-right {
+  margin-top: 90px;
+  text-align: left;
 }
 
 .footer-link-title {
@@ -33,7 +39,15 @@ ul {
 }
 
 #footer-logo-div {
-  margin: auto -20px;
+  margin: auto -10px;
+}
+
+#footerLogo {
+  max-height: auto;
+  max-width: 100%;
+  margin-top: 60px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .footer-icon {
@@ -42,10 +56,4 @@ ul {
 
 .footer-icon:hover {
   color: white;
-}
-
-#footerLogo {
-  max-height: auto;
-  max-width: 100%;
-  margin-top: 75px;
 }

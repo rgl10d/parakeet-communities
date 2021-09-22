@@ -2,7 +2,6 @@ import React from "react";
 import "./About.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-// import playingInYard from "../../assets/playingInYard.jpg";
 
 const About = () => {
   return (
