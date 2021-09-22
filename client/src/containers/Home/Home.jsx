@@ -35,71 +35,75 @@ const Home = () => {
     return {
       AL: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#alabama"),
+        clickHandler: () => (window.location.href = "/communities#alabama"),
       },
       FL: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#florida"),
+        clickHandler: () => (window.location.href = "/communities#florida"),
       },
       IN: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#indiana"),
+        clickHandler: () => (window.location.href = "/communities#indiana"),
       },
       KS: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#kansas"),
+        clickHandler: () => (window.location.href = "/communities#kansas"),
       },
       KY: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#kentucky"),
+        clickHandler: () => (window.location.href = "/communities#kentucky"),
       },
       MA: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#massachusettes"),
+        clickHandler: () =>
+          (window.location.href = "/communities#massachusettes"),
       },
       MD: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#maryland"),
+        clickHandler: () => (window.location.href = "/communities#maryland"),
       },
       MI: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#michigan"),
+        clickHandler: () => (window.location.href = "/communities#michigan"),
       },
       NC: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#northcarolina"),
+        clickHandler: () =>
+          (window.location.href = "/communities#northcarolina"),
       },
       ND: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#northdakota"),
+        clickHandler: () => (window.location.href = "/communities#northdakota"),
       },
       NY: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#newyork"),
+        clickHandler: () => (window.location.href = "/communities#newyork"),
       },
       OH: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#ohio"),
+        clickHandler: () => (window.location.href = "/communities#ohio"),
       },
       OR: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#oregon"),
+        clickHandler: () => (window.location.href = "/communities#oregon"),
       },
       PA: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#pennsylvania"),
+        clickHandler: () =>
+          (window.location.href = "/communities#pennsylvania"),
       },
       TX: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#texas"),
+        clickHandler: () => (window.location.href = "/communities#texas"),
       },
       WA: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#washington"),
+        clickHandler: () => (window.location.href = "/communities#washington"),
       },
       WV: {
         fill: "#2fc984",
-        clickHandler: () => window.location.replace("/communities#westvirginia"),
+        clickHandler: () =>
+          (window.location.href = "/communities#westvirginia"),
       },
     };
   };
