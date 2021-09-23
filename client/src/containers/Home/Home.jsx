@@ -7,8 +7,8 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const [mapResize, setMapResize] = useState({
-    width: 1020,
-    height: 600
+    width: window.innerWidth -100,
+    height: ((window.innerWidth - 100) * 0.6)
   });
 
   useEffect(() => {
