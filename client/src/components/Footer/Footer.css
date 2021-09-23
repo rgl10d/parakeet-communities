@@ -1,5 +1,4 @@
 #footer {
-  left: 0;
   bottom: 0;
   height: 300px;
   width: 100%;
@@ -63,5 +62,10 @@ ul {
 @media (max-width: 575px) {
   #footer {
     height: auto;
+  }
+
+  #footerLogo {
+    max-width: 200px;
+    max-height: auto;
   }
 }
