@@ -57,3 +57,11 @@ ul {
 .footer-icon:hover {
   color: white;
 }
+
+/* Media Queries */
+
+@media (max-width: 575px) {
+  #footer {
+    height: auto;
+  }
+}

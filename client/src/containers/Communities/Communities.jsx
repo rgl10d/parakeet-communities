@@ -101,7 +101,7 @@ const Communities = () => {
     <>
       <Navbar />
       <div className="container">
-        <h1>The Communities</h1>
+        <h1 id="communities-header">Communities</h1>
         {/* US STATE LIST MAP FUNCTION */}
         {communityStates.map((communityStates) => {
           return (

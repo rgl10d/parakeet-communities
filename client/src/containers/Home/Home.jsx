@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import stockParakeet from "../../assets/stockParakeetedit.png";
@@ -6,26 +6,40 @@ import USAMap from "react-usa-map";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
-  let newMapWidth = 0;
-  // const [mapWidth, setMapWidth] = useState([]);
+  const [mapResize, setMapResize] = useState({
+    width: 1020,
+    height: 600
+  });
 
-  if (window.innerWidth >= 1120) {
-    newMapWidth = 1000;
-  } else if (window.innerWidth < 1120 && window.innerWidth > 900) {
-    newMapWidth = 800;
-  } else if (window.innerWidth <= 900 && window.innerWidth > 800) {
-    newMapWidth = 700;
-  } else if (window.innerWidth <= 800 && window.innerWidth > 700) {
-    newMapWidth = 600;
-  } else if (window.innerWidth <= 700 && window.innerWidth > 600) {
-    newMapWidth = 500;
-  } else if (window.innerWidth <= 600 && window.innerWidth > 500) {
-    newMapWidth = 400;
-  } else if (window.innerWidth <= 500 && window.innerWidth > 400) {
-    newMapWidth = 350;
-  } else {
-    newMapWidth = 300;
-  }
+
+  useEffect(() => {
+    // FUNCTION THAT RESIZES MAP ON WINDOW SIZE
+    function handleMapResize() {
+      if (window.innerWidth >= 1120) {
+        setMapResize({
+          width: 1020,
+          height: 600
+        });
+      } else if (window.innerWidth < 400) {
+        setMapResize({
+          width: 300,
+          height: (mapResize.width * 0.6),
+        });
+      } else {
+        setMapResize({
+          width: window.innerWidth - 100,
+          height: (mapResize.width * 0.6),
+        });
+      }
+    }
+    // CALLS THE RESIZE FUNCTION WHEN WINDOW SIZE CHANGES
+    window.addEventListener('resize', handleMapResize)
+
+    return _ => {
+      // REMOVES THE EVENT LISTENER TO PREVENT MEMORY LEAKS FROM TOO MANY RE-RENDERS
+      window.removeEventListener('resize', handleMapResize)
+    }
+  });
 
   const mapHandler = (event) => {
     console.log(event.target.dataset.name);
@@ -143,7 +157,7 @@ const Home = () => {
               </h2>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               <p>
-                <a className="btn btn-success" href="/">
+                <a className="btn btn-success" href="/communities">
                   See Communities
                 </a>
               </p>
@@ -167,7 +181,7 @@ const Home = () => {
               </h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p>
-                <a className="btn btn-success" href="/">
+                <a className="btn btn-success" href="/communities">
                   See Communities
                 </a>
               </p>
@@ -191,7 +205,7 @@ const Home = () => {
               </h2>
               <p>Dream it. Rent it. Buy it.</p>
               <p>
-                <a className="btn btn-success" href="/">
+                <a className="btn btn-success" href="/apply">
                   Apply Here
                 </a>
               </p>
@@ -358,7 +372,8 @@ const Home = () => {
             customize={statesCustomConfig()}
             onClick={mapHandler}
             title="United States Map"
-            width={newMapWidth}
+            width={mapResize.width}
+            height={mapResize.height}
             defaulFill="#{darkgreen}"
           />
         </div>
