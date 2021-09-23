@@ -11,6 +11,24 @@ const Home = () => {
     height: 600
   });
 
+  useEffect(() => {
+    if (window.innerWidth >= 1120) {
+      setMapResize({
+        width: 1020,
+        height: 600
+      });
+    } else if (window.innerWidth < 400) {
+      setMapResize({
+        width: 300,
+        height: (300 * 0.6),
+      });
+    } else {
+      setMapResize({
+        width: window.innerWidth - 100,
+        height: ((window.innerWidth - 100) * 0.6),
+      });
+    }
+  }, [])
 
   useEffect(() => {
     // FUNCTION THAT RESIZES MAP ON WINDOW SIZE
