@@ -27,18 +27,15 @@ const About = () => {
         </p>
       </div>
       <section>
-        <div id="our-service-block">
+        <div id="find-community-block">
           <h1>
-            We're here for <span style={{ color: "#2fc984" }}>you</span>!
+            Ready to find your new <span style={{ color: "#2fc984" }}>home</span>?
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis excepturi autem quasi? Nulla facilis id nostrum ab
-            facere perspiciatis eligendi aut est, nemo maiores veniam animi quae
-            consectetur maxime deleniti?
+            Check out all of our communities and choose the right one for you!
           </p>
-          <a className="btn btn-success" href="/contact">
-            Contact Us
+          <a className="btn btn-success" href="/communities">
+            Communities
           </a>
         </div>
       </section>
