@@ -1,28 +1,78 @@
 /* Logo colors */
-/* reddish purple: #2f4d65;
+/* dark purple: #2f4d65;
 orange: #fa6261;
 green: #2fc984;
 yellow: #ffcc3b; */
-
 
 .carouself-highlight-text {
   color: #2fc984;
 }
 
 /* The 3 heading cards */
-.heading-card {
-  text-align: center;
-  margin-top: 55px;
+.header-card-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
 }
 
-.card-img-top {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  margin-top: 15px;
+.heading-card {
+  position: relative;
+  text-align: center;
+  margin-top: 55px;
+  border: solid grey 1px;
+  box-shadow: 1px 4px 4px 2px darkgrey;
+  font-family: Source Sans Pro;
+}
+
+.heading-card:hover {
+  box-shadow: 2px 7px 6px 4px darkgrey;
+  animation-name: heading-card-float;
+  top: -5px;
+  animation-duration: 200ms;
+}
+
+div .heading-card h2 {
+  font-family: Oswald;
+}
+
+div .heading-card p {
+  font-weight: bold;
+}
+
+#heading-card-1 {
+  background-color: #ffcc3b;
+}
+
+#heading-card-2 {
+  background-color: #2fc984;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+#heading-card-3 {
+  background-color: #fa6261;
+}
+
+.heading-card-icon {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 100px;
+}
+
+/* Header card hover animation */
+@keyframes heading-card-float {
+  from{ box-shadow: 1px 4px 4px 2px darkgrey; top: 0px}
+  to{ box-shadow: 2px 7px 6px 4px darkgrey; top: -5px}
 }
 
 /* Featured Text and Images */
+.home-background {
+  background-image: url(../../assets/parakeet-Logomark-offwhite.png);
+  background-size: 3500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .featured-center {
   height: 400px;
   padding: 150px 0;
@@ -55,49 +105,59 @@ yellow: #ffcc3b; */
   margin-bottom: 30px;
 }
 
-path {
+.map-container path {
   pointer-events: all;
 }
-path:hover {
+
+.map-container path:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-/* All green buttons */
+/* All green buttons (includes all pages/containers)*/
 .btn-success {
   background-color: #2fc984;
+  font-family: Oswald;
+  font-size: 20px;
 }
 
 .btn-outline-success {
+  color: #2f4d65;
+  border: 1px solid #2f4d65;
   font-family: Oswald;
 }
 
 .btn-outline-success:hover {
-  background-color: #fa6261;
+  background-color: #2f4d65;
+  border: 1px solid #2f4d65;
 }
 
 
 /* Media Queries */
 @media (min-width: 1200px) {
-  .page-core {
+  .home-featured {
     max-width: 1140px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-core {
+  .home-featured {
     max-width: 960px;
+  }
+  .home-background {
+    background-size: 2000px;
+    background-position: center;
   }
 }
 
 @media (max-width: 768px) {
-  .page-core {
+  .home-featured {
     max-width: 720px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-core {
+  .home-featured {
     max-width: 540px;
   }
 }

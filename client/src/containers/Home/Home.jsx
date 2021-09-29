@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
-import stockParakeet from "../../assets/stockParakeetedit.png";
 import USAMap from "react-usa-map";
 import Footer from "../../components/Footer/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouseUser, faQuestionCircle, faUserTie } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [mapResize, setMapResize] = useState({
@@ -231,61 +232,109 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container page-core">
+      
+      <div className="home-background">
+      <div className="flex-container">
         {/* Small Heading Cards */}
-        <div className="row">
-          <div className="col-lg-4 heading-card">
-            <img
-              src={stockParakeet}
-              className="card-img-top mx-auto"
-              alt="..."
-            />
-            <h2>Heading</h2>
+        <div className="row header-card-row">
+          <div id="heading-card-1" className="col-lg-3 heading-card">
+            <FontAwesomeIcon icon={faUserTie} className="heading-card-icon" />
+            <h2>About Us</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
               corporis quidem molestias, magnam quisquam possimus?
             </p>
             <p>
-              <a className="btn btn-outline-success" href="/">
-                A link
+              <a className="btn btn-outline-success" href="/about">
+                About Us
               </a>
             </p>
           </div>
-          <div className="col-lg-4 heading-card">
-            <img
-              src={stockParakeet}
-              className="card-img-top mx-auto"
-              alt="..."
-            />
-            <h2>Heading</h2>
+          <div id="heading-card-2" className="col-lg-3 heading-card">
+            <FontAwesomeIcon icon={faHouseUser} className="heading-card-icon" />
+            <h2>Communities</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
               corporis quidem molestias, magnam quisquam possimus?
             </p>
             <p>
-              <a className="btn btn-outline-success" href="/">
-                A link
+              <a className="btn btn-outline-success" href="/communities">
+                Communities
               </a>
             </p>
           </div>
-          <div className="col-lg-4 heading-card">
-            <img
-              src={stockParakeet}
-              className="card-img-top mx-auto"
-              alt="..."
-            />
-            <h2>Heading</h2>
+          <div id="heading-card-3" className="col-lg-3 heading-card">
+            <FontAwesomeIcon icon={faQuestionCircle} className="heading-card-icon" />
+            <h2>FAQs</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
               corporis quidem molestias, magnam quisquam possimus?
             </p>
             <p>
-              <a className="btn btn-outline-success" href="/">
-                A link
+              <a className="btn btn-outline-success" href="/faq">
+                FAQ
               </a>
             </p>
           </div>
         </div>
+        </div>
+      
+      
+      <div className="container home-featured">
+        {/* Small Heading Cards */}
+        {/* <div className="row">
+          <div id="heading-card-1" className="col-lg-4 heading-card">
+            <img
+              src={stockParakeet}
+              className="card-img-top mx-auto"
+              alt="..."
+            />
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              corporis quidem molestias, magnam quisquam possimus?
+            </p>
+            <p>
+              <a className="btn btn-outline-success" href="/">
+                A link
+              </a>
+            </p>
+          </div>
+          <div id="heading-card-2" className="col-lg-4 heading-card">
+            <img
+              src={stockParakeet}
+              className="card-img-top mx-auto"
+              alt="..."
+            />
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              corporis quidem molestias, magnam quisquam possimus?
+            </p>
+            <p>
+              <a className="btn btn-outline-success" href="/">
+                A link
+              </a>
+            </p>
+          </div>
+          <div id="heading-card-3" className="col-lg-4 heading-card">
+            <img
+              src={stockParakeet}
+              className="card-img-top mx-auto"
+              alt="..."
+            />
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              corporis quidem molestias, magnam quisquam possimus?
+            </p>
+            <p>
+              <a className="btn btn-outline-success" href="/">
+                A link
+              </a>
+            </p>
+          </div>
+        </div> */}
         <hr className="divider" />
         {/* Feature Blocks */}
         <div className="row featured">
@@ -395,6 +444,7 @@ const Home = () => {
             defaulFill="#{darkgreen}"
           />
         </div>
+      </div>
       </div>
       <Footer />
     </>
