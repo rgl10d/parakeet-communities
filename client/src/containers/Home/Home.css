@@ -4,8 +4,13 @@ orange: #fa6261;
 green: #2fc984;
 yellow: #ffcc3b; */
 
-.carouself-highlight-text {
+/* Carousel */
+.carousel-highlight-text {
   color: #2fc984;
+}
+
+#home-carousel h2{
+  font-family: Oswald;
 }
 
 /* The 3 heading cards */
@@ -27,12 +32,14 @@ yellow: #ffcc3b; */
 .heading-card:hover {
   box-shadow: 2px 7px 6px 4px darkgrey;
   animation-name: heading-card-float;
-  top: -5px;
-  animation-duration: 200ms;
+  top: -2px;
+  animation-duration: 300ms;
 }
 
 div .heading-card h2 {
   font-family: Oswald;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 div .heading-card p {
@@ -44,9 +51,18 @@ div .heading-card p {
 }
 
 #heading-card-2 {
-  background-color: #2fc984;
   margin-left: -100px;
   margin-right: -100px;
+  /* background-color: #2fc984; */
+  background-image: linear-gradient(
+      rgba(47, 201, 132, 0.8),
+      rgba(47, 201, 132, 0.8)
+    ),
+    url(../../assets/house_keychain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: white; */
 }
 
 #heading-card-3 {
@@ -61,8 +77,14 @@ div .heading-card p {
 
 /* Header card hover animation */
 @keyframes heading-card-float {
-  from{ box-shadow: 1px 4px 4px 2px darkgrey; top: 0px}
-  to{ box-shadow: 2px 7px 6px 4px darkgrey; top: -5px}
+  from {
+    box-shadow: 1px 4px 4px 2px darkgrey;
+    top: 0px;
+  }
+  to {
+    box-shadow: 2px 7px 6px 4px darkgrey;
+    top: -2px;
+  }
 }
 
 /* Featured Text and Images */
@@ -102,7 +124,15 @@ div .heading-card p {
   text-align: center;
   display: block;
   width: 100%;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+}
+
+div .map-container h1 {
+  font-family: Oswald;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .map-container path {
@@ -132,6 +162,16 @@ div .heading-card p {
   border: 1px solid #2f4d65;
 }
 
+.btn-primary {
+  font-family: Oswald;
+  background-color: #2f4d65;
+  border: 1px solid #2f4d65;
+}
+
+.btn-primary:hover {
+  background-color: #5b96c6;
+  border: 1px solid #5b96c6;
+}
 
 /* Media Queries */
 @media (min-width: 1200px) {
@@ -144,6 +184,7 @@ div .heading-card p {
   .home-featured {
     max-width: 960px;
   }
+
   .home-background {
     background-size: 2000px;
     background-position: center;
@@ -153,6 +194,20 @@ div .heading-card p {
 @media (max-width: 768px) {
   .home-featured {
     max-width: 720px;
+  }
+
+  div .map-container h1 {
+    font-size: 26px;
+  }
+
+  .heading-card {
+    box-shadow: initial;
+  }
+
+  .heading-card:hover {
+    box-shadow: initial;
+    animation-name: initial;
+    top: initial;
   }
 }
 

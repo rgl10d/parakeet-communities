@@ -4,32 +4,36 @@ import Navbar from "../../components/Navbar/Navbar";
 import USAMap from "react-usa-map";
 import Footer from "../../components/Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouseUser, faQuestionCircle, faUserTie } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouseUser,
+  faQuestionCircle,
+  faUserTie,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [mapResize, setMapResize] = useState({
-    width: window.innerWidth -100,
-    height: ((window.innerWidth - 100) * 0.6)
+    width: window.innerWidth - 100,
+    height: (window.innerWidth - 100) * 0.6,
   });
 
   useEffect(() => {
     if (window.innerWidth >= 1120) {
       setMapResize({
         width: 1020,
-        height: 600
+        height: 600,
       });
     } else if (window.innerWidth < 400) {
       setMapResize({
         width: 300,
-        height: (300 * 0.6),
+        height: 300 * 0.6,
       });
     } else {
       setMapResize({
         width: window.innerWidth - 100,
-        height: ((window.innerWidth - 100) * 0.6),
+        height: (window.innerWidth - 100) * 0.6,
       });
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     // FUNCTION THAT RESIZES MAP ON WINDOW SIZE
@@ -37,27 +41,27 @@ const Home = () => {
       if (window.innerWidth >= 1120) {
         setMapResize({
           width: 1020,
-          height: 600
+          height: 600,
         });
       } else if (window.innerWidth < 400) {
         setMapResize({
           width: 300,
-          height: (mapResize.width * 0.6),
+          height: mapResize.width * 0.6,
         });
       } else {
         setMapResize({
           width: window.innerWidth - 100,
-          height: (mapResize.width * 0.6),
+          height: mapResize.width * 0.6,
         });
       }
     }
     // CALLS THE RESIZE FUNCTION WHEN WINDOW SIZE CHANGES
-    window.addEventListener('resize', handleMapResize)
+    window.addEventListener("resize", handleMapResize);
 
-    return _ => {
+    return (_) => {
       // REMOVES THE EVENT LISTENER TO PREVENT MEMORY LEAKS FROM TOO MANY RE-RENDERS
-      window.removeEventListener('resize', handleMapResize)
-    }
+      window.removeEventListener("resize", handleMapResize);
+    };
   });
 
   const mapHandler = (event) => {
@@ -146,7 +150,7 @@ const Home = () => {
       {/* Navbar Component */}
       <Navbar />
       {/* Carousel */}
-      <div id="homeCarousel" className="carousel slide" data-ride="carousel">
+      <div id="home-carousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li
             data-target="#homeCarousel"
@@ -232,57 +236,64 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="home-background">
-      <div className="flex-container">
-        {/* Small Heading Cards */}
-        <div className="row header-card-row">
-          <div id="heading-card-1" className="col-lg-3 heading-card">
-            <FontAwesomeIcon icon={faUserTie} className="heading-card-icon" />
-            <h2>About Us</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              corporis quidem molestias, magnam quisquam possimus?
-            </p>
-            <p>
-              <a className="btn btn-outline-success" href="/about">
-                About Us
-              </a>
-            </p>
-          </div>
-          <div id="heading-card-2" className="col-lg-3 heading-card">
-            <FontAwesomeIcon icon={faHouseUser} className="heading-card-icon" />
-            <h2>Communities</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              corporis quidem molestias, magnam quisquam possimus?
-            </p>
-            <p>
-              <a className="btn btn-outline-success" href="/communities">
-                Communities
-              </a>
-            </p>
-          </div>
-          <div id="heading-card-3" className="col-lg-3 heading-card">
-            <FontAwesomeIcon icon={faQuestionCircle} className="heading-card-icon" />
-            <h2>FAQs</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              corporis quidem molestias, magnam quisquam possimus?
-            </p>
-            <p>
-              <a className="btn btn-outline-success" href="/faq">
-                FAQ
-              </a>
-            </p>
+        <div className="flex-container">
+          {/* Small Heading Cards */}
+          <div className="row header-card-row">
+            <div id="heading-card-1" className="col-lg-3 heading-card">
+              <FontAwesomeIcon icon={faUserTie} className="heading-card-icon" />
+              <h2>About Us</h2>
+              <p>
+                Our team has been in the manufactured housing space for decades.
+                We aim to offer affordable living with equal standards and
+                quality of living as other home communities.
+              </p>
+              <p>
+                <a className="btn btn-outline-success" href="/about">
+                  Learn More
+                </a>
+              </p>
+            </div>
+            <div id="heading-card-2" className="col-lg-3 heading-card">
+              <FontAwesomeIcon
+                icon={faHouseUser}
+                className="heading-card-icon"
+              />
+              <h2>Communities</h2>
+              <p>
+                View our fast growing list of communities and see which matches
+                up with your preferences. Lets get ready for your new forever
+                home!
+              </p>
+              <p>
+                <a className="btn btn-primary" href="/communities">
+                  See Communities
+                </a>
+              </p>
+            </div>
+            <div id="heading-card-3" className="col-lg-3 heading-card">
+              <FontAwesomeIcon
+                icon={faQuestionCircle}
+                className="heading-card-icon"
+              />
+              <h2>FAQs</h2>
+              <p>
+                Have a question about the move-in process? Check out our FAQ
+                page to see if your question has already been answered!
+              </p>
+              <p>
+                <a className="btn btn-outline-success" href="/faq">
+                  FAQ
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-        </div>
-      
-      
-      <div className="container home-featured">
-        {/* Small Heading Cards */}
-        {/* <div className="row">
+
+        <div className="container home-featured">
+          {/* Small Heading Cards */}
+          {/* <div className="row">
           <div id="heading-card-1" className="col-lg-4 heading-card">
             <img
               src={stockParakeet}
@@ -335,116 +346,116 @@ const Home = () => {
             </p>
           </div>
         </div> */}
-        <hr className="divider" />
-        {/* Feature Blocks */}
-        <div className="row featured">
-          {/* Feature Block 1 */}
-          <div className="col-md-7 featured-center">
-            <h2 className="featured-heading">
-              Feature Heading.{" "}
-              <span className="text-muted">This is the first.</span>
-            </h2>
-            <p className="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium debitis consectetur similique cupiditate, veritatis
-              eveniet!
-            </p>
-          </div>
-          <div className="col-md-5 featured-image-container">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee"></rect>
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                500x500
-              </text>
-            </svg>
+          <hr className="divider" />
+          {/* Feature Blocks */}
+          <div className="row featured">
+            {/* Feature Block 1 */}
+            <div className="col-md-7 featured-center">
+              <h2 className="featured-heading">
+                Feature Heading.{" "}
+                <span className="text-muted">This is the first.</span>
+              </h2>
+              <p className="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium debitis consectetur similique cupiditate, veritatis
+                eveniet!
+              </p>
+            </div>
+            <div className="col-md-5 featured-image-container">
+              <svg
+                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">
+                  500x500
+                </text>
+              </svg>
+            </div>
+            <hr className="divider" />
+            {/* Feature Block 2 */}
+            <div className="col-md-5 featured-image-container">
+              <svg
+                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">
+                  500x500
+                </text>
+              </svg>
+            </div>
+            <div id="middleFeatured" className="col-md-7 featured-center">
+              <h2 className="featured-heading">
+                Feature Heading.{" "}
+                <span className="text-muted">This is the second.</span>
+              </h2>
+              <p className="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium debitis consectetur similique cupiditate, veritatis
+                eveniet!
+              </p>
+            </div>
+            <hr className="divider" />
+            {/* Feature Block 3 */}
+            <div className="col-md-7 featured-center">
+              <h2 className="featured-heading">
+                Feature Heading.{" "}
+                <span className="text-muted">This is the third.</span>
+              </h2>
+              <p className="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium debitis consectetur similique cupiditate, veritatis
+                eveniet!
+              </p>
+            </div>
+            <div className="col-md-5 featured-image-container">
+              <svg
+                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                width="500"
+                height="500"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: 500x500"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="50%" y="50%" fill="#aaa" dy=".3em">
+                  500x500
+                </text>
+              </svg>
+            </div>
           </div>
           <hr className="divider" />
-          {/* Feature Block 2 */}
-          <div className="col-md-5 featured-image-container">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee"></rect>
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-          <div id="middleFeatured" className="col-md-7 featured-center">
-            <h2 className="featured-heading">
-              Feature Heading.{" "}
-              <span className="text-muted">This is the second.</span>
-            </h2>
-            <p className="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium debitis consectetur similique cupiditate, veritatis
-              eveniet!
-            </p>
-          </div>
-          <hr className="divider" />
-          {/* Feature Block 3 */}
-          <div className="col-md-7 featured-center">
-            <h2 className="featured-heading">
-              Feature Heading.{" "}
-              <span className="text-muted">This is the third.</span>
-            </h2>
-            <p className="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium debitis consectetur similique cupiditate, veritatis
-              eveniet!
-            </p>
-          </div>
-          <div className="col-md-5 featured-image-container">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee"></rect>
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
         </div>
-        <hr className="divider" />
         {/* US Map */}
         <div className="map-container">
-          <h1>Select your state!</h1>
+          <h1>Our Locations</h1>
           <USAMap
             customize={statesCustomConfig()}
             onClick={mapHandler}
-            title="United States Map"
+            title="Parakeet community United States map"
             width={mapResize.width}
             height={mapResize.height}
-            defaulFill="#{darkgreen}"
+            defaulFill={"darkgreen"}
           />
         </div>
-      </div>
       </div>
       <Footer />
     </>

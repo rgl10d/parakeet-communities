@@ -32,11 +32,11 @@
 .nav-link {
   font-family: Oswald;
   font-size: 20px;
-  border-left: 5px solid transparent;
+  border-left: 3px solid transparent;
 }
 
 .nav-link:hover {
-  border-left: 5px solid #ffcc3b;
+  border-left: 3px solid #ffcc3b;
   padding-top: 2px;
   animation-name: nav-link-border;
   animation-duration: 500ms;
@@ -44,6 +44,6 @@
 
 /* Link hover animation */
 @keyframes nav-link-border {
-    from{border-left: 5px solid transparent; padding-top: 8px;}
-    to{border-left: 5px solid #ffcc3b; padding-top: 2px;}
+    from{border-left: 3px solid transparent; padding-top: 8px;}
+    to{border-left: 3px solid #ffcc3b; padding-top: 2px;}
 }

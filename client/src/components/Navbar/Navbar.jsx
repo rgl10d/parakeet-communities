@@ -8,7 +8,7 @@ const Navbar = () => {
       <a id="logoLink" href="/">
         <img id="fullLogo" src={fullLogo} alt="Parakeet Communities Logo" />
       </a>
-      <hr id="navDivider"/>
+      <hr id="navDivider" />
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <button
@@ -24,14 +24,14 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-            <a className="nav-link" href="/">
+              <a className="nav-link" href="/">
                 Home
-              </a>
-              <a className="nav-link" href="/communities">
-                Communities
               </a>
               <a className="nav-link" href="/about">
                 About
+              </a>
+              <a className="nav-link" href="/communities">
+                Communities
               </a>
               <a className="nav-link" href="/faq">
                 FAQ
@@ -39,11 +39,11 @@ const Navbar = () => {
               <a className="nav-link" href="/apply">
                 Apply Now
               </a>
-              <a className="nav-link" href="/contact">
-                Contact Us
-              </a>
               <a className="nav-link" href="/careers">
                 Careers
+              </a>
+              <a className="nav-link" href="/contact">
+                Contact Us
               </a>
             </div>
           </div>
@@ -52,6 +52,7 @@ const Navbar = () => {
               id="residentPortalBtn"
               className="btn btn-outline-success"
               type="button"
+              href="https://bedg.twa.rentmanager.com/"
             >
               Resident Portal
             </button>
