@@ -48,14 +48,13 @@ const Navbar = () => {
             </div>
           </div>
           <form className="form-inline">
-            <button
-              id="residentPortalBtn"
+            <a
+              id="resident-portal-btn"
               className="btn btn-outline-success"
-              type="button"
               href="https://bedg.twa.rentmanager.com/"
             >
               Resident Portal
-            </button>
+            </a>
           </form>
         </div>
       </nav>

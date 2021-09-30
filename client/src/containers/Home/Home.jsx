@@ -153,32 +153,21 @@ const Home = () => {
       <div id="home-carousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           <li
-            data-target="#homeCarousel"
+            data-target="#home-carousel"
             data-slide-to="0"
             className="active"
           ></li>
-          <li data-target="#homeCarousel" data-slide-to="1"></li>
-          <li data-target="#homeCarousel" data-slide-to="2"></li>
+          <li data-target="#home-carousel" data-slide-to="1"></li>
+          <li data-target="#home-carousel" data-slide-to="2"></li>
         </ol>
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <svg
-              className="bd-placeholder-img"
-              width="100%"
-              height="600px"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
+          {/* First Slide */}
+          <div id="slide-0" className="carousel-item active all-slides">
             <div className="carousel-caption d-none d-md-block">
               <h2>
-                Our <span style={{ color: "#2fc984" }}>All Ages</span>{" "}
-                Communities
+                Check Out Our <span style={{ color: "#2fc984" }}>Communities</span>{" "}
               </h2>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>They're all across the U.S.</p>
               <p>
                 <a className="btn btn-success" href="/communities">
                   See Communities
@@ -186,42 +175,22 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="carousel-item">
-            <svg
-              className="bd-placeholder-img"
-              width="100%"
-              height="600px"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
+          {/* Second Slide */}
+          <div id="slide-1" className="carousel-item all-slides">
             <div className="carousel-caption d-none d-md-block">
               <h2>
-                Our <span style={{ color: "#2fc984" }}>55+</span> Communities
+                Send Us A <span style={{ color: "#2fc984" }}>Message</span>
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Our team of experienced professionals are here for you!</p>
               <p>
                 <a className="btn btn-success" href="/communities">
-                  See Communities
+                  Contact Us
                 </a>
               </p>
             </div>
           </div>
-          <div className="carousel-item">
-            <svg
-              className="bd-placeholder-img"
-              width="100%"
-              height="600px"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#777"></rect>
-            </svg>
+          {/* Third Slide */}
+          <div id="slide-2" className="carousel-item all-slides">
             <div className="carousel-caption d-none d-md-block">
               <h2>
                 Ready? <span style={{ color: "#2fc984" }}>Apply</span> Now.
@@ -236,10 +205,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="home-background">
+        {/* Small Heading Cards */}
         <div className="flex-container">
-          {/* Small Heading Cards */}
           <div className="row header-card-row">
             <div id="heading-card-1" className="col-lg-3 heading-card">
               <FontAwesomeIcon icon={faUserTie} className="heading-card-icon" />
@@ -290,62 +258,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        {/* Featured Section */}
         <div className="container home-featured">
-          {/* Small Heading Cards */}
-          {/* <div className="row">
-          <div id="heading-card-1" className="col-lg-4 heading-card">
-            <img
-              src={stockParakeet}
-              className="card-img-top mx-auto"
-              alt="..."
-            />
-            <h2>Heading</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              corporis quidem molestias, magnam quisquam possimus?
-            </p>
-            <p>
-              <a className="btn btn-outline-success" href="/">
-                A link
-              </a>
-            </p>
-          </div>
-          <div id="heading-card-2" className="col-lg-4 heading-card">
-            <img
-              src={stockParakeet}
-              className="card-img-top mx-auto"
-              alt="..."
-            />
-            <h2>Heading</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              corporis quidem molestias, magnam quisquam possimus?
-            </p>
-            <p>
-              <a className="btn btn-outline-success" href="/">
-                A link
-              </a>
-            </p>
-          </div>
-          <div id="heading-card-3" className="col-lg-4 heading-card">
-            <img
-              src={stockParakeet}
-              className="card-img-top mx-auto"
-              alt="..."
-            />
-            <h2>Heading</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-              corporis quidem molestias, magnam quisquam possimus?
-            </p>
-            <p>
-              <a className="btn btn-outline-success" href="/">
-                A link
-              </a>
-            </p>
-          </div>
-        </div> */}
           <hr className="divider" />
           {/* Feature Blocks */}
           <div className="row featured">
@@ -446,7 +360,7 @@ const Home = () => {
         </div>
         {/* US Map */}
         <div className="map-container">
-          <h1>Our Locations</h1>
+          <h1>Our <span  style={{ color: "#2fc984" }}>Locations</span></h1>
           <USAMap
             customize={statesCustomConfig()}
             onClick={mapHandler}
