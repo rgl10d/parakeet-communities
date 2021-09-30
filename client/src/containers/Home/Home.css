@@ -12,6 +12,11 @@ yellow: #ffcc3b; */
   transition: transform 0.5s ease-in-out;
 }
 
+.carousel-inner {
+  /*just incase the flash (style above) comes back*/
+  background: #000;
+}
+
 .all-slides {
   width: 100%;
   height: 600px;
