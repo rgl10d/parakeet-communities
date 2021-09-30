@@ -32,11 +32,13 @@
 .nav-link {
   font-family: Oswald;
   font-size: 20px;
-  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  margin-left: 3px;
 }
 
 .nav-link:hover {
-  border-left: 3px solid #ffcc3b;
+  border-bottom: 3px solid #ffcc3b;
   padding-top: 2px;
   animation-name: nav-link-border;
   animation-duration: 500ms;
@@ -44,6 +46,24 @@
 
 /* Link hover animation */
 @keyframes nav-link-border {
-    from{border-left: 3px solid transparent; padding-top: 8px;}
-    to{border-left: 3px solid #ffcc3b; padding-top: 2px;}
+    from{border-bottom: 3px solid transparent; padding-top: 8px;}
+    to{border-bottom: 3px solid #ffcc3b; padding-top: 2px;}
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .nav-link {
+    font-family: Oswald;
+    font-size: 20px;
+    border-bottom: initial;
+    padding-bottom: 5px;
+    margin-left: initial;
+  }
+
+  .nav-link:hover {
+    border-bottom: initial;
+    padding-top: 8px;
+    animation-name: initial;
+    animation-duration: initial;
+  }
 }
