@@ -17,21 +17,21 @@ yellow: #ffcc3b; */
   background-image: linear-gradient(
     rgb(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ) ,url(../../assets/wash_dog.jpg);
+  ) ,url(../../assets/wash_dog-min.jpg);
 }
 
 #slide-1 {
   background-image: linear-gradient(
     rgb(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ) ,url(../../assets/typing_on_computer.jpg);
+  ) ,url(../../assets/typing_on_computer-min.jpg);
 }
 
 #slide-2 {
   background-image: linear-gradient(
     rgb(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ) ,url(../../assets/handshake.jpg);
+  ) ,url(../../assets/handshake-min.jpg);
 }
 
 .carousel-highlight-text {
@@ -87,7 +87,7 @@ div .heading-card p {
       rgba(47, 201, 132, 0.8),
       rgba(47, 201, 132, 0.8)
     ),
-    url(../../assets/house_keychain.jpg);
+    url(../../assets/house_keychain-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
