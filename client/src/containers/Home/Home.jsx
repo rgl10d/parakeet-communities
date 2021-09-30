@@ -218,7 +218,7 @@ const Home = () => {
                 quality of living as other home communities.
               </p>
               <p>
-                <a className="btn btn-outline-success" href="/about">
+                <a className="btn btn-primary" href="/about">
                   Learn More
                 </a>
               </p>
@@ -251,7 +251,7 @@ const Home = () => {
                 page to see if your question has already been answered!
               </p>
               <p>
-                <a className="btn btn-outline-success" href="/faq">
+                <a className="btn btn-primary" href="/faq">
                   FAQ
                 </a>
               </p>
@@ -356,7 +356,7 @@ const Home = () => {
               </svg>
             </div>
           </div>
-          <hr className="divider" />
+          <hr id="map-divider" className="divider" />
         </div>
         {/* US Map */}
         <div className="map-container">
