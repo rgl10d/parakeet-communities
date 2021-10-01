@@ -165,7 +165,8 @@ const Home = () => {
           <div id="slide-0" className="carousel-item active all-slides">
             <div className="carousel-caption d-none d-md-block">
               <h2>
-                Check Out Our <span style={{ color: "#2fc984" }}>Communities</span>{" "}
+                Check Out Our{" "}
+                <span style={{ color: "#2fc984" }}>Communities</span>{" "}
               </h2>
               <p>They're all across the U.S.</p>
               <p>
@@ -230,12 +231,15 @@ const Home = () => {
               />
               <h2>Communities</h2>
               <p>
-                View our fast growing list of communities and see which matches
-                up with your preferences. Lets get ready for your new forever
-                home!
+                View our fast growing list of communities. With locations all
+                across the U.S. you're bound to find one that you can call your
+                forever home. Come join the Parakeet flock!
               </p>
               <p>
-                <a className="btn btn-primary" href="/communities">
+                <a
+                  className="btn btn-primary heading-card-btn"
+                  href="/communities"
+                >
                   See Communities
                 </a>
               </p>
@@ -247,8 +251,9 @@ const Home = () => {
               />
               <h2>FAQs</h2>
               <p>
-                Have a question about the move-in process? Check out our FAQ
-                page to see if your question has already been answered!
+                Have a question about the move-in process? There are many common
+                questions that residents have, check out our FAQ page to see if
+                your question has already been answered!
               </p>
               <p>
                 <a className="btn btn-primary" href="/faq">
@@ -360,7 +365,9 @@ const Home = () => {
         </div>
         {/* US Map */}
         <div className="map-container">
-          <h1>Our <span  style={{ color: "#2fc984" }}>Locations</span></h1>
+          <h1>
+            Our <span style={{ color: "#2fc984" }}>Locations</span>
+          </h1>
           <USAMap
             customize={statesCustomConfig()}
             onClick={mapHandler}
