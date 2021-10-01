@@ -9,6 +9,7 @@ import {
   faQuestionCircle,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
+// import Parakeets from "../../assets/parakeet_bird_img.jpg";
 
 const Home = () => {
   const [mapResize, setMapResize] = useState({
@@ -168,7 +169,7 @@ const Home = () => {
                 Check Out Our{" "}
                 <span style={{ color: "#2fc984" }}>Communities</span>{" "}
               </h2>
-              <p>They're all across the U.S.</p>
+              <p>Find affordable Mobile Housing all across the U.S.</p>
               <p>
                 <a className="btn btn-success" href="/communities">
                   See Communities
@@ -269,16 +270,19 @@ const Home = () => {
           {/* Feature Blocks */}
           <div className="row featured">
             {/* Feature Block 1 */}
-            <div className="col-md-7 featured-center">
+            <div className="col-md-7 featured-centering">
               <h2 className="featured-heading">
-                Feature Heading.{" "}
-                <span className="text-muted">This is the first.</span>
+                Welcome to the
+                <span style={{ color: "#2fc984" }}> Parakeet flock</span>
               </h2>
               <p className="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium debitis consectetur similique cupiditate, veritatis
-                eveniet!
+                We chose our name because the Green Parakeet is a reminder to
+                not be careless with time, energy or money. The Green Parakeet
+                is also known to build large communal roosts. We value these
+                ideals and want to make roosts of our own that residents can
+                live and thrive together in.
               </p>
+              <p className="lead">Come fly home.</p>
             </div>
             <div className="col-md-5 featured-image-container">
               <svg
@@ -297,6 +301,7 @@ const Home = () => {
                   500x500
                 </text>
               </svg>
+              {/* <img className="featured-img" src={Parakeets} alt="Parakeet birds"/> */}
             </div>
             <hr className="divider" />
             {/* Feature Block 2 */}
@@ -318,7 +323,7 @@ const Home = () => {
                 </text>
               </svg>
             </div>
-            <div id="middleFeatured" className="col-md-7 featured-center">
+            <div id="middleFeatured" className="col-md-7 featured-centering">
               <h2 className="featured-heading">
                 Feature Heading.{" "}
                 <span className="text-muted">This is the second.</span>
@@ -331,7 +336,7 @@ const Home = () => {
             </div>
             <hr className="divider" />
             {/* Feature Block 3 */}
-            <div className="col-md-7 featured-center">
+            <div className="col-md-7 featured-centering">
               <h2 className="featured-heading">
                 Feature Heading.{" "}
                 <span className="text-muted">This is the third.</span>
@@ -365,9 +370,7 @@ const Home = () => {
         </div>
         {/* US Map */}
         <div className="map-container">
-          <h1>
-            Our <span style={{ color: "#2fc984" }}>Locations</span>
-          </h1>
+          <h1>Our Locations</h1>
           <USAMap
             customize={statesCustomConfig()}
             onClick={mapHandler}
@@ -378,6 +381,7 @@ const Home = () => {
           />
         </div>
       </div>
+      {/* Footer Component */}
       <Footer />
     </>
   );
