@@ -5,6 +5,7 @@
 }
 
 .community-state-names {
+  text-align: center;
   font-family: Oswald;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -14,6 +15,26 @@
     rgba(255, 255, 255, 1) 70%,
     rgba(255, 255, 255, 1) 100%
   );
+}
+
+/* COMMUNITY CARDS */
+.us-state-card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.community-card {
+  text-align: center;
+  background-color: #fafafa;
+  box-shadow: 1px 4px 4px 2px darkgrey;
+  margin: 10px;
+  width: 350px;
+}
+
+.community-card-title {
+  font-family: Oswald;
 }
 
 .community-list {

@@ -106,14 +106,47 @@ const Communities = () => {
         {communityStates.map((communityStates) => {
           return (
             <>
-              {/* CONTAINER FOR EACH STATE */}
+              {/* CONTAINER FOR EACH US STATE */}
               <div id={communityStates.usStateId}>
                 {/* DISPLAYS US STATE NAME */}
-                <h1 className="community-state-names">{communityStates.state}</h1>
+                <h1 className="community-state-names">
+                  {communityStates.state}
+                </h1>
                 {/* COMMUNITIES WITHIN EACH STATE MAP FUNCTION */}
-                {communityStates.communities.map((communities) => {
-                  return <p className="community-list">{communities}</p>;
-                })}
+                <div className="row us-state-card-container">
+                  {communityStates.communities.map((communities) => {
+                    return (
+                      <div class="card community-card">
+                        <div class="card-body">
+                          {/* COMMUNITY NAME */}
+                          <h3 class="card-title community-card-title">
+                            {communities}
+                          </h3>
+                          {/* CITY/STATE OF THE COMMUNITY */}
+                          <h5 className="card-title community-card-title">
+                            City, {communityStates.state}
+                          </h5>
+                          {/* COMMUNITY IMAGE */}
+                          {/* <img src="..." class="card-img-top" alt="..." /> */}
+                          <svg
+                            viewBox="0 0 286 160"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect width="286" height="160" />
+                          </svg>
+                          {/* COMMUNITY ADDRESS */}
+                          <p class="card-text">Address</p>
+                          <p class="card-text">Type of Community</p>
+                          <p class="card-text">Amenities?</p>
+                          {/* LINK TO COMMUNITY PAGE */}
+                          <a href="/communities" class="btn btn-primary">
+                            Details
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </>
           );

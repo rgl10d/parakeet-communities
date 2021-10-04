@@ -4,7 +4,7 @@ orange: #fa6261;
 green: #2fc984;
 yellow: #ffcc3b; */
 
-/* Carousel */
+/* CAROUSEL */
 .carousel-inner > .item {
   /*disables white flash*/
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -48,7 +48,7 @@ yellow: #ffcc3b; */
   font-family: Oswald;
 }
 
-/* The 3 heading cards */
+/* 3 HEADING CARDS */
 .header-card-row {
   display: flex;
   justify-content: space-around;
@@ -138,7 +138,7 @@ div .heading-card p {
   }
 }
 
-/* Featured Text and Images */
+/* fEATURED TEXT AND IMAGES */
 .home-background {
   background-image: url(../../assets/parakeet-Logomark-offwhite.png);
   background-size: 3500px;
@@ -174,7 +174,7 @@ div .heading-card p {
   box-shadow: 1px 4px 4px 2px darkgrey;
 }
 
-/* <hr> Dividers */
+/* <hr> DIVIDERS */
 .divider {
   margin: 5rem 0;
   border: 0;
@@ -239,7 +239,7 @@ div .map-container h1 {
   border: 1px solid #5b96c6;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 @media (min-width: 1200px) {
   .home-featured {
     max-width: 1140px;
