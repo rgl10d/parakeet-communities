@@ -201,7 +201,7 @@ const Home = () => {
               </h2>
               <p>Dream it. Rent it. Buy it.</p>
               <p>
-                <a className="btn btn-success" href="/apply">
+                <a className="btn btn-success" href="https://bedg.twa.rentmanager.com/applynow">
                   Apply Here
                 </a>
               </p>

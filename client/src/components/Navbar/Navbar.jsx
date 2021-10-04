@@ -36,7 +36,7 @@ const Navbar = () => {
               <a className="nav-link" href="/faq">
                 FAQ
               </a>
-              <a className="nav-link" href="/apply">
+              <a className="nav-link" href="https://bedg.twa.rentmanager.com/applynow">
                 Apply Now
               </a>
               <a className="nav-link" href="/careers">
