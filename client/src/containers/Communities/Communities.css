@@ -33,10 +33,29 @@
   width: 350px;
 }
 
+.community-card:hover {
+  box-shadow: 2px 7px 6px 4px darkgrey;
+  animation-name: community-card-float;
+  top: -2px;
+  animation-duration: 300ms;
+}
+
 .community-card-title {
   font-family: Oswald;
 }
 
 .community-list {
   font-family: Source Sans Pro;
+}
+
+/* COMMUNITY CARD HOVER ANIMATION */
+@keyframes community-card-float {
+  from {
+    box-shadow: 1px 4px 4px 2px darkgrey;
+    top: 0px;
+  }
+  to {
+    box-shadow: 2px 7px 6px 4px darkgrey;
+    top: -2px;
+  }
 }
