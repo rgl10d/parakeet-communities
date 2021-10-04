@@ -9,7 +9,9 @@ import {
   faQuestionCircle,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
-// import Parakeets from "../../assets/parakeet_bird_img.jpg";
+import Parakeets from "../../assets/parakeet_bird_img.jpg";
+import Hands from "../../assets/hands_together-min.jpg";
+import FatherSon from "../../assets/father_and_son-min.jpg";
 
 const Home = () => {
   const [mapResize, setMapResize] = useState({
@@ -273,60 +275,33 @@ const Home = () => {
             <div className="col-md-7 featured-centering">
               <h2 className="featured-heading">
                 Welcome to the
-                <span style={{ color: "#2fc984" }}> Parakeet flock</span>
+                <span style={{ color: "#2fc984" }}> Flock</span>
               </h2>
               <p className="lead">
                 We chose our name because the Green Parakeet is a reminder to
                 not be careless with time, energy or money. The Green Parakeet
                 is also known to build large communal roosts. We value these
                 ideals and want to make roosts of our own that residents can
-                live and thrive together in.
+                live in and thrive together.
               </p>
               <p className="lead">Come fly home.</p>
             </div>
             <div className="col-md-5 featured-image-container">
-              <svg
-                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                width="500"
-                height="500"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect>
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                  500x500
-                </text>
-              </svg>
-              {/* <img className="featured-img" src={Parakeets} alt="Parakeet birds"/> */}
+              <img
+                className="featured-img"
+                src={Parakeets}
+                alt="Parakeet birds"
+              />
             </div>
             <hr className="divider" />
             {/* Feature Block 2 */}
             <div className="col-md-5 featured-image-container">
-              <svg
-                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                width="500"
-                height="500"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect>
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                  500x500
-                </text>
-              </svg>
+              <img className="featured-img" src={Hands} alt="Hands stacked in unison" />
             </div>
             <div id="middleFeatured" className="col-md-7 featured-centering">
               <h2 className="featured-heading">
-                Feature Heading.{" "}
-                <span className="text-muted">This is the second.</span>
+                We're
+                <span style={{ color: "#2fc984" }}> Community</span> first
               </h2>
               <p className="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -338,8 +313,8 @@ const Home = () => {
             {/* Feature Block 3 */}
             <div className="col-md-7 featured-centering">
               <h2 className="featured-heading">
-                Feature Heading.{" "}
-                <span className="text-muted">This is the third.</span>
+                Find your 
+                <span style={{ color: "#2fc984" }}> Forever Home</span>
               </h2>
               <p className="lead">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -348,22 +323,11 @@ const Home = () => {
               </p>
             </div>
             <div className="col-md-5 featured-image-container">
-              <svg
-                className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                width="500"
-                height="500"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: 500x500"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#eee"></rect>
-                <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                  500x500
-                </text>
-              </svg>
+              <img
+                className="featured-img"
+                src={FatherSon}
+                alt="A father and a son playing"
+              />
             </div>
           </div>
           <hr id="map-divider" className="divider" />
