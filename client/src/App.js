@@ -6,6 +6,7 @@ import FAQ from './containers/FAQ/FAQ';
 import Communities from "./containers/Communities/Communities";
 import Contact from "./containers/Contact/Contact";
 import Careers from "./containers/Careers/Careers";
+import CommunityPages from "./containers/CommunityPages/CommunityPages";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/communities" component={Communities} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/careers" component={Careers} />
+        <Route exact path="/communities/:communityname" component={CommunityPages} />
       </Switch>
     </Router>
   );

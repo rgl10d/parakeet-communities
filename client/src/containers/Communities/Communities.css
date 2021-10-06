@@ -1,7 +1,28 @@
+#community-page-container {
+  padding-top: 40px;
+}
+
 #communities-header {
   font-family: Oswald;
+  font-weight: bold;
   text-align: center;
-  margin: 40px 0px;
+  margin-bottom: 40px;
+}
+
+#filter-header {
+  font-family: Oswald;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters-container {
+  margin-bottom: 30px;
+}
+
+.state-select-dropdown {
+  width: 100%;
+  font-family: Oswald;
 }
 
 .community-state-names {
@@ -11,8 +32,8 @@
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(11, 255, 224, 1) 10%,
-    rgba(255, 255, 255, 1) 70%,
+    rgba(11, 255, 224, 1) 50%,
+    /* rgba(255, 255, 255, 1) 50%, */
     rgba(255, 255, 255, 1) 100%
   );
 }
@@ -31,8 +52,13 @@
   box-shadow: 1px 4px 4px 2px darkgrey;
   margin: 10px;
   width: 350px;
+  /* background-image: url(../../assets/US_States_Imgs/florida.png);
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: center; */
 }
 
+/* ON COMMUNITY CARD HOVER */
 .community-card:hover {
   box-shadow: 2px 7px 6px 4px darkgrey;
   animation-name: community-card-float;
@@ -40,12 +66,37 @@
   animation-duration: 300ms;
 }
 
+/* COMMUNITY NAME/TITLE */
 .community-card-title {
   font-family: Oswald;
 }
 
-.community-list {
+/* COMMUNITY NAME */
+.community-name {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* COMMUNITY CITY/STATE */
+.community-city {
+  font-size: 25px;
+}
+
+/* COMMUNITY DETAIL TEXT */
+.card-text {
   font-family: Source Sans Pro;
+  font-weight: bold;
+}
+
+/* COMMUNITY ADDRESS */
+.community-card-address {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* COMMUNITY TYPE */
+.community-card-type {
+  margin-bottom: 10px;
 }
 
 /* COMMUNITY CARD HOVER ANIMATION */

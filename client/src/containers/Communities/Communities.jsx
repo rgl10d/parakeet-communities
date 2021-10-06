@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Communities.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
@@ -12,10 +12,10 @@ const communityStates = [
       {
         communityName: "Wolf Bay MHC",
         communityCity: "Elberta, AL",
-        communityAddress: "Address",
+        communityAddress: "9741 Wilson Rd, Elberta, AL",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "AL-1"
+        communityID: "AL-1",
       },
     ],
   },
@@ -27,34 +27,34 @@ const communityStates = [
       {
         communityName: "Bay Oaks Village I & II",
         communityCity: "Panama City, FL",
-        communityAddress: "Address",
+        communityAddress: "409 School Ave, Panama City, FL",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-1"
+        communityID: "FL-1",
       },
       {
         communityName: "Everglades MHP",
         communityCity: "Clewiston, FL",
-        communityAddress: "Address",
+        communityAddress: "800 E Obispo Avenue Clewiston, FL",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-2"
+        communityID: "FL-2",
       },
       {
         communityName: "Gulf Breeze MHC",
         communityCity: "Hudson, FL",
-        communityAddress: "Address",
+        communityAddress: "7530 Bolton Ave, Hudson, FL",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-3"
+        communityID: "FL-3",
       },
       {
         communityName: "Journey's End",
         communityCity: "Okeechobee, FL",
-        communityAddress: "Address",
+        communityAddress: "480 Highway 441 SE, Okeechobee, FL",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-4"
+        communityID: "FL-4",
       },
       {
         communityName: "Lake Wales MHC",
@@ -62,7 +62,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-5"
+        communityID: "FL-5",
       },
       {
         communityName: "Oceanaire MHC",
@@ -70,7 +70,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-6"
+        communityID: "FL-6",
       },
       {
         communityName: "Ormond Beach Oasis",
@@ -78,7 +78,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-7"
+        communityID: "FL-7",
       },
       {
         communityName: "Palm Springs Estates",
@@ -86,7 +86,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-8"
+        communityID: "FL-8",
       },
       {
         communityName: "Royal Oaks MHC",
@@ -94,7 +94,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-9"
+        communityID: "FL-9",
       },
       {
         communityName: "Royal Palm Trailer Park",
@@ -102,7 +102,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-10"
+        communityID: "FL-10",
       },
       {
         communityName: "Town & Country MHC",
@@ -110,7 +110,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-11"
+        communityID: "FL-11",
       },
       {
         communityName: "Westwood MHC",
@@ -118,7 +118,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "FL-12"
+        communityID: "FL-12",
       },
     ],
   },
@@ -133,7 +133,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "IN-1"
+        communityID: "IN-1",
       },
     ],
   },
@@ -148,7 +148,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "KS-1"
+        communityID: "KS-1",
       },
       {
         communityName: "Fishin' MHP",
@@ -156,7 +156,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "KS-2"
+        communityID: "KS-2",
       },
     ],
   },
@@ -171,7 +171,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "KY-1"
+        communityID: "KY-1",
       },
     ],
   },
@@ -186,7 +186,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "MD-1"
+        communityID: "MD-1",
       },
       {
         communityName: "Rio Vista MHP",
@@ -194,7 +194,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "MD-2"
+        communityID: "MD-2",
       },
     ],
   },
@@ -209,7 +209,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "MA-1"
+        communityID: "MA-1",
       },
     ],
   },
@@ -224,7 +224,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "MI-1"
+        communityID: "MI-1",
       },
       {
         communityName: "Victoria Woods MHC",
@@ -232,7 +232,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "MI-2"
+        communityID: "MI-2",
       },
       {
         communityName: "Kimball Estates",
@@ -240,7 +240,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "MI-3"
+        communityID: "MI-3",
       },
     ],
   },
@@ -255,7 +255,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NY-1"
+        communityID: "NY-1",
       },
       {
         communityName: "Underwood Estates",
@@ -263,7 +263,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NY-2"
+        communityID: "NY-2",
       },
     ],
   },
@@ -278,7 +278,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NC-1"
+        communityID: "NC-1",
       },
       {
         communityName: "Colonial MHC",
@@ -286,7 +286,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NC-2"
+        communityID: "NC-2",
       },
       {
         communityName: "Lambeth MHC",
@@ -294,7 +294,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NC-3"
+        communityID: "NC-3",
       },
       {
         communityName: "Parkwood MHC",
@@ -302,7 +302,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NC-4"
+        communityID: "NC-4",
       },
       {
         communityName: "Vandemere MHC",
@@ -310,7 +310,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "NC-5"
+        communityID: "NC-5",
       },
     ],
   },
@@ -325,7 +325,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "ND-1"
+        communityID: "ND-1",
       },
       {
         communityName: "Countryside MHC",
@@ -333,7 +333,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "ND-2"
+        communityID: "ND-2",
       },
       {
         communityName: "Parktown MHC",
@@ -341,7 +341,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "ND-3"
+        communityID: "ND-3",
       },
     ],
   },
@@ -356,7 +356,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "OH-1"
+        communityID: "OH-1",
       },
     ],
   },
@@ -371,7 +371,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "OR-1"
+        communityID: "OR-1",
       },
       {
         communityName: "Valley View MHC",
@@ -379,7 +379,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "OR-2"
+        communityID: "OR-2",
       },
     ],
   },
@@ -394,7 +394,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "PA-1"
+        communityID: "PA-1",
       },
       {
         communityName: "Tri-State MHP",
@@ -402,7 +402,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "PA-2"
+        communityID: "PA-2",
       },
     ],
   },
@@ -417,7 +417,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "TX-1"
+        communityID: "TX-1",
       },
     ],
   },
@@ -432,7 +432,7 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "WA-1"
+        communityID: "WA-1",
       },
     ],
   },
@@ -447,24 +447,73 @@ const communityStates = [
         communityAddress: "Address",
         communityType: "All Ages",
         communityAmenities: "Amenities",
-        communityID: "WV-1"
+        communityID: "WV-1",
       },
     ],
   },
 ];
 
 const Communities = () => {
+  // STATES VARIABLES
+  const [usStatesState, setUsStatesState] = useState([]);
+
+  // HOOK THAT OCCURS ON PAGE LOAD
+  useEffect(() => {
+    setUsStatesState(communityStates);
+  }, []);
+
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div id="community-page-container" className="container">
         <h1 id="communities-header">Communities</h1>
+        <h3 id="filter-header">Filters:</h3>
+        <div className="row filters-container">
+          {/* STATE SELECT DROPDOWN */}
+          <div className="col-lg-4">
+            <select
+              className="form-select state-select-dropdown"
+              aria-label="US State Select"
+              onChange={(e) => {
+                if (e.target.value === "") {
+                  setUsStatesState(communityStates);
+                } else {
+                  setUsStatesState(
+                    communityStates.filter(
+                      (communityStates) =>
+                        communityStates.state === e.target.value
+                    )
+                  );
+                }
+              }}
+            >
+              <option value="">State</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Florida">Florida</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusettes">Massachusettes</option>
+              <option value="Michigan">Michigan</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Texas">Texas</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+            </select>
+          </div>
+        </div>
         {/* US STATE LIST MAP FUNCTION */}
-        {communityStates.map((communityStates) => {
+        {usStatesState.map((communityStates) => {
           return (
             <>
               {/* CONTAINER FOR EACH US STATE */}
-              <div key={communityStates.usStateId}>
+              <div id={communityStates.usStateId}>
                 {/* DISPLAYS US STATE NAME */}
                 <h1 className="community-state-names">
                   {communityStates.state}
@@ -473,14 +522,17 @@ const Communities = () => {
                 <div className="row us-state-card-container">
                   {communityStates.communities.map((communities) => {
                     return (
-                      <div key={communities.communityID} className="card community-card">
+                      <div
+                        key={communities.communityID}
+                        className="card community-card"
+                      >
                         <div className="card-body">
                           {/* COMMUNITY NAME */}
-                          <h3 className="card-title community-card-title">
+                          <h3 className="card-title community-card-title community-name">
                             {communities.communityName}
                           </h3>
                           {/* CITY/STATE OF THE COMMUNITY */}
-                          <h5 className="card-title community-card-title">
+                          <h5 className="card-title community-card-title community-city">
                             {communities.communityCity}
                           </h5>
                           {/* COMMUNITY IMAGE */}
@@ -492,11 +544,21 @@ const Communities = () => {
                             <rect width="286" height="160" />
                           </svg>
                           {/* COMMUNITY ADDRESS */}
-                          <p className="card-text">{communities.communityAddress}</p>
-                          <p className="card-text">Community Type: {communities.communityType}</p>
-                          <p className="card-text">{communities.communityAmenities}</p>
+                          <p className="card-text community-card-address">
+                            {communities.communityAddress}
+                          </p>
+                          <p className="card-text community-card-type">
+                            Community Type: {communities.communityType}
+                          </p>
+                          <p className="card-text community-card-amenities">
+                            {communities.communityAmenities}
+                          </p>
                           {/* LINK TO COMMUNITY PAGE */}
-                          <a href="/communities" className="btn btn-primary">
+                          <a
+                            href={`/communities/${communities.communityName}`}
+                            className="btn btn-primary"
+                            community={{ communities }}
+                          >
                             Learn More
                           </a>
                         </div>
