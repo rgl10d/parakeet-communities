@@ -79,7 +79,9 @@ const Home = () => {
       },
       FL: {
         fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#florida"),
+        clickHandler: () => {
+          window.location.href = "/communities#florida";
+        },
       },
       IN: {
         fill: "#2fc984",
@@ -201,7 +203,10 @@ const Home = () => {
               </h2>
               <p>Dream it. Rent it. Buy it.</p>
               <p>
-                <a className="btn btn-success" href="https://bedg.twa.rentmanager.com/applynow">
+                <a
+                  className="btn btn-success"
+                  href="https://bedg.twa.rentmanager.com/applynow"
+                >
                   Apply Here
                 </a>
               </p>
@@ -296,7 +301,11 @@ const Home = () => {
             <hr className="divider" />
             {/* Feature Block 2 */}
             <div className="col-md-5 featured-image-container">
-              <img className="featured-img" src={Hands} alt="Hands stacked in unison" />
+              <img
+                className="featured-img"
+                src={Hands}
+                alt="Hands stacked in unison"
+              />
             </div>
             <div id="middleFeatured" className="col-md-7 featured-centering">
               <h2 className="featured-heading">
@@ -313,7 +322,7 @@ const Home = () => {
             {/* Feature Block 3 */}
             <div className="col-md-7 featured-centering">
               <h2 className="featured-heading">
-                Find your 
+                Find your
                 <span style={{ color: "#2fc984" }}> Forever Home</span>
               </h2>
               <p className="lead">
