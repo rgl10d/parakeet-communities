@@ -8,8 +8,11 @@ const Communities = () => {
   // STATE VARIABLES
   const { communityStates } = useContext(CommunityContext);
   const [usStatesState, setUsStatesState] = useState([]);
+  const [defaultOption, setDefaultOption] = useState([]);
+  
   // HOOK THAT OCCURS ON PAGE LOAD
   useEffect(() => {
+    setDefaultOption(window.location.hash.replace("#", ""));
     for (let i = 0; i < communityStates.length; i++) {
       if (
         window.location.hash.replace("#", "") === communityStates[i].usStateId
@@ -33,38 +36,40 @@ const Communities = () => {
           <div className="col-lg-4">
             <select
               className="form-select state-select-dropdown"
+              value={defaultOption}
               aria-label="US State Select"
               onChange={(e) => {
+                setDefaultOption(e.target.value);
                 if (e.target.value === "") {
                   setUsStatesState(communityStates);
                 } else {
                   setUsStatesState(
                     communityStates.filter(
                       (communityStates) =>
-                        communityStates.state === e.target.value
+                        communityStates.usStateId === e.target.value
                     )
                   );
                 }
               }}
             >
               <option value="">State</option>
-              <option value="Alabama">Alabama</option>
-              <option value="Florida">Florida</option>
-              <option value="Indiana">Indiana</option>
-              <option value="Kansas">Kansas</option>
-              <option value="Kentucky">Kentucky</option>
-              <option value="Maryland">Maryland</option>
-              <option value="Massachusettes">Massachusettes</option>
-              <option value="Michigan">Michigan</option>
-              <option value="New York">New York</option>
-              <option value="North Carolina">North Carolina</option>
-              <option value="North Dakota">North Dakota</option>
-              <option value="Ohio">Ohio</option>
-              <option value="Oregon">Oregon</option>
-              <option value="Pennsylvania">Pennsylvania</option>
-              <option value="Texas">Texas</option>
-              <option value="Washington">Washington</option>
-              <option value="West Virginia">West Virginia</option>
+              <option value="alabama">Alabama</option>
+              <option value="florida">Florida</option>
+              <option value="indiana">Indiana</option>
+              <option value="kansas">Kansas</option>
+              <option value="kentucky">Kentucky</option>
+              <option value="maryland">Maryland</option>
+              <option value="massachusettes">Massachusettes</option>
+              <option value="michigan">Michigan</option>
+              <option value="newyork">New York</option>
+              <option value="northcarolina">North Carolina</option>
+              <option value="northdakota">North Dakota</option>
+              <option value="ohio">Ohio</option>
+              <option value="oregon">Oregon</option>
+              <option value="pennsylvania">Pennsylvania</option>
+              <option value="texas">Texas</option>
+              <option value="washington">Washington</option>
+              <option value="westvirginia">West Virginia</option>
             </select>
           </div>
         </div>

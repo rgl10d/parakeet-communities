@@ -6,13 +6,13 @@ import { CommunityContext } from "../../contexts/CommunityContext";
 const CommunityPages = () => {
   const { communityStates } = useContext(CommunityContext);
   const [currentCommunity, setCurrentCommunity] = useState([]);
-  const communityPathName = window.location.pathname.replace(
-    "/communities/",
-    ""
-  );
 
   //   FOR LOOP TO GET THE PAGE'S COMMUNITY INFORMATION FROM CONTEXT
   useEffect(() => {
+    const communityPathName = window.location.pathname.replace(
+      "/communities/",
+      ""
+    );
     for (let i = 0; i < communityStates.length; i++) {
       for (let j = 0; j < communityStates[i].communities.length; j++) {
         if (
@@ -22,7 +22,7 @@ const CommunityPages = () => {
         }
       }
     }
-  });
+  }, []);
 
   return (
     <>
