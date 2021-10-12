@@ -1,5 +1,11 @@
 #community-page-container {
   padding-top: 40px;
+  background-image: url(../../assets/parakeet-Logomark-offwhite.png);
+  background-size: 1750px;
+  background-position: center;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #communities-header {
@@ -53,10 +59,9 @@
   box-shadow: 1px 4px 4px 2px darkgrey;
   margin: 10px;
   width: 350px;
-  /* background-image: url(../../assets/US_States_Imgs/florida.png);
   background-repeat: no-repeat;
   background-size: 450px;
-  background-position: center; */
+  background-position: center;
 }
 
 /* ON COMMUNITY CARD HOVER */

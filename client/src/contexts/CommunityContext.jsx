@@ -1,4 +1,21 @@
 import React, { createContext, useState } from "react";
+import AlabamaShape from "../assets/US_States_Imgs/alabama.png";
+import FloridaShape from "../assets/US_States_Imgs/florida.png";
+import IndianaShape from "../assets/US_States_Imgs/indiana.png";
+import KansasShape from "../assets/US_States_Imgs/kansas.png";
+import KentuckyShape from "../assets/US_States_Imgs/kentucky.png";
+import MarylandShape from "../assets/US_States_Imgs/maryland.png";
+import MassachusettsShape from "../assets/US_States_Imgs/massachusetts.png";
+import MichiganShape from "../assets/US_States_Imgs/michigan.png";
+import NewYorkShape from "../assets/US_States_Imgs/newyork.png";
+import NorthCarolinaShape from "../assets/US_States_Imgs/northcarolina.png";
+import NorthDakotaShape from "../assets/US_States_Imgs/northdakota.png";
+import OhioShape from "../assets/US_States_Imgs/ohio.png";
+import OregonShape from "../assets/US_States_Imgs/oregon.png";
+import PennsylvaniaShape from "../assets/US_States_Imgs/pennsylvania.png";
+import TexasShape from "../assets/US_States_Imgs/texas.png";
+import WashingtonShape from "../assets/US_States_Imgs/washington.png";
+import WestVirginiaShape from "../assets/US_States_Imgs/westvirginia.png";
 
 export const CommunityContext = createContext();
 
@@ -8,6 +25,7 @@ const CommunityContextProvider = (props) => {
       state: "Alabama",
       usStateId: "alabama",
       stateAbbr: "AL",
+      stateBgURL: AlabamaShape,
       communities: [
         {
           communityName: "Wolf Bay MHC",
@@ -24,6 +42,7 @@ const CommunityContextProvider = (props) => {
       state: "Florida",
       usStateId: "florida",
       stateAbbr: "FL",
+      stateBgURL: FloridaShape,
       communities: [
         {
           communityName: "Bay Oaks Village I & II",
@@ -139,6 +158,7 @@ const CommunityContextProvider = (props) => {
       state: "Indiana",
       usStateId: "indiana",
       stateAbbr: "IN",
+      stateBgURL: IndianaShape,
       communities: [
         {
           communityName: "Moores Hill MHP",
@@ -155,6 +175,7 @@ const CommunityContextProvider = (props) => {
       state: "Kansas",
       usStateId: "kansas",
       stateAbbr: "KS",
+      stateBgURL: KansasShape,
       communities: [
         {
           communityName: "Cherrywoods MHP",
@@ -180,6 +201,7 @@ const CommunityContextProvider = (props) => {
       state: "Kentucky",
       usStateId: "kentucky",
       stateAbbr: "KY",
+      stateBgURL: KentuckyShape,
       communities: [
         {
           communityName: "Ponderosa MHP",
@@ -196,6 +218,7 @@ const CommunityContextProvider = (props) => {
       state: "Maryland",
       usStateId: "maryland",
       stateAbbr: "MD",
+      stateBgURL: MarylandShape,
       communities: [
         {
           communityName: "Mobile Manor",
@@ -221,6 +244,7 @@ const CommunityContextProvider = (props) => {
       state: "Massachusettes",
       usStateId: "massachusettes",
       stateAbbr: "MA",
+      stateBgURL: MassachusettsShape,
       communities: [
         {
           communityName: "Mayflower Hills MHC",
@@ -237,6 +261,7 @@ const CommunityContextProvider = (props) => {
       state: "Michigan",
       usStateId: "michigan",
       stateAbbr: "MI",
+      stateBgURL: MichiganShape,
       communities: [
         {
           communityName: "Lamberton Lake MHC",
@@ -271,6 +296,7 @@ const CommunityContextProvider = (props) => {
       state: "New York",
       usStateId: "newyork",
       stateAbbr: "NY",
+      stateBgURL: NewYorkShape,
       communities: [
         {
           communityName: "Collins MHC",
@@ -296,6 +322,7 @@ const CommunityContextProvider = (props) => {
       state: "North Carolina",
       usStateId: "northcarolina",
       stateAbbr: "NC",
+      stateBgURL: NorthCarolinaShape,
       communities: [
         {
           communityName: "Cedar Grove MHC",
@@ -348,6 +375,7 @@ const CommunityContextProvider = (props) => {
       state: "North Dakota",
       usStateId: "northdakota",
       stateAbbr: "ND",
+      stateBgURL: NorthDakotaShape,
       communities: [
         {
           communityName: "Apple Creek MHC",
@@ -382,6 +410,7 @@ const CommunityContextProvider = (props) => {
       state: "Ohio",
       usStateId: "ohio",
       stateAbbr: "OH",
+      stateBgURL: OhioShape,
       communities: [
         {
           communityName: "Northgate MHP",
@@ -398,6 +427,7 @@ const CommunityContextProvider = (props) => {
       state: "Oregon",
       usStateId: "oregon",
       stateAbbr: "OR",
+      stateBgURL: OregonShape,
       communities: [
         {
           communityName: "Shasta Glen MHC",
@@ -423,6 +453,7 @@ const CommunityContextProvider = (props) => {
       state: "Pennsylvania",
       usStateId: "pennsylvania",
       stateAbbr: "PA",
+      stateBgURL: PennsylvaniaShape,
       communities: [
         {
           communityName: "Tracey Acres MHP",
@@ -448,6 +479,7 @@ const CommunityContextProvider = (props) => {
       state: "Texas",
       usStateId: "texas",
       stateAbbr: "TX",
+      stateBgURL: TexasShape,
       communities: [
         {
           communityName: "Knollwood Village",
@@ -464,6 +496,7 @@ const CommunityContextProvider = (props) => {
       state: "Washington",
       usStateId: "washington",
       stateAbbr: "WA",
+      stateBgURL: WashingtonShape,
       communities: [
         {
           communityName: "University MHP",
@@ -480,6 +513,7 @@ const CommunityContextProvider = (props) => {
       state: "West Virginia",
       usStateId: "westvirginia",
       stateAbbr: "WV",
+      stateBgURL: WestVirginiaShape,
       communities: [
         {
           communityName: "Cambridge MHC",

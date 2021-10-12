@@ -138,7 +138,7 @@ div .heading-card p {
   }
 }
 
-/* FEATURED TEXT AND IMAGES */
+/* PARALLAX BACKGROUND */
 .home-background {
   background-image: url(../../assets/parakeet-Logomark-offwhite.png);
   background-size: 1750px;
@@ -147,6 +147,7 @@ div .heading-card p {
   background-attachment: fixed;
 }
 
+/* FEATURED TEXT AND IMAGES */
 .featured-centering {
   height: 400px;
   padding: 150px 0;

@@ -87,6 +87,7 @@ const Communities = () => {
                       <div
                         key={communities.communityID}
                         className="card community-card"
+                        style={{backgroundImage: `url(${communityStates.stateBgURL})`}}
                       >
                         <div className="card-body">
                           {/* COMMUNITY NAME */}

@@ -11,7 +11,7 @@ const CommunityPages = () => {
     ""
   );
 
-//   FOR LOOP TO GET THE PAGE'S COMMUNITY INFORMATION FROM CONTEXT
+  //   FOR LOOP TO GET THE PAGE'S COMMUNITY INFORMATION FROM CONTEXT
   useEffect(() => {
     for (let i = 0; i < communityStates.length; i++) {
       for (let j = 0; j < communityStates[i].communities.length; j++) {
