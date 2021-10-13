@@ -3,7 +3,7 @@
   background-image: url(../../assets/parakeet-Logomark-offwhite.png);
   background-size: 1750px;
   background-position: center;
-  background-position-y: 20%;
+  /* background-position-y: 10%; */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -35,14 +35,16 @@
 .community-state-names {
   text-align: center;
   font-family: Oswald;
-  background: rgb(255, 255, 255);
+  font-size: 45px;
+  color: #2fc984;
+  border-bottom: solid 3px #fa6261;
+  /* background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(11, 255, 224, 1) 50%,
-    /* rgba(255, 255, 255, 1) 50%, */
     rgba(255, 255, 255, 1) 100%
-  );
+  ); */
 }
 
 /* COMMUNITY CARDS */
@@ -105,6 +107,11 @@
   margin-bottom: 10px;
 }
 
+/* .community-card-button {
+  position: relative;
+  left: 12%;
+} */
+
 /* COMMUNITY CARD HOVER ANIMATION */
 @keyframes community-card-float {
   from {
@@ -114,5 +121,29 @@
   to {
     box-shadow: 2px 7px 6px 4px darkgrey;
     top: -2px;
+  }
+}
+
+/* PARAKEET LOGO ON BOTTOM OF CARD */
+.community-card-logo {
+  position: absolute;
+  left: 88%;
+  max-width: 55px;
+  max-height: 55px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .state-select-dropdown {
+    margin-bottom: 25px;
+  }
+  .community-state-names {
+    font-size: 32px
+  }
+}
+
+@media (max-width: 300px) {
+  .community-card-logo {
+    left: 84%;
   }
 }

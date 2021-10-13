@@ -13,6 +13,7 @@ const CommunityPages = () => {
       "/communities/",
       ""
     );
+    
     for (let i = 0; i < communityStates.length; i++) {
       for (let j = 0; j < communityStates[i].communities.length; j++) {
         if (

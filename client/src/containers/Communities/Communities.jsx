@@ -3,13 +3,14 @@ import "./Communities.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { CommunityContext } from "../../contexts/CommunityContext";
+import logomark from "../../assets/parakeet-Logomark.png";
 
 const Communities = () => {
   // STATE VARIABLES
   const { communityStates } = useContext(CommunityContext);
   const [usStatesState, setUsStatesState] = useState([]);
-  const [defaultOption, setDefaultOption] = useState([]);
-  
+  const [defaultOption, setDefaultOption] = useState("");
+
   // HOOK THAT OCCURS ON PAGE LOAD
   useEffect(() => {
     setDefaultOption(window.location.hash.replace("#", ""));
@@ -37,7 +38,8 @@ const Communities = () => {
             <select
               className="form-select state-select-dropdown"
               value={defaultOption}
-              aria-label="US State Select"
+              multiple={false}
+              aria-label="US State Filter Select"
               onChange={(e) => {
                 setDefaultOption(e.target.value);
                 if (e.target.value === "") {
@@ -55,26 +57,46 @@ const Communities = () => {
               <option value="">State</option>
               <option value="alabama">Alabama</option>
               <option value="florida">Florida</option>
-              <option value="indiana">Indiana</option>
-              <option value="kansas">Kansas</option>
-              <option value="kentucky">Kentucky</option>
+              {/* <option value="indiana">Indiana</option> */}
+              {/* <option value="kansas">Kansas</option> */}
+              {/* <option value="kentucky">Kentucky</option> */}
               <option value="maryland">Maryland</option>
               <option value="massachusettes">Massachusettes</option>
               <option value="michigan">Michigan</option>
               <option value="newyork">New York</option>
               <option value="northcarolina">North Carolina</option>
               <option value="northdakota">North Dakota</option>
-              <option value="ohio">Ohio</option>
+              {/* <option value="ohio">Ohio</option> */}
               <option value="oregon">Oregon</option>
-              <option value="pennsylvania">Pennsylvania</option>
-              <option value="texas">Texas</option>
-              <option value="washington">Washington</option>
+              {/* <option value="pennsylvania">Pennsylvania</option> */}
+              {/* <option value="texas">Texas</option> */}
+              {/* <option value="washington">Washington</option> */}
               <option value="westvirginia">West Virginia</option>
             </select>
           </div>
+          {/* COMMUNITY TYPE SELECT */}
+          <div className="col-lg-4">
+            <select
+              className="form-select state-select-dropdown"
+              aria-label="Community Age Filter Select"
+            >
+              <option value="communityage">Community Type</option>
+              <option value="allages">All Ages</option>
+              <option value="55+">55+</option>
+            </select>
+          </div>
+          {/* HOUSING TYPE SELECT */}
+          <div className="col-lg-4">
+            <select
+              className="form-select state-select-dropdown"
+              aria-label="Housing Type Filter Select"
+            >
+              <option value="housingtype">Housing Type</option>
+              <option value="manufacturedhouses">Manufactured Houses</option>
+              <option value="rv">RV's</option>
+            </select>
+          </div>
         </div>
-        {/* TYPE SELECT */}
-        
         {/* US STATE LIST MAP FUNCTION */}
         {usStatesState.map((communityStates) => {
           return (
@@ -92,7 +114,9 @@ const Communities = () => {
                       <div
                         key={communities.communityID}
                         className="card community-card"
-                        style={{backgroundImage: `url(${communityStates.stateBgURL})`}}
+                        style={{
+                          backgroundImage: `url(${communityStates.stateBgURL})`,
+                        }}
                       >
                         <div className="card-body">
                           {/* COMMUNITY NAME */}
@@ -121,10 +145,17 @@ const Communities = () => {
                           <p className="card-text community-card-amenities">
                             {communities.communityAmenities}
                           </p>
+                          <div style={{ position: "relative" }}>
+                            <img
+                              alt="Parakeet Communities Logo"
+                              className="community-card-logo"
+                              src={logomark}
+                            />
+                          </div>
                           {/* LINK TO COMMUNITY PAGE */}
                           <a
                             href={`/communities/${communities.communityURL}`}
-                            className="btn btn-primary"
+                            className="btn btn-primary community-card-button"
                             community={{ communities }}
                           >
                             Learn More

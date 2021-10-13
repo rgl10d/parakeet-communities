@@ -83,18 +83,18 @@ const Home = () => {
           window.location.href = "/communities#florida";
         },
       },
-      IN: {
-        fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#indiana"),
-      },
-      KS: {
-        fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#kansas"),
-      },
-      KY: {
-        fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#kentucky"),
-      },
+      // IN: {
+      //   fill: "#2fc984",
+      //   clickHandler: () => (window.location.href = "/communities#indiana"),
+      // },
+      // KS: {
+      //   fill: "#2fc984",
+      //   clickHandler: () => (window.location.href = "/communities#kansas"),
+      // },
+      // KY: {
+      //   fill: "#2fc984",
+      //   clickHandler: () => (window.location.href = "/communities#kentucky"),
+      // },
       MA: {
         fill: "#2fc984",
         clickHandler: () =>
@@ -121,27 +121,27 @@ const Home = () => {
         fill: "#2fc984",
         clickHandler: () => (window.location.href = "/communities#newyork"),
       },
-      OH: {
-        fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#ohio"),
-      },
+      // OH: {
+      //   fill: "#2fc984",
+      //   clickHandler: () => (window.location.href = "/communities#ohio"),
+      // },
       OR: {
         fill: "#2fc984",
         clickHandler: () => (window.location.href = "/communities#oregon"),
       },
-      PA: {
-        fill: "#2fc984",
-        clickHandler: () =>
-          (window.location.href = "/communities#pennsylvania"),
-      },
-      TX: {
-        fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#texas"),
-      },
-      WA: {
-        fill: "#2fc984",
-        clickHandler: () => (window.location.href = "/communities#washington"),
-      },
+      // PA: {
+      //   fill: "#2fc984",
+      //   clickHandler: () =>
+      //     (window.location.href = "/communities#pennsylvania"),
+      // },
+      // TX: {
+      //   fill: "#2fc984",
+      //   clickHandler: () => (window.location.href = "/communities#texas"),
+      // },
+      // WA: {
+      //   fill: "#2fc984",
+      //   clickHandler: () => (window.location.href = "/communities#washington"),
+      // },
       WV: {
         fill: "#2fc984",
         clickHandler: () =>
