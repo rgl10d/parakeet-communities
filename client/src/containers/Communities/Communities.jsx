@@ -74,13 +74,13 @@ const Communities = () => {
               <option value="westvirginia">West Virginia</option>
             </select>
           </div>
-          {/* COMMUNITY TYPE SELECT */}
+          {/* COMMUNITY AGE SELECT */}
           <div className="col-lg-4">
             <select
               className="form-select state-select-dropdown"
               aria-label="Community Age Filter Select"
             >
-              <option value="communityage">Community Type</option>
+              <option value="communityage">Community Ages</option>
               <option value="allages">All Ages</option>
               <option value="55+">55+</option>
             </select>

@@ -6,7 +6,11 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <h1>This will be the Contact Page!</h1>
+      <div className="container">
+        <div style={{ height: "1000px" }}>
+          <h1>Page is under construction.</h1>
+        </div>
+      </div>
       <Footer />
     </>
   );
