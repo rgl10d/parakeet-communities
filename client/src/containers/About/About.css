@@ -31,7 +31,7 @@
   font-size: 20px;
 }
 
-#find-community-block {
+#find-community-action {
   display: block;
   text-align: center;
   height: 300px;
@@ -41,12 +41,12 @@
   /* margin-bottom: 50px; */
 }
 
-div #find-community-block h1 {
+div #find-community-action h1 {
   font-family: Oswald;
   font-size: 60px;
 }
 
-div #find-community-block p {
+div #find-community-action p {
   font-family: Source Sans Pro;
   font-size: 25px;
   text-align: center;

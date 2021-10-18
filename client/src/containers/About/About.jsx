@@ -27,7 +27,7 @@ const About = () => {
         </p>
       </div>
       <section>
-        <div id="find-community-block">
+        <div id="find-community-action">
           <h1>
             Ready to find your new <span style={{ color: "#2fc984" }}>home</span>?
           </h1>

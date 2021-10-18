@@ -146,7 +146,7 @@ const CommunityContextProvider = (props) => {
         {
           communityName: "Ormond Beach Oasis",
           communityCity: "Ormond Beach, FL",
-          communityAddress: "955 S. Nova Rd",
+          communityAddress: "955 S. Nova Rd, Ormond Beach, FL",
           communityType: "All Ages",
           communityAmenities: "Amenities",
           communityURL: "ormondbeachoasis",

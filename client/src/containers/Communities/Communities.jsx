@@ -29,8 +29,8 @@ const Communities = () => {
   return (
     <>
       <Navbar />
-      <div id="community-page-container" className="container">
-        <h1 id="communities-header">Communities</h1>
+      <div id="communities-container" className="container">
+        <h1 id="communities-header">Find your perfect <span style={{color: "#2fc984"}}>Community</span></h1>
         <h3 id="filter-header">Filters:</h3>
         <div className="row filters-container">
           {/* STATE SELECT DROPDOWN */}
@@ -80,7 +80,7 @@ const Communities = () => {
               className="form-select state-select-dropdown"
               aria-label="Community Age Filter Select"
             >
-              <option value="communityage">Community Ages</option>
+              <option value="communityage">Age Preference</option>
               <option value="allages">All Ages</option>
               <option value="55+">55+</option>
             </select>
@@ -92,7 +92,7 @@ const Communities = () => {
               aria-label="Housing Type Filter Select"
             >
               <option value="housingtype">Housing Type</option>
-              <option value="manufacturedhouses">Manufactured Houses</option>
+              <option value="houses">Houses</option>
               <option value="rv">RV's</option>
             </select>
           </div>

@@ -264,8 +264,7 @@ div .map-container h1 {
   }
 
   .home-background {
-    background-size: 1000px;
-    background-position: center;
+    background-image: none;
   }
 
   .featured-centering {
