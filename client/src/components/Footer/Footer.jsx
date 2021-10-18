@@ -2,11 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import footerLogo from "../../assets/parakeet-White-Logomark.png";
 import footerLogo2 from "../../assets/parakeet-Logomark.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   const [footerLogoState, setFooterLogoState] = useState([]);
@@ -17,31 +12,8 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <div className="container">
+      <div id="footer-container" className="container">
         <div className="row">
-          <div id="links-left" className="col-sm-5">
-            {/* <h4 className="footer-link-title"> Left Links </h4> */}
-            <ul>
-              <li>
-                <a className="footer-link" href="/">
-                  Home
-                </a>
-                <FontAwesomeIcon className="footer-icon" icon={faChevronLeft} />
-              </li>{" "}
-              <li>
-                <a className="footer-link" href="/communities">
-                  Communities
-                </a>
-                <FontAwesomeIcon className="footer-icon" icon={faChevronLeft} />
-              </li>{" "}
-              <li>
-                <a className="footer-link" href="/about">
-                  About Us
-                </a>
-                <FontAwesomeIcon className="footer-icon" icon={faChevronLeft} />
-              </li>
-            </ul>
-          </div>
           <div id="footer-logo-div" className="col-sm-2">
             <img
               id="footerLogo"
@@ -55,37 +27,50 @@ const Footer = () => {
               }}
             />
           </div>
-          <div id="links-right" className="col-sm-5">
-            {/* <h4 className="footer-link-title"> Right Links </h4> */}
-            <ul>
-              <li>
-                <FontAwesomeIcon
-                  className="footer-icon"
-                  icon={faChevronRight}
-                />
+          <div className="col-sm-4" id="footer-address">
+            <strong>10221 River Road, #59831</strong>
+            <p>Potomac, MD 20859</p>
+          </div>
+          <div id="footer-link-list" className="col-sm-6">
+            <div className="row">
+              <div className="col-sm-3">
+                <a className="footer-link" href="/">
+                  Home
+                </a>
+              </div>
+              <div className="col-sm-3">
+                <a className="footer-link" href="/about">
+                  About
+                </a>
+              </div>
+              <div className="col-sm-3">
+                <a className="footer-link" href="/Contact">
+                  Contact
+                </a>
+              </div>
+              <div className="col-sm-3">
+                <a className="footer-link" href="/communities">
+                  Communities
+                </a>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-3">
+                <a className="footer-link" href="/apply">
+                  Apply
+                </a>
+              </div>
+              <div className="col-sm-3">
+                <a className="footer-link" href="/careers">
+                  Careers
+                </a>
+              </div>
+              <div className="col-sm-3">
                 <a className="footer-link" href="/faq">
                   FAQ
                 </a>
-              </li>{" "}
-              <li>
-                <FontAwesomeIcon
-                  className="footer-icon"
-                  icon={faChevronRight}
-                />
-                <a className="footer-link" href="/apply">
-                  Apply Now
-                </a>
-              </li>{" "}
-              <li>
-                <FontAwesomeIcon
-                  className="footer-icon"
-                  icon={faChevronRight}
-                />
-                <a className="footer-link" href="/contact">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

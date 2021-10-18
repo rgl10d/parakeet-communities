@@ -1,10 +1,12 @@
 #communities-container {
   padding-top: 40px;
+  padding-bottom: 134px;
   background-image: url(../../assets/parakeet-Logomark-offwhite.png);
   background-size: 1750px;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 #communities-header {
