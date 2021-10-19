@@ -15,17 +15,20 @@ const Footer = () => {
       <div id="footer-container" className="container">
         <div className="row">
           <div id="footer-logo-div" className="col-sm-2">
-            <img
-              id="footerLogo"
-              src={footerLogoState}
-              alt="Parakeet Communities Logo"
-              onMouseOver={() => {
-                setFooterLogoState(footerLogo2);
-              }}
-              onMouseOut={() => {
-                setFooterLogoState(footerLogo);
-              }}
-            />
+            <a href="/">
+              <img
+                id="footerLogo"
+                src={footerLogoState}
+                alt="Parakeet Communities Logo"
+                onMouseOver={() => {
+                  setFooterLogoState(footerLogo2);
+                }}
+                onMouseOut={() => {
+                  setFooterLogoState(footerLogo);
+                }}
+                onClick={() => {}}
+              />
+            </a>
           </div>
           <div className="col-sm-4" id="footer-address">
             <strong>10221 River Road, #59831</strong>
@@ -44,7 +47,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="col-sm-3">
-                <a className="footer-link" href="/Contact">
+                <a className="footer-link" href="/contact">
                   Contact
                 </a>
               </div>
@@ -56,7 +59,10 @@ const Footer = () => {
             </div>
             <div className="row">
               <div className="col-sm-3">
-                <a className="footer-link" href="/apply">
+                <a
+                  className="footer-link"
+                  href="https://bedg.twa.rentmanager.com/applynow"
+                >
                   Apply
                 </a>
               </div>

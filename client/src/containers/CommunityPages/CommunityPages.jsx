@@ -24,7 +24,7 @@ const CommunityPages = () => {
         }
       }
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
@@ -37,7 +37,7 @@ const CommunityPages = () => {
               {currentCommunity.communityName}
             </span>
           </h1>
-          <p>{currentCommunity.communityAddress}</p>
+          <p>{currentCommunity.communitySubtitle}</p>
         </div>
         <div
           id="carouselExampleFade"
@@ -79,7 +79,7 @@ const CommunityPages = () => {
           </a>
         </div>
         <div>
-          <h3>About the Park</h3>
+          <h3>About Our Community</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui
             voluptatibus unde, libero ipsam animi expedita illum voluptates
@@ -100,34 +100,9 @@ const CommunityPages = () => {
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div>
-          <h3>What's it like in {currentCommunity.communityCity}?</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui
-            voluptatibus unde, libero ipsam animi expedita illum voluptates
-            dignissimos at consequuntur officiis aperiam ullam quas distinctio
-            consectetur fugit sed quidem nihil similique dolor. Nesciunt
-            necessitatibus dicta repellendus reiciendis possimus fugit
-            laboriosam excepturi ad ullam, harum temporibus deserunt qui est
-            reprehenderit ex corporis unde cumque deleniti quisquam optio quasi!
-            Tempore totam fuga consequatur esse sit harum aspernatur beatae
-            maiores, repellat quisquam similique doloribus. Rerum laborum
-            reiciendis ipsum quam voluptatibus explicabo consectetur aliquam
-            soluta impedit illum eaque nemo neque commodi eveniet maxime aperiam
-            ab tempora laudantium at suscipit qui, ipsam atque reprehenderit.
-          </p>
+          <h3>Our Contact Information</h3>
+          <p>Address? Number? Name of Manager?</p>
         </div>
-      </div>
-      <div id="apply-now-action">
-        <h1>
-          Like this <span style={{ color: "#2fc984" }}>park</span>?
-        </h1>
-        <p>Apply today and join the flock!</p>
-        <a
-          className="btn btn-success"
-          href="https://bedg.twa.rentmanager.com/applynow"
-        >
-          Apply Now
-        </a>
       </div>
       <Footer />
     </>

@@ -29,6 +29,7 @@ const CommunityContextProvider = (props) => {
       communities: [
         {
           communityName: "Wolf Bay",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Elberta, AL",
           communityAddress: "9741 Wilson Rd, Elberta, AL",
           communityType: "All Ages",
@@ -46,6 +47,7 @@ const CommunityContextProvider = (props) => {
       communities: [
         {
           communityName: "Applegate",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Deland, FL",
           communityAddress: "399 Circle Dr, Deland, FL",
           communityType: "All Ages",
@@ -55,6 +57,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Bay Oaks Village I",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Panama City, FL",
           communityAddress: "409 School Ave, Panama City, FL",
           communityType: "All Ages",
@@ -64,6 +67,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Bay Oaks Village I",
+          communitySubtitle: "A Manufactured Housing Community",
           communityCity: "Panama City, FL",
           communityAddress: "420 N Kimbrel Ave, Panama City, FL",
           communityType: "All Ages",
@@ -72,7 +76,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-3",
         },
         {
-          communityName: "Congress MHP",
+          communityName: "Congress",
+          communitySubtitle: "A Manufactured Housing Community",
           communityCity: "West Palm Beach, FL",
           communityAddress: "1960 Congress Avenue, West Palm Beach, FL",
           communityType: "All Ages",
@@ -81,7 +86,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-4",
         },
         {
-          communityName: "Everglades MHP",
+          communityName: "Everglades",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Clewiston, FL",
           communityAddress: "500 S Francisco Street Clewiston, FL",
           communityType: "All Ages",
@@ -91,6 +97,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Gulf Breeze",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Hudson, FL",
           communityAddress: "7530 Maryland Ave, Hudson, FL",
           communityType: "All Ages",
@@ -100,6 +107,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Hunter Springs",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Crystal River, FL",
           communityAddress: "316 NE 2nd Street, Crystal River, FL",
           communityType: "All Ages",
@@ -109,6 +117,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "J Bar J Estates",
+          communitySubtitle: "A Manufactured Housing Community",
           communityCity: "Miami, FL",
           communityAddress: "2980 NW 79th St, Miami, FL",
           communityType: "All Ages",
@@ -117,7 +126,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-8",
         },
         {
-          communityName: "Lake Saunders MHC",
+          communityName: "Lake Saunders",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Miami, FL",
           communityAddress: "2980 NW 79th St, Miami, FL",
           communityType: "All Ages",
@@ -126,7 +136,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-9",
         },
         {
-          communityName: "Lake Wales MHC",
+          communityName: "Lake Wales",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Lake Wales, FL",
           communityAddress: "705 N. Scenic Highway, Lake Wales, FL",
           communityType: "All Ages",
@@ -136,6 +147,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Oceanaire",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "New Smyrna Beach, FL",
           communityAddress: "1311 Turnbull Street, New Smyrna Beach, FL",
           communityType: "All Ages",
@@ -145,6 +157,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Ormond Beach Oasis",
+          communitySubtitle: "A Manufactured Housing Community",
           communityCity: "Ormond Beach, FL",
           communityAddress: "955 S. Nova Rd, Ormond Beach, FL",
           communityType: "All Ages",
@@ -154,6 +167,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Palm Spring Estates",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Tarpon Springs, FL",
           communityAddress: "40110 US 19 N, Tarpon Springs, FL",
           communityType: "All Ages",
@@ -162,7 +176,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-13",
         },
         {
-          communityName: "Royal Oaks MHC",
+          communityName: "Royal Oaks",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Vero Beach, FL",
           communityAddress: "8125 US 1 Highway, Vero Beach, FL",
           communityType: "All Ages",
@@ -172,6 +187,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Shady Oaks",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Miami, FL",
           communityAddress: "14701 NE 6 Avenue, Miami, FL",
           communityType: "All Ages",
@@ -180,7 +196,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-15",
         },
         {
-          communityName: "Town & Country MHC",
+          communityName: "Town & Country",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Jacksonville, FL",
           communityAddress: "7835 Morse Avenue, Jacksonville, FL",
           communityType: "All Ages",
@@ -190,6 +207,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Tradewinds",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Cocoa, FL",
           communityAddress: "4100 N Cocoa Blvd, Cocoa, FL",
           communityType: "All Ages",
@@ -198,7 +216,8 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-17",
         },
         {
-          communityName: "Westwood MHC",
+          communityName: "Westwood",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Ormond Beach, FL",
           communityAddress: "1804 Nelson Av, Ormond Beach, FL",
           communityType: "All Ages",
@@ -276,6 +295,7 @@ const CommunityContextProvider = (props) => {
       communities: [
         {
           communityName: "Mobile Manor",
+          communitySubtitle: "A Manufactured Housing Community",
           communityCity: "Rosedale, MD",
           communityAddress: "1302 Evering Ave, Rosedale, MD",
           communityType: "All Ages",
@@ -293,7 +313,8 @@ const CommunityContextProvider = (props) => {
         //   communityID: "MD-2",
         // },
         {
-          communityName: "Royal Palm Trailer Park",
+          communityName: "Royal Palm",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Potomac, MD",
           communityAddress: "10221 River Road #59831, Potomac, MD",
           communityType: "All Ages",
@@ -310,7 +331,8 @@ const CommunityContextProvider = (props) => {
       stateBgURL: MassachusettsShape,
       communities: [
         {
-          communityName: "Mayflower Hills MHC",
+          communityName: "Mayflower Hills",
+          communitySubtitle: "A Manufactured Housing Community",
           communityCity: "Plymouth, MA",
           communityAddress: "0 Minuteman Lane, Plymouth, MA",
           communityType: "All Ages",
@@ -327,7 +349,8 @@ const CommunityContextProvider = (props) => {
       stateBgURL: MichiganShape,
       communities: [
         {
-          communityName: "Lamberton Lake MHC",
+          communityName: "Lamberton Lake",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Grand Rapids, MI",
           communityAddress: "1561 Sherin Drive NE, Grand Rapids,",
           communityType: "All Ages",
@@ -362,7 +385,8 @@ const CommunityContextProvider = (props) => {
       stateBgURL: NewYorkShape,
       communities: [
         {
-          communityName: "Collins MHC",
+          communityName: "Collins",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Plattsburgh, NY",
           communityAddress: "53 Mill Lane, Plattsburgh, NY",
           communityType: "All Ages",
@@ -372,6 +396,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Underwood Estates",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Plattsburgh, NY",
           communityAddress: "53 Mill Lane, Plattsburgh, NY",
           communityType: "All Ages",
@@ -388,7 +413,8 @@ const CommunityContextProvider = (props) => {
       stateBgURL: NorthCarolinaShape,
       communities: [
         {
-          communityName: "Cedar Grove MHC",
+          communityName: "Cedar Grove",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Kernersville, NC",
           communityAddress: "209 Pegg Farm Lane, Kernersville, NC",
           communityType: "All Ages",
@@ -397,7 +423,8 @@ const CommunityContextProvider = (props) => {
           communityID: "NC-1",
         },
         {
-          communityName: "Colonial MHC",
+          communityName: "Colonial",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "New Bern, NC",
           communityAddress: "76 Morningstar Drive, New Bern, NC",
           communityType: "All Ages",
@@ -406,7 +433,8 @@ const CommunityContextProvider = (props) => {
           communityID: "NC-2",
         },
         {
-          communityName: "Lambeth MHC",
+          communityName: "Lambeth",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Winston-Salem, NC",
           communityAddress: "4630 South Main Street, Winston-Salem, NC",
           communityType: "All Ages",
@@ -415,7 +443,8 @@ const CommunityContextProvider = (props) => {
           communityID: "NC-3",
         },
         {
-          communityName: "Parkwood MHC",
+          communityName: "Parkwood",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Winston-Salem, NC",
           communityAddress: "338 Barnes Road Lot 100, Winston-Salem, NC",
           communityType: "All Ages",
@@ -424,7 +453,8 @@ const CommunityContextProvider = (props) => {
           communityID: "NC-4",
         },
         {
-          communityName: "Vandemere MHC",
+          communityName: "Vandemere",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Greenville, NC",
           communityAddress: "474 Earl Road, Greenville, NC",
           communityType: "All Ages",
@@ -442,6 +472,7 @@ const CommunityContextProvider = (props) => {
       communities: [
         {
           communityName: "Apple Creek",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Bismarck, ND",
           communityAddress: "111 Albatross Drive, Bismarck, ND",
           communityType: "All Ages",
@@ -451,6 +482,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Countryside",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Mandan, ND",
           communityAddress: "103 Countryside Lane, Mandan, ND",
           communityType: "All Ages",
@@ -460,6 +492,7 @@ const CommunityContextProvider = (props) => {
         },
         {
           communityName: "Parktown",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Mandan, ND",
           communityAddress: "703 6th Ave SE, Mandan, ND",
           communityType: "All Ages",
@@ -503,6 +536,7 @@ const CommunityContextProvider = (props) => {
         // },
         {
           communityName: "Valley View",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Roseburg, OR",
           communityAddress: "200 Emils Way, Roseburg, OR",
           communityType: "All Ages",
@@ -579,7 +613,8 @@ const CommunityContextProvider = (props) => {
       stateBgURL: WestVirginiaShape,
       communities: [
         {
-          communityName: "Cambridge MHC",
+          communityName: "Cambridge",
+          communitySubtitle: "Manufactured Housing Community",
           communityCity: "Charles Town, WV",
           communityAddress: "11 Manchester Drive, Charles Town, WV",
           communityType: "All Ages",

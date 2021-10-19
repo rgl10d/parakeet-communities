@@ -16,7 +16,7 @@
 /* FOOTER ADDRESS */
 #footer-address {
   color: white;
-  font-family: Source Sans Pro;
+  font-family: Montserrat;
   padding-top: 50px;
 }
 
@@ -25,15 +25,10 @@
   padding-top: 40px;
 }
 
-.footer-link-title {
-  font-family: Oswald;
-  color: white;
-}
-
 .footer-link {
   color: white;
   font-size: 22px;
-  font-family: Oswald;
+  font-family: Red Hat Display;
 }
 
 .footer-link:hover {

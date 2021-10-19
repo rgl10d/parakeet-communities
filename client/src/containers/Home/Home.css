@@ -45,7 +45,7 @@ yellow: #ffcc3b; */
 }
 
 #home-carousel h2 {
-  font-family: Oswald;
+  font-family: Red Hat Display;
 }
 
 /* 3 HEADING CARDS */
@@ -61,7 +61,7 @@ yellow: #ffcc3b; */
   margin-top: 55px;
   border: solid grey 1px;
   box-shadow: 1px 4px 4px 2px darkgrey;
-  font-family: Source Sans Pro;
+  font-family: Montserrat;
 }
 
 .heading-card:hover {
@@ -72,7 +72,7 @@ yellow: #ffcc3b; */
 }
 
 div .heading-card h2 {
-  font-family: Oswald;
+  font-family: Red Hat Display;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -154,11 +154,12 @@ div .heading-card p {
 }
 
 .featured-centering h2 {
-  font-family: Oswald;
+  font-family: Red Hat Display;
+  font-weight: bold;
 }
 
 .featured-centering p {
-  font-family: Source Pro Sans;
+  font-family: Montserrat;
 }
 
 #middleFeatured {
@@ -198,7 +199,7 @@ div .heading-card p {
 }
 
 div .map-container h1 {
-  font-family: Oswald;
+  font-family: Red Hat Display;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -215,14 +216,14 @@ div .map-container h1 {
 /* All green buttons (includes all pages/containers)*/
 .btn-success {
   background-color: #2fc984;
-  font-family: Oswald;
+  font-family: Red Hat Display;
   font-size: 20px;
 }
 
 .btn-outline-success {
   color: #2f4d65;
   border: 1px solid #2f4d65;
-  font-family: Oswald;
+  font-family: Red Hat Display;
 }
 
 .btn-outline-success:hover {
@@ -231,7 +232,7 @@ div .map-container h1 {
 }
 
 .btn-primary {
-  font-family: Oswald;
+  font-family: Red Hat Display;
   background-color: #2f4d65;
   border: 1px solid #2f4d65;
 }

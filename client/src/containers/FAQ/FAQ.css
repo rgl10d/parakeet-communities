@@ -4,7 +4,7 @@
 }
 
 div #faqContainer h1 {
-  font-family: Oswald;
+  font-family: Red Hat Display;
   margin-bottom: 20px;
   text-align: center;
   background: rgb(255, 255, 255);
@@ -17,7 +17,7 @@ div #faqContainer h1 {
 }
 
 div #faqContainer button {
-  font-family: Source Sans Pro;
+  font-family: Montserrat;
   font-weight: bolder;
   text-decoration: none;
   color: black;
@@ -47,12 +47,12 @@ div #faqContainer .card {
 }
 
 div #moreQuestions h1 {
-  font-family: Oswald;
+  font-family: Red Hat Display;
   font-size: 60px;
 }
 
 div #moreQuestions p {
-  font-family: Source Sans Pro;
+  font-family: Montserrat;
   font-size: 25px;
 }
 

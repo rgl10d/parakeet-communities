@@ -30,8 +30,9 @@
 
 /* Link styling */
 .nav-link {
-  font-family: Oswald;
+  font-family: Red Hat Display;
   font-size: 20px;
+  font-weight: bold;
   border-bottom: 3px solid transparent;
   padding-bottom: 5px;
   margin-left: 3px;
@@ -53,7 +54,6 @@
 /* Media Queries */
 @media (max-width: 991px) {
   .nav-link {
-    font-family: Oswald;
     font-size: 20px;
     border-bottom: initial;
     padding-bottom: 5px;
