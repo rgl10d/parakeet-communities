@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { Fragment, useContext, useEffect, useState } from "react";
 import "./Communities.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { CommunityContext } from "../../contexts/CommunityContext";
 import logomark from "../../assets/parakeet-Logomark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import uuid from "react-uuid";
 
 const Communities = () => {
   // STATE VARIABLES
@@ -121,60 +122,75 @@ const Communities = () => {
         {/* US STATE LIST MAP FUNCTION */}
         {usStatesState.map((communityStates) => {
           return (
-            <>
+            <Fragment key={uuid()}>
               {/* CONTAINER FOR EACH US STATE */}
-              <div key={communityStates.usStateId}>
+              <div key={uuid()}>
                 {/* DISPLAYS US STATE NAME */}
-                <h1 className="community-state-names">
+                <h1 key={uuid()} className="community-state-names">
                   {communityStates.state}
                 </h1>
                 {/* COMMUNITIES WITHIN EACH STATE MAP FUNCTION */}
-                <div className="row us-state-card-container">
+                <div key={uuid()} className="row us-state-card-container">
                   {communityStates.communities.map((communities) => {
                     return (
                       <div
-                        key={communities.communityID}
+                        key={uuid()}
                         className="card community-card"
                         style={{
                           backgroundImage: `url(${communityStates.stateBgURL})`,
                         }}
                       >
-                        <div className="card-body">
+                        <div key={uuid()} className="card-body">
                           {/* COMMUNITY NAME */}
-                          <h3 className="card-title community-card-title community-name">
+                          <h3
+                            key={uuid()}
+                            className="card-title community-card-title community-name"
+                          >
                             {communities.communityName}
                           </h3>
                           {/* CITY/STATE OF THE COMMUNITY */}
-                          <h5 className="card-title community-card-title community-city">
+                          <h5
+                            key={uuid()}
+                            className="card-title community-card-title community-city"
+                          >
                             {communities.communityCity}
                           </h5>
                           {/* COMMUNITY IMAGE */}
                           {/* <img src="..." class="card-img-top" alt="..." /> */}
                           <svg
+                            key={uuid()}
                             viewBox="0 0 286 160"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect width="286" height="160" />
+                            <rect key={uuid()} width="286" height="160" />
                           </svg>
                           {/* COMMUNITY ADDRESS */}
-                          <p className="card-text community-card-address">
+                          <p
+                            key={uuid()}
+                            className="card-text community-card-address"
+                          >
                             {communities.communityAddress}
                           </p>
-                          <p className="card-text community-card-type">
+                          <p
+                            key={uuid()}
+                            className="card-text community-card-type"
+                          >
                             Community Type: {communities.communityType}
                           </p>
                           {/* RV ALLOWED LINE */}
-                          <p className="card-text card-rv-allowed">
+                          <p key={uuid()} className="card-text card-rv-allowed">
                             RV's Allowed?{" "}
                             <FontAwesomeIcon
+                              key={uuid()}
                               icon={communities.communityRV}
                               className={communities.rvClass}
                               alt="House Icon"
                             />
                           </p>
 
-                          <div style={{ position: "relative" }}>
+                          <div key={uuid()} style={{ position: "relative" }}>
                             <img
+                              key={uuid()}
                               alt="Parakeet Communities Logo"
                               className="community-card-logo"
                               src={logomark}
@@ -182,6 +198,7 @@ const Communities = () => {
                           </div>
                           {/* LINK TO COMMUNITY PAGE */}
                           <a
+                            key={uuid()}
                             href={`/communities/${communities.communityURL}`}
                             className="btn btn-primary community-card-button"
                             community={{ communities }}
@@ -194,7 +211,7 @@ const Communities = () => {
                   })}
                 </div>
               </div>
-            </>
+            </Fragment>
           );
         })}
       </div>
