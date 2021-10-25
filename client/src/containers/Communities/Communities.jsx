@@ -4,11 +4,13 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { CommunityContext } from "../../contexts/CommunityContext";
 import logomark from "../../assets/parakeet-Logomark.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Communities = () => {
   // STATE VARIABLES
   const { communityStates } = useContext(CommunityContext);
   const [usStatesState, setUsStatesState] = useState([]);
+  // const [filteredCommunities, setFilteredCommunities] = useState([]);
   const [defaultOption, setDefaultOption] = useState("");
 
   // HOOK THAT OCCURS ON PAGE LOAD
@@ -30,7 +32,9 @@ const Communities = () => {
     <>
       <Navbar />
       <div id="communities-container" className="container">
-        <h1 id="communities-header">Find your perfect <span style={{color: "#2fc984"}}>Community</span></h1>
+        <h1 id="communities-header">
+          Find your perfect <span style={{ color: "#2fc984" }}>Community</span>
+        </h1>
         <h3 id="filter-header">Filters:</h3>
         <div className="row filters-container">
           {/* STATE SELECT DROPDOWN */}
@@ -87,14 +91,31 @@ const Communities = () => {
           </div>
           {/* HOUSING TYPE SELECT */}
           <div className="col-lg-4">
-            <select
+            {/* <select
               className="form-select state-select-dropdown"
               aria-label="Housing Type Filter Select"
             >
               <option value="housingtype">Housing Type</option>
               <option value="houses">Houses</option>
               <option value="rv">RV's</option>
-            </select>
+            </select> */}
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value="no-rv"
+              id="rv-check"
+              defaultChecked
+              onChange={(e) => {
+                if (e.target.checked) {
+                  console.log("Hi");
+                } else {
+                  console.log("Goodbye");
+                }
+              }}
+            />
+            <label className="form-check-label" htmlFor="rv-check">
+              Include RV Communities
+            </label>
           </div>
         </div>
         {/* US STATE LIST MAP FUNCTION */}
@@ -142,9 +163,16 @@ const Communities = () => {
                           <p className="card-text community-card-type">
                             Community Type: {communities.communityType}
                           </p>
-                          <p className="card-text community-card-amenities">
-                            {communities.communityAmenities}
+                          {/* RV ALLOWED LINE */}
+                          <p className="card-text card-rv-allowed">
+                            RV's Allowed?{" "}
+                            <FontAwesomeIcon
+                              icon={communities.communityRV}
+                              className={communities.rvClass}
+                              alt="House Icon"
+                            />
                           </p>
+
                           <div style={{ position: "relative" }}>
                             <img
                               alt="Parakeet Communities Logo"

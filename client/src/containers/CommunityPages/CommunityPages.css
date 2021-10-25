@@ -1,3 +1,8 @@
+div #community-page-container h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
 .community-page-title-div {
   padding: 30px 0px 20px 0px;
   text-align: center;

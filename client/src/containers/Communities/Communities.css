@@ -6,7 +6,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 #communities-header {
@@ -31,6 +30,18 @@
   width: 100%;
   font-family: Red Hat Display;
   font-size: 24px;
+}
+
+#rv-check {
+  margin: 0;
+  width: 34px;
+  height: 34px;
+}
+
+.form-check-label {
+  font-family: Red Hat Display;
+  font-size: 24px;
+  margin-left: 45px;
 }
 
 .community-state-names {
@@ -61,7 +72,7 @@
   background-color: #fafafa;
   box-shadow: 1px 4px 4px 2px darkgrey;
   margin: 10px;
-  width: 350px;
+  width: 370px;
   background-repeat: no-repeat;
   background-size: 450px;
   background-position: center;
@@ -94,7 +105,7 @@
 /* COMMUNITY DETAIL TEXT */
 .card-text {
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -107,6 +118,22 @@
 /* COMMUNITY TYPE */
 .community-card-type {
   margin-bottom: 10px;
+}
+
+/* RV ALLOWED? */
+.card-rv-allowed {
+  padding-top: 15px;
+}
+
+/* RV CHECK CLASSES */
+.yes-rv {
+  color: green;
+  font-size: 20px;
+}
+
+.no-rv {
+  color: red;
+  font-size: 20px;
 }
 
 /* .community-card-button {
@@ -135,6 +162,13 @@
 }
 
 /* MEDIA QUERIES */
+
+@media (min-width: 1200px) {
+  #communities-container {
+    max-width: 1200px;
+  }
+}
+
 @media (max-width: 992px) {
   #communities-container {
     background-image: none;
@@ -144,7 +178,7 @@
     margin-bottom: 25px;
   }
   .community-state-names {
-    font-size: 32px
+    font-size: 32px;
   }
 }
 

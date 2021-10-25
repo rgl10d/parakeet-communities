@@ -16,6 +16,10 @@ import OregonShape from "../assets/US_States_Imgs/oregon.png";
 // import TexasShape from "../assets/US_States_Imgs/texas.png";
 // import WashingtonShape from "../assets/US_States_Imgs/washington.png";
 import WestVirginiaShape from "../assets/US_States_Imgs/westvirginia.png";
+import {
+  faCheckCircle,
+  faTimesCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const CommunityContext = createContext();
 
@@ -36,6 +40,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "wolfbay",
           communityID: "AL-1",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
       ],
     },
@@ -54,6 +60,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "applegate",
           communityID: "FL-1",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Bay Oaks Village I",
@@ -64,9 +72,11 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "bayoaksvillage",
           communityID: "FL-2",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
-          communityName: "Bay Oaks Village I",
+          communityName: "Bay Oaks Village II",
           communitySubtitle: "A Manufactured Housing Community",
           communityCity: "Panama City, FL",
           communityAddress: "420 N Kimbrel Ave, Panama City, FL",
@@ -74,6 +84,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "bayoaksvillage",
           communityID: "FL-3",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Congress",
@@ -84,6 +96,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "congress",
           communityID: "FL-4",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Everglades",
@@ -94,6 +108,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "everglades",
           communityID: "FL-5",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Gulf Breeze",
@@ -104,6 +120,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "gulfbreeze",
           communityID: "FL-6",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Hunter Springs",
@@ -114,6 +132,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "huntersprings",
           communityID: "FL-7",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "J Bar J Estates",
@@ -124,6 +144,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "jbarjestates",
           communityID: "FL-8",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Lake Saunders",
@@ -134,6 +156,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "lakesaunders",
           communityID: "FL-9",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Lake Wales",
@@ -144,6 +168,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "lakewales",
           communityID: "FL-10",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Oceanaire",
@@ -154,6 +180,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "oceanaire",
           communityID: "FL-11",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Ormond Beach Oasis",
@@ -164,6 +192,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "ormondbeachoasis",
           communityID: "FL-12",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Palm Spring Estates",
@@ -174,6 +204,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "palmspringestates",
           communityID: "FL-13",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Royal Oaks",
@@ -184,6 +216,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "royaloaks",
           communityID: "FL-14",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Shady Oaks",
@@ -194,6 +228,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "shadyoaks",
           communityID: "FL-15",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Town & Country",
@@ -204,6 +240,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "townandcountry",
           communityID: "FL-16",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Tradewinds",
@@ -214,6 +252,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "tradewinds",
           communityID: "FL-17",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Westwood",
@@ -224,6 +264,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "westwood",
           communityID: "FL-18",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
       ],
     },
@@ -302,16 +344,9 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "mobilemanor",
           communityID: "MD-1",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
-        // {
-        //   communityName: "Rio Vista MHP",
-        //   communityCity: "Lothian, MD",
-        //   communityAddress: "Address",
-        //   communityType: "All Ages",
-        //   communityAmenities: "Amenities",
-        //   communityURL: "riovista",
-        //   communityID: "MD-2",
-        // },
         {
           communityName: "Royal Palm",
           communitySubtitle: "Manufactured Housing Community",
@@ -320,7 +355,9 @@ const CommunityContextProvider = (props) => {
           communityType: "All Ages",
           communityAmenities: "Amenities",
           communityURL: "royalpalm",
-          communityID: "MD-3",
+          communityID: "MD-2",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
       ],
     },
@@ -339,6 +376,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "mayflowerhills",
           communityID: "MA-1",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
       ],
     },
@@ -357,6 +396,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "lambertonlake",
           communityID: "MI-1",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         // {
         //   communityName: "Victoria Woods MHC",
@@ -393,6 +434,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "collins",
           communityID: "NY-1",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Underwood Estates",
@@ -403,6 +446,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "underwoodestates",
           communityID: "NY-2",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
       ],
     },
@@ -421,6 +466,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "cedargrove",
           communityID: "NC-1",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Colonial",
@@ -431,6 +478,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "colonial",
           communityID: "NC-2",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Lambeth",
@@ -441,6 +490,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "lambeth",
           communityID: "NC-3",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Parkwood",
@@ -451,6 +502,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "parkwood",
           communityID: "NC-4",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Vandemere",
@@ -461,6 +514,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "vandemere",
           communityID: "NC-5",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
       ],
     },
@@ -479,6 +534,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "applecreek",
           communityID: "ND-1",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
         {
           communityName: "Countryside",
@@ -489,6 +546,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "countryside",
           communityID: "ND-2",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
         {
           communityName: "Parktown",
@@ -499,6 +558,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "parktown",
           communityID: "ND-3",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
       ],
     },
@@ -525,15 +586,6 @@ const CommunityContextProvider = (props) => {
       stateAbbr: "OR",
       stateBgURL: OregonShape,
       communities: [
-        // {
-        //   communityName: "Shasta Glen MHC",
-        //   communityCity: "Klamath Falls, OR",
-        //   communityAddress: "Address",
-        //   communityType: "All Ages",
-        //   communityAmenities: "Amenities",
-        //   communityURL: "shastaglen",
-        //   communityID: "OR-1",
-        // },
         {
           communityName: "Valley View",
           communitySubtitle: "Manufactured Housing Community",
@@ -542,7 +594,9 @@ const CommunityContextProvider = (props) => {
           communityType: "All Ages",
           communityAmenities: "Amenities",
           communityURL: "valleyview",
-          communityID: "OR-2",
+          communityID: "OR-1",
+          communityRV: faCheckCircle,
+          rvClass: "yes-rv",
         },
       ],
     },
@@ -621,6 +675,8 @@ const CommunityContextProvider = (props) => {
           communityAmenities: "Amenities",
           communityURL: "cambridge",
           communityID: "WV-1",
+          communityRV: faTimesCircle,
+          rvClass: "no-rv",
         },
       ],
     },

@@ -1,0 +1,23 @@
+#contact-container {
+    height: 687px;
+}
+
+#contact-hero-image {
+    height: 300px;
+    max-width: 100%;
+    background-image: url(../../assets/writing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contact-hero-title {
+    font-family: Red Hat Display;
+    font-weight: bold;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* #contact-form {
+    padding-left: 125px;
+} */
