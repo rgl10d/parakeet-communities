@@ -10,7 +10,9 @@ const FAQ = () => {
     <>
       <Navbar />
       <div id="faqContainer" className="container">
-        <h1>Frequently Asked Questions</h1>
+        <h1>
+          Frequently Asked <span style={{ color: "#2fc984" }}>Questions</span>
+        </h1>
         <div className="accordion" id="accordionExample">
           {/* Question 1 */}
           <div className="card">
@@ -24,7 +26,10 @@ const FAQ = () => {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   What is the difference between a mobile home and a
                   manufactured home?
                 </button>
@@ -59,7 +64,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   What are the advantages of living in a mobile home or
                   manufactured home?
                 </button>
@@ -105,7 +113,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   Can I move my home to another location if I want?
                 </button>
               </h2>
@@ -138,7 +149,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  <FontAwesomeIcon icon={faQuestionCircle} className="question-icon" />
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   Are your rules enforced?
                 </button>
               </h2>
@@ -168,6 +182,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseFive"
                 >
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   Is there an application?
                 </button>
               </h2>
@@ -199,6 +217,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseSix"
                 >
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   Can I bring in a used mobile home?
                 </button>
               </h2>
@@ -229,6 +251,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseSeven"
                 >
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   May I sell my mobile home to someone and leave it in the park?
                 </button>
               </h2>
@@ -257,6 +283,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseEight"
                 >
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   Will I get my security deposit back when I move?
                 </button>
               </h2>
@@ -287,6 +317,10 @@ const FAQ = () => {
                   aria-expanded="false"
                   aria-controls="collapseNine"
                 >
+                  <FontAwesomeIcon
+                    icon={faQuestionCircle}
+                    className="question-icon"
+                  />
                   May I park my RV in this park?
                 </button>
               </h2>

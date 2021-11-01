@@ -8,6 +8,17 @@
   background-attachment: fixed;
 }
 
+#communities-hero-image {
+  height: 400px;
+  background-image: url(../../assets/playingInYard-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 4px 4px 2px darkgrey;
+  margin-bottom: 50px;
+  background-color: black;
+}
+
 #communities-header {
   font-family: Red Hat Display;
   font-weight: bold;
@@ -72,7 +83,7 @@
   background-color: #fafafa;
   box-shadow: 1px 4px 4px 2px darkgrey;
   margin: 10px;
-  width: 370px;
+  width: 400px;
   background-repeat: no-repeat;
   background-size: 450px;
   background-position: center;
@@ -105,7 +116,7 @@
 /* COMMUNITY DETAIL TEXT */
 .card-text {
   font-family: Montserrat;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -120,21 +131,29 @@
   margin-bottom: 10px;
 }
 
-/* RV ALLOWED? */
-.card-rv-allowed {
-  padding-top: 15px;
+/* CARD ICONS DIV */
+.card-icons {
+  padding: 20px 0;
   font-size: 22px;
 }
 
-/* RV CHECK CLASSES */
-.yes-rv {
-  color: green;
-  font-size: 22px;
+/* CARD ICON CLASSES */
+.card-house-icon {
+  /* color: #2fc984; */
+  font-size: 32px;
+}
+
+.card-rv-icon {
+  width: 52px;
+  height: 32px;
+  margin-top: -2px;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
 }
 
 .no-rv {
-  color: red;
-  font-size: 24px;
+  display: none;
 }
 
 /* .community-card-button {
@@ -164,9 +183,9 @@
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   #communities-container {
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 

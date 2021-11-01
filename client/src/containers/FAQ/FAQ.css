@@ -7,13 +7,7 @@ div #faqContainer h1 {
   font-family: Red Hat Display;
   margin-bottom: 20px;
   text-align: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 10%,
-    rgba(11, 255, 224, 1) 50%,
-    rgba(255, 255, 255, 1) 90%
-  );
+  font-weight: bold;
 }
 
 div #faqContainer button {

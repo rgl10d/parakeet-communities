@@ -7,10 +7,12 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div id="aboutHeaderImg"></div>
       <div id="aboutContainer" className="container">
+      <div id="about-hero-img">
+        {/* <img id="about-logo" src={aboutLogo} alt="Business men talking" /> */}
+      </div>
         <h1 id="aboutTitle">
-          Who <span style={{ color: "lightgreen" }}>We</span> Are
+          Who <span style={{ color: "#2fc984" }}>We</span> Are
         </h1>
         <p id="aboutText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam

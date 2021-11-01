@@ -1,29 +1,24 @@
-#aboutHeaderImg {
+#about-hero-img {
   height: 100%;
-  min-height: 500px;
-  background-image: url(../../assets/playingInYard-min.jpg);
+  min-height: 400px;
+  background-image: url(../../assets/meeting-2-min.jpg);
   background-repeat: no-repeat;
   /* background-size: 100% auto; */
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  margin-bottom: 50px;
+  box-shadow: 1px 4px 4px 2px darkgrey;
 }
 
 #aboutContainer {
-  margin-top: 150px;
-  margin-bottom: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #aboutTitle {
   font-family: Red Hat Display;
   font-size: 50px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(11, 255, 224, 1) 10%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  font-weight: bold;
 }
 
 #aboutText {

@@ -5,6 +5,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import { CommunityContext } from "../../contexts/CommunityContext";
 import logomark from "../../assets/parakeet-Logomark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import rvIcon from "../../assets/rvIcon.png";
 import uuid from "react-uuid";
 
 const Communities = () => {
@@ -33,6 +35,7 @@ const Communities = () => {
     <>
       <Navbar />
       <div id="communities-container" className="container">
+        <div id="communities-hero-image" />
         <h1 id="communities-header">
           Find your perfect <span style={{ color: "#2fc984" }}>Community</span>
         </h1>
@@ -92,15 +95,15 @@ const Communities = () => {
           </div>
           {/* HOUSING TYPE SELECT */}
           <div className="col-lg-4">
-            {/* <select
+            <select
               className="form-select state-select-dropdown"
               aria-label="Housing Type Filter Select"
             >
               <option value="housingtype">Housing Type</option>
               <option value="houses">Houses</option>
               <option value="rv">RV's</option>
-            </select> */}
-            <input
+            </select>
+            {/* <input
               className="form-check-input"
               type="checkbox"
               value="no-rv"
@@ -116,7 +119,7 @@ const Communities = () => {
             />
             <label className="form-check-label" htmlFor="rv-check">
               Include RV Communities
-            </label>
+            </label> */}
           </div>
         </div>
         {/* US STATE LIST MAP FUNCTION */}
@@ -177,16 +180,23 @@ const Communities = () => {
                           >
                             Community Type: {communities.communityType}
                           </p>
-                          {/* RV ALLOWED LINE */}
-                          <p key={uuid()} className="card-text card-rv-allowed">
-                            RV's Allowed?{" "}
+                          {/* CARD ICONS DIV */}
+                          <div key={uuid()} className="card-text card-icons">
+                            {/* HOUSE ICON */}
                             <FontAwesomeIcon
                               key={uuid()}
-                              icon={communities.communityRV}
-                              className={communities.rvClass}
-                              alt="House Icon"
+                              icon={faHome}
+                              className="card-house-icon"
+                              alt="Manufactured Houses Allowed"
                             />
-                          </p>
+                            {/* RV ICON */}
+                            <img
+                              key={uuid()}
+                              src={rvIcon}
+                              className={communities.rvClass}
+                              alt="RV's Allowed"
+                            />
+                          </div>
 
                           <div key={uuid()} style={{ position: "relative" }}>
                             <img

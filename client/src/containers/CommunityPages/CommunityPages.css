@@ -1,3 +1,7 @@
+#community-page-container {
+  margin-bottom: 99px;
+}
+
 div #community-page-container h3 {
   font-family: Montserrat;
   font-weight: bold;
@@ -16,6 +20,10 @@ div .community-page-title-div p {
 .community-page-title {
   font-family: Red Hat Display;
   font-weight: bolder;
+}
+
+#community-carousel {
+  margin-bottom: 30px;
 }
 
 /* MEDIA QUERIES */

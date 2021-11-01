@@ -38,9 +38,10 @@ const CommunityPages = () => {
             </span>
           </h1>
           <p>{currentCommunity.communitySubtitle}</p>
+          <p>{currentCommunity.communityAddress} | (888)-888-8888</p>
         </div>
         <div
-          id="carouselExampleFade"
+          id="community-carousel"
           class="carousel slide carousel-fade"
           data-ride="carousel"
         >
@@ -61,7 +62,7 @@ const CommunityPages = () => {
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleFade"
+            href="#community-carousel"
             role="button"
             data-slide="prev"
           >
@@ -70,7 +71,7 @@ const CommunityPages = () => {
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleFade"
+            href="#community-carousel"
             role="button"
             data-slide="next"
           >
@@ -97,11 +98,7 @@ const CommunityPages = () => {
         </div>
         <div className="community-amenities">
           <h3>Park Amenities</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div>
-          <h3>Our Contact Information</h3>
-          <p>Address? Number? Name of Manager?</p>
+          <p>{currentCommunity.communityAmenities}</p>
         </div>
       </div>
       <Footer />

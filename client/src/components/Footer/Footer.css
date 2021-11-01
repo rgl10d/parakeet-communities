@@ -45,9 +45,21 @@
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 1035px) {
+  .footer-link {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 990px) {
   #footerLogo {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 830px) {
+  .footer-link {
+    font-size: 15px;
   }
 }
 
@@ -84,6 +96,7 @@
   #footer-link-list {
     padding-top: 20px;
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .footer-link {
