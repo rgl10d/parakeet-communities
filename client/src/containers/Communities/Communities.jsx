@@ -39,10 +39,10 @@ const Communities = () => {
         <h1 id="communities-header">
           Find your perfect <span style={{ color: "#2fc984" }}>Community</span>
         </h1>
-        <h3 id="filter-header">Filters:</h3>
+        <h3 id="filter-header">Filter:</h3>
         <div className="row filters-container">
           {/* STATE SELECT DROPDOWN */}
-          <div className="col-lg-4">
+          <div className="col-lg-6">
             <select
               className="form-select state-select-dropdown"
               value={defaultOption}
@@ -83,7 +83,7 @@ const Communities = () => {
             </select>
           </div>
           {/* COMMUNITY AGE SELECT */}
-          <div className="col-lg-4">
+          {/* <div className="col-lg-4">
             <select
               className="form-select state-select-dropdown"
               aria-label="Community Age Filter Select"
@@ -92,9 +92,9 @@ const Communities = () => {
               <option value="allages">All Ages</option>
               <option value="55+">55+</option>
             </select>
-          </div>
+          </div> */}
           {/* HOUSING TYPE SELECT */}
-          <div className="col-lg-4">
+          {/* <div className="col-lg-4">
             <select
               className="form-select state-select-dropdown"
               aria-label="Housing Type Filter Select"
@@ -103,24 +103,7 @@ const Communities = () => {
               <option value="houses">Houses</option>
               <option value="rv">RV's</option>
             </select>
-            {/* <input
-              className="form-check-input"
-              type="checkbox"
-              value="no-rv"
-              id="rv-check"
-              defaultChecked
-              onChange={(e) => {
-                if (e.target.checked) {
-                  console.log("Hi");
-                } else {
-                  console.log("Goodbye");
-                }
-              }}
-            />
-            <label className="form-check-label" htmlFor="rv-check">
-              Include RV Communities
-            </label> */}
-          </div>
+          </div> */}
         </div>
         {/* US STATE LIST MAP FUNCTION */}
         {usStatesState.map((communityStates) => {

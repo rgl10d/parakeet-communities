@@ -193,7 +193,7 @@ const CommunityContextProvider = (props) => {
           communitySubtitle: "Manufactured Housing Community",
           communityCity: "Miami, FL",
           communityAddress: "2980 NW 79th St, Miami, FL",
-          communityType: "All Ages",
+          communityType: "55+",
           communityAmenities: [
             "amenity #1",
             "amenity #2",
@@ -290,6 +290,23 @@ const CommunityContextProvider = (props) => {
           communityID: "FL-14",
           rvClass: "card-rv-icon",
         },
+                {
+          communityName: "Sea Shells",
+          communitySubtitle: "Manufactured Housing Community",
+          communityCity: "Cape Canaveral, FL",
+          communityAddress: "51 Hitching Post Rd, Cape Canaveral, FL",
+          communityType: "All Ages",
+          communityAmenities: [
+            "amenity #1",
+            "amenity #2",
+            "amenity #3",
+            "amenity #4",
+            "amenity #5",
+          ],
+          communityURL: "royaloaks",
+          communityID: "FL-15",
+          rvClass: "card-rv-icon",
+        },
         {
           communityName: "Shady Oaks",
           communitySubtitle: "Manufactured Housing Community",
@@ -304,7 +321,7 @@ const CommunityContextProvider = (props) => {
             "amenity #5",
           ],
           communityURL: "shadyoaks",
-          communityID: "FL-15",
+          communityID: "FL-16",
           rvClass: "card-rv-icon",
         },
         {
@@ -321,7 +338,7 @@ const CommunityContextProvider = (props) => {
             "amenity #5",
           ],
           communityURL: "townandcountry",
-          communityID: "FL-16",
+          communityID: "FL-17",
           rvClass: "card-rv-icon",
         },
         {
@@ -338,7 +355,7 @@ const CommunityContextProvider = (props) => {
             "amenity #5",
           ],
           communityURL: "tradewinds",
-          communityID: "FL-17",
+          communityID: "FL-18",
           rvClass: "card-rv-icon",
         },
         {
@@ -355,7 +372,7 @@ const CommunityContextProvider = (props) => {
             "amenity #5",
           ],
           communityURL: "westwood",
-          communityID: "FL-18",
+          communityID: "FL-19",
           rvClass: "card-rv-icon",
         },
       ],
