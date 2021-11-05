@@ -1,4 +1,5 @@
 import React from "react";
+import "./Careers.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 
@@ -7,9 +8,7 @@ const Careers = () => {
     <>
       <Navbar />
       <div className="container">
-        <div style={{ height: "1000px" }}>
-          <h1>Page is under construction.</h1>
-        </div>
+        <div id="bzOpeningsContainer"></div>
       </div>
       <Footer />
     </>

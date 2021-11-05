@@ -1,0 +1,24 @@
+#bzOpeningsContainer {
+  width: auto;
+}
+
+div #bzOpeningsContainer a {
+  color: black;
+}
+
+div #bzOpeningsContainer a:hover {
+  /* text-decoration: none;
+  color: black; */
+}
+
+div #bzOpeningsContainer li {
+  color: black;
+}
+
+.bzOpening {
+    margin-bottom: 25px;
+}
+
+.bzButtonApply {
+  display: none;
+}
