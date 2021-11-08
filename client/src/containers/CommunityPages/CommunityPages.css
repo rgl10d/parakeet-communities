@@ -26,6 +26,11 @@ div .community-page-title-div p {
   margin-bottom: 30px;
 }
 
+.community-pages-carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 320px) {
   #apply-now-action {

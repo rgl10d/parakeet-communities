@@ -82,10 +82,10 @@ div .heading-card p {
 }
 
 #heading-card-1 {
-  background-color: #ffcc3b;
+  /* background-color: #ffcc3b; */
   background-image: linear-gradient(
-      rgba(255, 204, 59, 0.9),
-      rgba(255, 204, 59, 0.9)
+      rgba(226, 181, 57, 0.9),
+      rgba(226, 181, 57, 0.9)
     ),
     url(../../assets/meeting.jpg);
   background-position: center;
@@ -98,8 +98,8 @@ div .heading-card p {
   margin-right: -100px;
   /* background-color: #2fc984; */
   background-image: linear-gradient(
-      rgba(47, 201, 132, 0.8),
-      rgba(47, 201, 132, 0.8)
+      rgba(39, 170, 111, 0.9),
+      rgba(39, 170, 111, 0.9)
     ),
     url(../../assets/bubbles.jpg);
   background-position: center;
@@ -111,8 +111,8 @@ div .heading-card p {
 #heading-card-3 {
   background-color: #fa6261;
   background-image: linear-gradient(
-      rgba(250, 98, 97, 0.8),
-      rgba(250, 98, 97, 0.8)
+      rgba(221, 88, 88, 0.9),
+      rgba(221, 88, 88, 0.9)
     ),
     url(../../assets/house_keychain-min.jpg);
   background-position: center;
@@ -201,7 +201,6 @@ div .heading-card p {
 div .map-container h1 {
   font-family: Red Hat Display;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .map-container path {
@@ -213,7 +212,7 @@ div .map-container h1 {
   cursor: pointer;
 }
 
-/* All green buttons (includes all pages/containers)*/
+/* All buttons (includes all pages/containers/components)*/
 .btn-success {
   background-color: #2fc984;
   font-family: Red Hat Display;

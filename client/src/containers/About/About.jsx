@@ -31,7 +31,7 @@ const About = () => {
       <section>
         <div id="find-community-action">
           <h1>
-            Ready to find your new <span style={{ color: "#2fc984" }}>home</span>?
+            Ready to find your new <span style={{ color: "#fa6261" }}>home</span>?
           </h1>
           <p>
             Check out all of our communities and choose the right one for you!

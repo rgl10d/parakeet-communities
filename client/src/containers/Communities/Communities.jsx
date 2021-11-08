@@ -37,7 +37,7 @@ const Communities = () => {
       <div id="communities-container" className="container">
         <div id="communities-hero-image" />
         <h1 id="communities-header">
-          Find your perfect <span style={{ color: "#2fc984" }}>Community</span>
+          Our <span style={{ color: "#2fc984" }}>Communities</span>
         </h1>
         <h3 id="filter-header">Filter:</h3>
         <div className="row filters-container">

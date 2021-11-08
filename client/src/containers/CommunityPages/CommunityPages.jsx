@@ -38,7 +38,10 @@ const CommunityPages = () => {
             </span>
           </h1>
           <p>{currentCommunity.communitySubtitle}</p>
-          <p>{currentCommunity.communityAddress} | (888)-888-8888</p>
+          <p>
+            {currentCommunity.communityAddress} <span style={{fontWeight: "bolder", fontSize: "20px", marginLeft: "2px", marginRight: "2px"}}>|</span>{" "}
+            {currentCommunity.communityPhone}
+          </p>
         </div>
         <div
           id="community-carousel"
@@ -47,17 +50,31 @@ const CommunityPages = () => {
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div style={{ backgroundColor: "red", height: "400px" }}></div>
+              <div style={{ height: "500px" }}>
+                <img
+                  src={currentCommunity.communityImage1}
+                  class="d-block w-100 community-pages-carousel-image"
+                  alt="..."
+                />
+              </div>
             </div>
             <div class="carousel-item">
-              <div style={{ backgroundColor: "green", height: "400px" }}></div>
+              <div style={{ height: "500px" }}>
+                <img
+                  src={currentCommunity.communityImage2}
+                  class="d-block w-100 community-pages-carousel-image"
+                  alt="..."
+                />
+              </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="https://via.placeholder.com/1110x400)"
-                class="d-block w-100"
-                alt="..."
-              />
+              <div style={{ height: "500px" }}>
+                <img
+                  src={currentCommunity.communityImage3}
+                  class="d-block w-100 community-pages-carousel-image"
+                  alt="..."
+                />
+              </div>
             </div>
           </div>
           <a

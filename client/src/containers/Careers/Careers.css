@@ -6,10 +6,10 @@ div #bzOpeningsContainer a {
   color: black;
 }
 
-div #bzOpeningsContainer a:hover {
-  /* text-decoration: none;
-  color: black; */
-}
+/* div #bzOpeningsContainer a:hover {
+  text-decoration: none;
+  color: black;
+} */
 
 div #bzOpeningsContainer li {
   color: black;
