@@ -84,8 +84,8 @@ div .heading-card p {
 #heading-card-1 {
   /* background-color: #ffcc3b; */
   background-image: linear-gradient(
-      rgba(226, 181, 57, 0.9),
-      rgba(226, 181, 57, 0.9)
+      rgba(255, 227, 152, 0.8),
+      rgba(255, 227, 152, 0.8)
     ),
     url(../../assets/meeting.jpg);
   background-position: center;
@@ -98,8 +98,8 @@ div .heading-card p {
   margin-right: -100px;
   /* background-color: #2fc984; */
   background-image: linear-gradient(
-      rgba(39, 170, 111, 0.9),
-      rgba(39, 170, 111, 0.9)
+      rgba(75, 223, 156, 0.8),
+      rgba(75, 223, 156, 0.8)
     ),
     url(../../assets/bubbles.jpg);
   background-position: center;
@@ -111,8 +111,8 @@ div .heading-card p {
 #heading-card-3 {
   background-color: #fa6261;
   background-image: linear-gradient(
-      rgba(221, 88, 88, 0.9),
-      rgba(221, 88, 88, 0.9)
+      rgba(255, 109, 109, 0.8),
+      rgba(255, 109, 109, 0.8)
     ),
     url(../../assets/house_keychain-min.jpg);
   background-position: center;

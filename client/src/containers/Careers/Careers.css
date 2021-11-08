@@ -17,6 +17,7 @@ div #bzOpeningsContainer li {
 
 .bzOpening {
     margin-bottom: 25px;
+    border: 1px black solid;
 }
 
 .bzButtonApply {
