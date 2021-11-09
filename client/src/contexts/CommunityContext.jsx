@@ -368,7 +368,7 @@ const CommunityContextProvider = (props) => {
             "amenity #4",
             "amenity #5",
           ],
-          communityURL: "royaloaks",
+          communityURL: "seashells",
           communityID: "FL-15",
           rvClass: "card-rv-icon",
           communityPhone: "(321)-613-3990",

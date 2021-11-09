@@ -9,7 +9,7 @@ import {
   faQuestionCircle,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
-import Parakeets from "../../assets/parakeet_bird_img.jpg";
+import Family from "../../assets/family.jpg";
 import Hands from "../../assets/hands_together-min.jpg";
 import FatherSon from "../../assets/father_and_son-min.jpg";
 
@@ -294,7 +294,7 @@ const Home = () => {
             <div className="col-md-5 featured-image-container">
               <img
                 className="featured-img"
-                src={Parakeets}
+                src={Family}
                 alt="Parakeet birds"
               />
             </div>

@@ -1,25 +1,64 @@
 #bzOpeningsContainer {
   width: auto;
+  margin: 0px 0px 5px 0px;
 }
 
 div #bzOpeningsContainer a {
   color: black;
 }
 
-/* div #bzOpeningsContainer a:hover {
+div #bzOpeningsContainer a:hover {
   text-decoration: none;
-  color: black;
-} */
-
-div #bzOpeningsContainer li {
   color: black;
 }
 
+div #bzOpeningsContainer li {
+  color: black;
+  list-style-type: none;
+}
+
+.bzOpeningsList {
+  padding: 0;
+}
+
+/* EACH INDIVIDUAL JOB OPENING */
 .bzOpening {
-    margin-bottom: 25px;
-    border: 1px black solid;
+  position: relative;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: 1px black solid;
+  box-shadow: 1px 4px 4px 2px darkgrey;
+  background-color: rgba(241, 241, 241, 0.692);
+}
+
+.bzOpening:hover {
+  box-shadow: 2px 7px 6px 4px darkgrey;
+  animation-name: job-opening-float-anim;
+  animation-duration: 300ms;
+  top: -2px;
+}
+
+.bzOpening h2 {
+  font-family: Red Hat Display;
+  font-weight: bold;
+}
+
+.bzMeta {
+  font-family: Montserrat;
 }
 
 .bzButtonApply {
   display: none;
+}
+
+/* JOB OPENING FLOAT ANIMATION */
+@keyframes job-opening-float-anim {
+  from {
+    box-shadow: 1px 4px 4px 2px darkgrey;
+    top: 0px;
+  }
+  to {
+    box-shadow: 2px 7px 6px 4px darkgrey;
+    top: -2px;
+  }
 }
