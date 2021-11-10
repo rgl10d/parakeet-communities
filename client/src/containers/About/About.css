@@ -8,11 +8,12 @@
   background-position: top;
   margin-bottom: 50px;
   box-shadow: 1px 4px 4px 2px darkgrey;
+  background-color: black;
 }
 
 #aboutContainer {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 #aboutTitle {
@@ -53,4 +54,29 @@ div #find-community-action a {
 
 div #find-community-action a:hover {
   background-color: #5b96c6;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  div #find-community-action h1 {
+    font-size: 45px;
+  }
+
+  div #find-community-action p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  #find-community-action {
+    padding-top: 50px;
+  }
+
+  div #find-community-action h1 {
+    font-size: 40px;
+  }
+
+  div #find-community-action p {
+    font-size: 16px;
+  }
 }

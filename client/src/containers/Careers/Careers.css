@@ -1,3 +1,8 @@
+#careers-title {
+  text-align: center;
+  margin: 25px 0px;
+}
+
 #bzOpeningsContainer {
   width: auto;
   margin: 0px 0px 5px 0px;
@@ -43,6 +48,7 @@ div #bzOpeningsContainer li {
   font-weight: bold;
 }
 
+/* LISTED DETAILS FOR EACH POSTING */
 .bzMeta {
   font-family: Montserrat;
 }
@@ -60,5 +66,36 @@ div #bzOpeningsContainer li {
   to {
     box-shadow: 2px 7px 6px 4px darkgrey;
     top: -2px;
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .bzOpening h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  #careers-title {
+    font-size: 30px;
+  }
+  .bzOpening h2 {
+    font-size: 20px;
+  }
+  .bzMeta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  #careers-title {
+    font-size: 25px;
+  }
+  .bzOpening h2 {
+    font-size: 15px;
+  }
+  .bzMeta {
+    font-size: 10px;
   }
 }

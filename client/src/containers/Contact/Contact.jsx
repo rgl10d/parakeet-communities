@@ -7,11 +7,10 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div id="contact-hero-image" alt="Man writing on paper" />
+
       <div id="contact-container" className="container">
-
+      <div id="contact-hero-image" alt="Man writing on paper" />
         <h1 id="contact-hero-title">Send us a message</h1>
-
         <form id="contact-form">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -34,10 +33,19 @@ const Contact = () => {
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputMessage">Message</label>
-              <textarea type="text" class="form-control" id="inputMessage" style={{resize: "none", minHeight: "150px"}} />
+              <textarea
+                type="text"
+                class="form-control"
+                id="inputMessage"
+                style={{ resize: "none", minHeight: "150px" }}
+              />
             </div>
           </div>
-          <button id="contact-send-button" type="submit" class="btn btn-success">
+          <button
+            id="contact-send-button"
+            type="submit"
+            class="btn btn-success"
+          >
             Send
           </button>
         </form>
@@ -46,7 +54,5 @@ const Contact = () => {
     </>
   );
 };
-
-
 
 export default Contact;

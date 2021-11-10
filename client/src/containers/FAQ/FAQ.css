@@ -51,7 +51,17 @@ div #moreQuestions p {
 }
 
 /* Media Queries */
-@media (max-width: 623px) {
+@media (max-width: 800px) {
+  div #moreQuestions h1 {
+    font-size: 45px;
+  }
+
+  div #moreQuestions p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
   #moreQuestions {
     padding-top: 50px;
   }

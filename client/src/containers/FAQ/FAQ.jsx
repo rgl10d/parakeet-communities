@@ -95,9 +95,7 @@ const FAQ = () => {
                 out on their own, or the buyers are on a fixed income,
                 manufactured housing is a very affordable alternative to
                 renting. Another advantage is the wonderful sense of community
-                that one gets in a manufactured home community. Our community is
-                very friendly, safe, quiet, and clean. Our residents can take
-                pride in their home and their home community.
+                that one gets in a manufactured home community.
               </div>
             </div>
           </div>
@@ -232,10 +230,10 @@ const FAQ = () => {
               data-parent="#accordionExample"
             >
               <div className="card-body">
-                Yes, but Worsham Mobile Home Park staff must inspect the home
-                before it can be brought into the park. Homes that require
-                extensive work will not be approved...the work must be completed
-                prior to the home being brought into the park.
+                Yes, but the home must be inspected before it can be brought
+                into the park. Homes that require extensive work will not be
+                approved...the work must be completed prior to the home being
+                brought into the park.
               </div>
             </div>
           </div>
@@ -321,7 +319,7 @@ const FAQ = () => {
                     icon={faQuestionCircle}
                     className="question-icon"
                   />
-                  May I park my RV in this park?
+                  May I park my RV in your parks?
                 </button>
               </h2>
             </div>
@@ -332,8 +330,7 @@ const FAQ = () => {
               data-parent="#accordionExample"
             >
               <div className="card-body">
-                This mobile home park is designed to be a more stable, not
-                transient community. RVs are not permitted.
+                RV's are permitted in certain communities.
               </div>
             </div>
           </div>

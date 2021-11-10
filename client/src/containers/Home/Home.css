@@ -48,6 +48,10 @@ yellow: #ffcc3b; */
   font-family: Red Hat Display;
 }
 
+#home-carousel p {
+  font-family: Montserrat;
+}
+
 /* 3 HEADING CARDS */
 .header-card-row {
   display: flex;

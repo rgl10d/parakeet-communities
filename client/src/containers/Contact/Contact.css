@@ -1,5 +1,5 @@
 #contact-container {
-    height: 687px;
+    height: 987px;
 }
 
 #contact-hero-image {
@@ -9,6 +9,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: 1px 4px 4px 2px darkgrey;
+    background-color: black;
+    margin-top: 25px;
 }
 
 #contact-hero-title {
@@ -16,6 +19,10 @@
     font-weight: bold;
     padding: 40px 0;
     text-align: center;
+}
+
+#contact-container label{
+    font-family: Montserrat;
 }
 
 /* #contact-form {

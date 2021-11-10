@@ -8,7 +8,7 @@ const Careers = () => {
     <>
       <Navbar />
       <div className="container">
-        <h1>Our Open Positions</h1>
+        <h1 id="careers-title">Our Open Positions</h1>
         <div id="bzOpeningsContainer"></div>
       </div>
       <Footer />

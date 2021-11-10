@@ -183,7 +183,6 @@
 }
 
 /* MEDIA QUERIES */
-
 @media (min-width: 1300px) {
   #communities-container {
     max-width: 1300px;
@@ -200,6 +199,12 @@
   }
   .community-state-names {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  #communities-hero-image {
+    display: none;
   }
 }
 
