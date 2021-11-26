@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Contact.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState("Send");
@@ -20,6 +21,7 @@ const Contact = () => {
     }));
   }
 
+  // ON-SUBMIT FUNCTION
   const submitEmail = async (e) => {
     e.preventDefault();
     setSubmitStatus("Sending...");
@@ -34,9 +36,17 @@ const Contact = () => {
     .then(async (res) => {
       const resData = await res;
       if(resData.status === "success") {
-        alert("Message Sent!");
+        Swal.fire(
+          'Your message has been sent!',
+          'We will respond to you as soon as possible!',
+          'success'
+        )
       } else if (resData.status === "fail") {
-        alert("Message failed to send!")
+        Swal.fire(
+          'Something went wrong.',
+          'Please try again later.',
+          'error'
+        )
       }
     })
     .then(() => {
