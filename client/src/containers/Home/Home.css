@@ -153,8 +153,9 @@ div .heading-card p {
 
 /* FEATURED TEXT AND IMAGES */
 .featured-centering {
-  height: 400px;
+  height: 445px;
   padding: 150px 0;
+  text-align: center;
 }
 
 .featured-centering h2 {
@@ -166,9 +167,9 @@ div .heading-card p {
   font-family: Montserrat;
 }
 
-#middleFeatured {
+/* #middleFeatured {
   text-align: right;
-}
+} */
 
 .featured-image-container {
   max-width: 500px;

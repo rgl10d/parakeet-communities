@@ -39,10 +39,10 @@ const Communities = () => {
         <h1 id="communities-header">
           Our <span style={{ color: "#2fc984" }}>Communities</span>
         </h1>
-        <h3 id="filter-header">Filter:</h3>
-        <div className="row filters-container">
+        <h3 id="filter-header">Filter by State:</h3>
+        <div className="row filters-container justify-content-center">
           {/* STATE SELECT DROPDOWN */}
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <select
               className="form-select state-select-dropdown"
               value={defaultOption}
@@ -143,13 +143,19 @@ const Communities = () => {
                           </h5>
                           {/* COMMUNITY IMAGE */}
                           {/* <img src="..." class="card-img-top" alt="..." /> */}
-                          <svg
+                          <img
+                              key={uuid()}
+                              src={communities.communityCardImage}
+                              // className={communities.rvClass}
+                              alt={communities.communityName}
+                            />
+                          {/* <svg
                             key={uuid()}
                             viewBox="0 0 286 160"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <rect key={uuid()} width="286" height="160" />
-                          </svg>
+                          </svg> */}
                           {/* COMMUNITY ADDRESS */}
                           <p
                             key={uuid()}

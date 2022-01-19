@@ -278,25 +278,11 @@ const Home = () => {
           <div className="row featured">
             {/* Feature Block 1 */}
             <div className="col-md-7 featured-centering">
-              <h2 className="featured-heading">
-                Welcome to the
-                <span style={{ color: "#2fc984" }}> Flock</span>
-              </h2>
-              <p className="lead">
-                We chose our name because the Green Parakeet is a reminder to
-                not be careless with time, energy or money. The Green Parakeet
-                is also known to build large communal roosts. We value these
-                ideals and want to make roosts of our own that residents can
-                live in and thrive together.
-              </p>
-              <p className="lead">Come fly home.</p>
+              <h2 className="featured-heading">Welcome to the</h2>
+              <h2 style={{ color: "#2fc984" }}> Flock</h2>
             </div>
             <div className="col-md-5 featured-image-container">
-              <img
-                className="featured-img"
-                src={Family}
-                alt="Parakeet birds"
-              />
+              <img className="featured-img" src={Family} alt="Parakeet birds" />
             </div>
             <hr className="divider" />
             {/* Feature Block 2 */}
@@ -308,28 +294,15 @@ const Home = () => {
               />
             </div>
             <div id="middleFeatured" className="col-md-7 featured-centering">
-              <h2 className="featured-heading">
-                We're
-                <span style={{ color: "#2fc984" }}> Community</span> first
-              </h2>
-              <p className="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium debitis consectetur similique cupiditate, veritatis
-                eveniet!
-              </p>
+              <h2 className="featured-heading">We're</h2>
+              <h2 style={{ color: "#2fc984" }}> Community</h2>
+              <h2 className="featured-heading">first</h2>
             </div>
             <hr className="divider" />
             {/* Feature Block 3 */}
             <div className="col-md-7 featured-centering">
-              <h2 className="featured-heading">
-                Find your
-                <span style={{ color: "#2fc984" }}> Forever Home</span>
-              </h2>
-              <p className="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium debitis consectetur similique cupiditate, veritatis
-                eveniet!
-              </p>
+              <h2 className="featured-heading">Find your</h2>
+              <h2 style={{ color: "#2fc984" }}> Forever Home</h2>
             </div>
             <div className="col-md-5 featured-image-container">
               <img
