@@ -23,8 +23,14 @@ import ApplegateCardImage from "../assets/Community_Pictures/Applegate/main-min.
 import BayoaksOneCardimage from "../assets/Community_Pictures/Bay_Oaks_One/bayoaks-main-min.jpg";
 import BayoaksTwoCardimage from "../assets/Community_Pictures/Bay_Oaks_Two/bayoaks2-main-min.jpg";
 import CongressCardImage from "../assets/Community_Pictures/Congress/congress-main-min.jpg";
+import EvergladesCardImage from "../assets/Community_Pictures/Everglades/everglades-main-min.jpg";
+import GulfBreezeCardImage from "../assets/Community_Pictures/Gulf_Breeze/gulf-breeze-main-min.jpg";
 import HunterCardImage from "../assets/Community_Pictures/Hunter_Springs/hunter-main-min.jpg";
+import JBarJCardImage from "../assets/Community_Pictures/J_Bar_J/j-bar-j-main-min.jpg";
+import LakeWalesCardImage from "../assets/Community_Pictures/Lake_Wales/lake-wales-main-min.jpg";
 import SaundersCardImage from "../assets/Community_Pictures/Lake_Saunders/saunders-main-min.jpg";
+import SeaShellsCardImage from "../assets/Community_Pictures/Seashells/seashells-main-min.jpg";
+import ShadyOaksCardImage from "../assets/Community_Pictures/Shady_Oaks/shady-oaks-main-min.jpg";
 import TradewindsCardImage from "../assets/Community_Pictures/Tradewinds/tradewinds-main-min.jpg";
 import PlaceholderCardImage from "../assets/Community_Pictures/Placeholders/placeholder-card-image.jpg"
 
@@ -178,6 +184,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: EvergladesCardImage,
         },
         {
           communityName: "Gulf Breeze",
@@ -199,6 +206,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: GulfBreezeCardImage,
         },
         {
           communityName: "Hunter Springs",
@@ -242,6 +250,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: JBarJCardImage,
         },
         {
           communityName: "Lake Saunders",
@@ -285,6 +294,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: LakeWalesCardImage,
         },
         {
           communityName: "Oceanaire",
@@ -328,6 +338,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: PlaceholderCardImage,
         },
         {
           communityName: "Palm Spring Estates",
@@ -349,6 +360,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: PlaceholderCardImage,
         },
         {
           communityName: "Royal Oaks",
@@ -370,6 +382,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: PlaceholderCardImage,
         },
         {
           communityName: "Sea Shells",
@@ -391,6 +404,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: SeaShellsCardImage,
         },
         {
           communityName: "Shady Oaks",
@@ -412,6 +426,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: ShadyOaksCardImage,
         },
         {
           communityName: "Town & Country",
@@ -478,6 +493,7 @@ const CommunityContextProvider = (props) => {
           communityImage1: SeashellsImageOne,
           communityImage2: SeashellsImageTwo,
           communityImage3: SeashellsImageThree,
+          communityCardImage: PlaceholderCardImage,
         },
       ],
     },

@@ -3,7 +3,7 @@ import "./Communities.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { CommunityContext } from "../../contexts/CommunityContext";
-import logomark from "../../assets/parakeet-Logomark.png";
+// import logomark from "../../assets/parakeet-Logomark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import rvIcon from "../../assets/rvIcon.png";
@@ -187,14 +187,14 @@ const Communities = () => {
                             />
                           </div>
 
-                          <div key={uuid()} style={{ position: "relative" }}>
+                          {/* <div key={uuid()} style={{ position: "relative" }}>
                             <img
                               key={uuid()}
                               alt="Parakeet Communities Logo"
                               className="community-card-logo"
                               src={logomark}
                             />
-                          </div>
+                          </div> */}
                           {/* LINK TO COMMUNITY PAGE */}
                           <a
                             key={uuid()}
